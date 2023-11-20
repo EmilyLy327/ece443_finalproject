@@ -1,0 +1,83 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=Simple_Processor
+[Library]
+Simple_Processor=.\Simple_Processor\Simple_Processor.lib
+[$LibMap$]
+Simple_Processor=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+[IMPLEMENTATION]
+UCF=
+[Files]
+/Data Memory.vhd=-1
+/ALU.vhd=-1
+/ALU Control Unit.vhd=-1
+/Register File.vhd=-1
+/Control Unit.vhd=-1
+/Instruction Memory.vhd=-1
+/Instruction Decode Execute.vhd=-1
+Testbench/tb.vhd=-1
+[Files.Data]
+.\src\Data Memory.vhd=VHDL Source Code
+.\src\ALU.vhd=VHDL Source Code
+.\src\ALU Control Unit.vhd=VHDL Source Code
+.\src\Register File.vhd=VHDL Source Code
+.\src\Control Unit.vhd=VHDL Source Code
+.\src\Instruction Memory.vhd=VHDL Source Code
+.\src\Instruction Decode Execute.vhd=VHDL Source Code
+.\src\Testbench\tb.vhd=VHDL Test Bench
+[folders]
+name0=ALINT-PRO Workspaces
+directory0=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\Simple_Processor\Simple Processor\
+extension0=alintws
+name1=Coverage Databases
+directory1=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\Simple_Processor\Simple Processor\
+extension1=acdb
+name2=Dll Libraries
+directory2=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\Simple_Processor\Simple Processor\
+extension2=dll
+name3=Event Lists
+directory3=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\Simple_Processor\Simple Processor\
+extension3=lst
+name4=HTML Files
+directory4=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\Simple_Processor\Simple Processor\
+extension4=htm;html
+name5=Log Files
+directory5=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\Simple_Processor\Simple Processor\
+extension5=log;htm;xml;txt
+name6=Matlab/Simulink Files
+directory6=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\Simple_Processor\
+extension6=m;mdl;slx
+name7=Memory Files
+directory7=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\Simple_Processor\Simple Processor\
+extension7=mem;mif;hex
+name8=PDF Files
+directory8=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\Simple_Processor\Simple Processor\
+extension8=pdf
+name9=Profiler Databases
+directory9=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\Simple_Processor\Simple Processor\
+extension9=tbp
+name10=Script Files
+directory10=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\Simple_Processor\Simple Processor\
+extension10=do;tcl;pl
+name11=Waveform Files
+directory11=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\Simple_Processor\Simple Processor\
+extension11=asdb;awc;asdbc;asdbe
+[Groups]
+Testbench=1
+[HierarchyViewer]
+HierarchyInformation=processor|Behavioral|0 tb|behavior|0
+ShowHide=ShowTopLevel
+Selected=

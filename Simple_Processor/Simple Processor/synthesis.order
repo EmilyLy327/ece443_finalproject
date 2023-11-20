@@ -1,0 +1,8 @@
+i<>.\src\Instruction.vhd
+i<>.\src\ALU.vhd
+i<>.\src\Register File.vhd
+i<>.\src\Data Memory.vhd
+i<>.\src\ALU Control Unit.vhd
+i<>.\src\Control Unit.vhd
+i<>.\src\Processor.vhd
+i<>.\src\tb.vhd

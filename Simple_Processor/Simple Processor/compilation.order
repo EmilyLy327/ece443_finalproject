@@ -1,0 +1,8 @@
+.\src\Data Memory.vhd
+.\src\ALU.vhd
+.\src\ALU Control Unit.vhd
+.\src\Register File.vhd
+.\src\Control Unit.vhd
+.\src\Instruction Memory.vhd
+.\src\Instruction Decode Execute.vhd
+.\src\Testbench\tb.vhd

@@ -78,6 +78,8 @@ extension11=asdb;awc;asdbc;asdbe
 [Groups]
 Testbench=1
 [HierarchyViewer]
-HierarchyInformation=processor|Behavioral|0 tb|behavior|0
+HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+[SpecTracer]
+WindowVisible=0

@@ -1,4 +1,4 @@
-5
+6
 ~E 1 "../src/ALU.vhd" 18 ALU
 ~A 1 "../src/ALU.vhd" 27 Behavioral
 ~E 1 "../src/ALU Control Unit.vhd" 17 ALU_control
@@ -9,8 +9,8 @@
 ~A 1 "../src/Data Memory.vhd" 28 Behavioral
 ~E 1 "../src/Instruction Memory.vhd" 18 instruction_memory
 ~A 1 "../src/Instruction Memory.vhd" 25 Behavioral
-~E 1 "../src/Instruction Decode Execute.vhd" 21 Processor
-~A 1 "../src/Instruction Decode Execute.vhd" 29 Behavioral
+~E 1 "../src/Instruction Decode Execute.vhd" 23 Processor
+~A 1 "../src/Instruction Decode Execute.vhd" 31 Behavioral
 ~E 1 "../src/Register File.vhd" 18 register_file
 ~A 1 "../src/Register File.vhd" 31 Behavioral
 ~E 1 "../src/Testbench/tb.vhd" 17 tb

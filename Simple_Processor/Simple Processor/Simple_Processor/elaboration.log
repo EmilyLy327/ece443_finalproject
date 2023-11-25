@@ -1,42 +1,9 @@
-Active-HDL 13.0.376.8320 2023-11-20 13:13:09
+Active-HDL 12.0.118.7745 2023-11-23 12:11:41
 
 Elaboration top modules:
-Architecture                  Behavioral(Processor)
 
 
---------------------------------------------------------------------------------------------------------------
-Entity             | Architecture | Library          | Info | Compiler Version          | Compilation Options
---------------------------------------------------------------------------------------------------------------
-Processor          | Behavioral   | Simple_Processor |      | 13.0.376.8320 (Windows64) | -O3
-instruction_memory | Behavioral   | Simple_Processor |      | 13.0.376.8320 (Windows64) | -O3
-control_unit       | Behavioral   | Simple_Processor |      | 13.0.376.8320 (Windows64) | -O3
-register_file      | Behavioral   | Simple_Processor |      | 13.0.376.8320 (Windows64) | -O3
-ALU_control        | Behavioral   | Simple_Processor |      | 13.0.376.8320 (Windows64) | -O3
-ALU                | Behavioral   | Simple_Processor |      | 13.0.376.8320 (Windows64) | -O3
-Data_Memory        | Behavioral   | Simple_Processor |      | 13.0.376.8320 (Windows64) | -O3
---------------------------------------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------------------------------------
-VHDL Package                      | Library          | Info | Compiler Version          | Compilation Options
---------------------------------------------------------------------------------------------------------------
-standard                          | std              |      |                           | <unavailable>
-TEXTIO                            | std              |      | 13.0.376.8320 (Windows64) |  -2019
-std_logic_1164                    | ieee             |      | 13.0.376.8320 (Windows64) |  -2008
-std_logic_arith                   | ieee             |      | 13.0.376.8320 (Windows64) | <unavailable>
-STD_LOGIC_SIGNED                  | ieee             |      | 13.0.376.8320 (Windows64) | <unavailable>
-NUMERIC_STD                       | ieee             |      | 13.0.376.8320 (Windows64) |  -2008
---------------------------------------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------------------------------------
-Library                           | Comment
---------------------------------------------------------------------------------------------------------------
-ieee                              | Standard IEEE packages library
-Simple_Processor                  | None
-std                               | Standard VHDL library
---------------------------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+Processor Processor Behavioral
-
-
-The performance of simulation is reduced. Version Student Edition
+----------------------------------------------------------------------------------
+Library                 | Comment
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------

@@ -5,4 +5,10 @@
 .\src\Control Unit.vhd
 .\src\Instruction Memory.vhd
 .\src\Instruction Decode Execute.vhd
+.\src\half_adder.vhd
+.\src\full_adder.vhd
+.\src\sixteen_bit_adder.vhd
+.\src\sixteen_bit_subtractor.vhd
+.\src\sixteen_bit_multiplier.vhd
+.\src\sixteen_bit_multiplexer.vhd
 .\src\Testbench\tb.vhd

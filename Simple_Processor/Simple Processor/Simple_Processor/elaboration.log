@@ -1,9 +1,42 @@
-Active-HDL 12.0.118.7745 2023-11-23 12:11:41
+Active-HDL 12.0.118.7745 2023-11-25 17:40:17
 
 Elaboration top modules:
+Architecture                  Behavioral(Processor)
 
 
-----------------------------------------------------------------------------------
-Library                 | Comment
-----------------------------------------------------------------------------------
-----------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+Entity             | Architecture | Library          | Info | Compiler Version        | Compilation Options
+------------------------------------------------------------------------------------------------------------
+Processor          | Behavioral   | simple_processor |      | 12.0.118.7745 (Windows) | -O3
+instruction_memory | Behavioral   | simple_processor |      | 12.0.118.7745 (Windows) | -O3
+control_unit       | Behavioral   | simple_processor |      | 12.0.118.7745 (Windows) | -O3
+register_file      | Behavioral   | simple_processor |      | 12.0.118.7745 (Windows) | -O3
+ALU_control        | Behavioral   | simple_processor |      | 12.0.118.7745 (Windows) | -O3
+ALU                | Behavioral   | simple_processor |      | 12.0.118.7745 (Windows) | -O3
+Data_Memory        | Behavioral   | simple_processor |      | 12.0.118.7745 (Windows) | -O3
+------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------
+VHDL Package                      | Library          | Info | Compiler Version        | Compilation Options
+------------------------------------------------------------------------------------------------------------
+standard                          | std              |      |                         | <unavailable>
+TEXTIO                            | std              |      |                         | <unavailable>
+std_logic_1164                    | ieee             |      |                         | <unavailable>
+std_logic_arith                   | ieee             |      |                         | <unavailable>
+STD_LOGIC_SIGNED                  | ieee             |      |                         | <unavailable>
+NUMERIC_STD                       | ieee             |      |                         | <unavailable>
+------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------
+Library                           | Comment
+------------------------------------------------------------------------------------------------------------
+ieee                              | Standard IEEE packages library
+simple_processor                  | None
+std                               | Standard VHDL library
+------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+Processor Processor Behavioral
+
+
+The performance of simulation is reduced. Version EDU Edition

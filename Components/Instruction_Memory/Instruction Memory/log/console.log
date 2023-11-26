@@ -1,0 +1,323 @@
+# Design: Design Instruction Memory already active.
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => Instruction_Fetch
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# Error: COMP96_0077: Instruction Memory.vhd : (31, 2): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0079: Instruction Memory.vhd : (30, 36): Invalid aggregate.
+# Error: COMP96_0077: Instruction Memory.vhd : (30, 36): Undefined type of expression. Expected type 'ROM_type'.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Error: COMP96_0071: Instruction Fetch.vhd : (27, 29): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Instruction Fetch.vhd : (27, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# Error: COMP96_0077: Instruction Memory.vhd : (31, 2): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0079: Instruction Memory.vhd : (30, 36): Invalid aggregate.
+# Error: COMP96_0077: Instruction Memory.vhd : (30, 36): Undefined type of expression. Expected type 'ROM_type'.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Error: COMP96_0071: Instruction Fetch.vhd : (27, 29): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Instruction Fetch.vhd : (27, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# Error: COMP96_0077: Instruction Memory.vhd : (16, 2): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0079: Instruction Memory.vhd : (15, 36): Invalid aggregate.
+# Error: COMP96_0077: Instruction Memory.vhd : (15, 36): Undefined type of expression. Expected type 'ROM_type'.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Error: COMP96_0071: Instruction Fetch.vhd : (27, 29): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Instruction Fetch.vhd : (27, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# Error: COMP96_0077: Instruction Memory.vhd : (31, 2): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0079: Instruction Memory.vhd : (30, 36): Invalid aggregate.
+# Error: COMP96_0077: Instruction Memory.vhd : (30, 36): Undefined type of expression. Expected type 'ROM_type'.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Error: COMP96_0071: Instruction Fetch.vhd : (27, 29): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Instruction Fetch.vhd : (27, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# Error: COMP96_0077: Instruction Memory.vhd : (31, 2): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0079: Instruction Memory.vhd : (30, 34): Invalid aggregate.
+# Error: COMP96_0077: Instruction Memory.vhd : (30, 34): Undefined type of expression. Expected type 'ROM_type'.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Error: COMP96_0071: Instruction Fetch.vhd : (27, 29): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Instruction Fetch.vhd : (27, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# Error: COMP96_0077: Instruction Memory.vhd : (31, 2): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0079: Instruction Memory.vhd : (30, 36): Invalid aggregate.
+# Error: COMP96_0077: Instruction Memory.vhd : (30, 36): Undefined type of expression. Expected type 'ROM_type'.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Error: COMP96_0071: Instruction Fetch.vhd : (27, 29): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Instruction Fetch.vhd : (27, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# Error: COMP96_0077: Instruction Memory.vhd : (31, 2): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0079: Instruction Memory.vhd : (30, 36): Invalid aggregate.
+# Error: COMP96_0077: Instruction Memory.vhd : (30, 36): Undefined type of expression. Expected type 'ROM_type'.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Error: COMP96_0071: Instruction Fetch.vhd : (27, 29): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Instruction Fetch.vhd : (27, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Error: COMP96_0071: Instruction Fetch.vhd : (27, 29): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Instruction Fetch.vhd : (27, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# Error: COMP96_0077: Instruction Memory.vhd : (31, 2): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0079: Instruction Memory.vhd : (30, 36): Invalid aggregate.
+# Error: COMP96_0077: Instruction Memory.vhd : (30, 36): Undefined type of expression. Expected type 'ROM_type'.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Error: COMP96_0071: Instruction Fetch.vhd : (27, 29): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Instruction Fetch.vhd : (27, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# Error: COMP96_0077: Instruction Memory.vhd : (31, 2): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0079: Instruction Memory.vhd : (30, 36): Invalid aggregate.
+# Error: COMP96_0077: Instruction Memory.vhd : (30, 36): Undefined type of expression. Expected type 'ROM_type'.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Error: COMP96_0019: Instruction Fetch.vhd : (15, 1): Keyword 'begin' expected.
+# Error: COMP96_0016: Instruction Fetch.vhd : (15, 19): Design unit declaration expected.
+# Compile Entity "work"
+# Error: COMP96_0019: Instruction Fetch.vhd : (15, 32): Keyword 'is' expected.
+# Error: COMP96_0019: Instruction Fetch.vhd : (15, 32): Keyword 'end' expected.
+# Error: COMP96_0015: Instruction Fetch.vhd : (15, 32): ';' expected.
+# Error: COMP96_0016: Instruction Fetch.vhd : (15, 33): Design unit declaration expected.
+# Compile failure 9 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# Error: COMP96_0077: Instruction Memory.vhd : (31, 2): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0079: Instruction Memory.vhd : (30, 36): Invalid aggregate.
+# Error: COMP96_0077: Instruction Memory.vhd : (30, 36): Undefined type of expression. Expected type 'ROM_type'.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Error: COMP96_0071: Instruction Fetch.vhd : (29, 29): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Instruction Fetch.vhd : (29, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# Error: COMP96_0077: Instruction Memory.vhd : (31, 2): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0079: Instruction Memory.vhd : (30, 36): Invalid aggregate.
+# Error: COMP96_0077: Instruction Memory.vhd : (30, 36): Undefined type of expression. Expected type 'ROM_type'.
+# Error: COMP96_0078: Instruction Memory.vhd : (51, 49): Unknown identifier "rom_addr".
+# Error: COMP96_0133: Instruction Memory.vhd : (51, 49): Cannot find object declaration.
+# Error: COMP96_0149: Instruction Memory.vhd : (51, 49): Explicit type conversions are allowed between closely related types only.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Error: COMP96_0071: Instruction Fetch.vhd : (29, 29): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Instruction Fetch.vhd : (29, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# Error: COMP96_0077: Instruction Memory.vhd : (31, 2): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0079: Instruction Memory.vhd : (30, 36): Invalid aggregate.
+# Error: COMP96_0077: Instruction Memory.vhd : (30, 36): Undefined type of expression. Expected type 'ROM_type'.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Error: COMP96_0071: Instruction Fetch.vhd : (29, 29): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Instruction Fetch.vhd : (29, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Error: COMP96_0071: Instruction Fetch.vhd : (29, 29): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Instruction Fetch.vhd : (29, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Error: COMP96_0071: Instruction Fetch.vhd : (29, 29): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Instruction Fetch.vhd : (29, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Error: COMP96_0078: Instruction Fetch.vhd : (29, 33): Unknown identifier "unsighed".
+# Error: COMP96_0133: Instruction Fetch.vhd : (29, 33): Cannot find object declaration.
+# Error: COMP96_0289: Instruction Fetch.vhd : (29, 33): Prefix of index must be an array.
+# Error: COMP96_0149: Instruction Fetch.vhd : (29, 33): Explicit type conversions are allowed between closely related types only.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Error: COMP96_0078: Instruction Fetch.vhd : (29, 33): Unknown identifier "unsigned".
+# Error: COMP96_0133: Instruction Fetch.vhd : (29, 33): Cannot find object declaration.
+# Error: COMP96_0289: Instruction Fetch.vhd : (29, 33): Prefix of index must be an array.
+# Error: COMP96_0149: Instruction Fetch.vhd : (29, 33): Explicit type conversions are allowed between closely related types only.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+Instruction_Fetch Instruction_Fetch Behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "Instruction_Memory"
+# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
+# File: C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
+# Compile Entity "Instruction_Fetch"
+# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6197 kB (elbread=256 elab2=5803 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\test files for 443 final project\Instruction_Memory\Instruction Memory\src\wave.asdb
+#  6:55 PM, Saturday, November 25, 2023
+#  Simulation has been initialized
+# 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/test files for 443 final project/Instruction_Memory/Instruction Memory/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Instruction_Fetch/Instruction_Memory,  Process: line__51.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.

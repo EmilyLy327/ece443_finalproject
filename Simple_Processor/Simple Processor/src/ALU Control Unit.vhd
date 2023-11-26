@@ -34,7 +34,7 @@ end ALU_control;
 
 architecture Behavioral of ALU_control is
 begin
-	process(ALUOp,ALU_Funct)
+	process(ALUOp, ALU_Funct)
 	begin
 		case ALUOp is
 			when "00" => -- Arithmetic Operation

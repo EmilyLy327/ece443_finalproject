@@ -6,3 +6,9 @@ i<>.\src\ALU Control Unit.vhd
 i<>.\src\Control Unit.vhd
 i<>.\src\Processor.vhd
 i<>.\src\tb.vhd
+i<>.\src\half_adder.vhd
+i<>.\src\full_adder.vhd
+i<>.\src\sixteen_bit_adder.vhd
+i<>.\src\sixteen_bit_subtractor.vhd
+i<>.\src\sixteen_bit_multiplier.vhd
+i<>.\src\sixteen_bit_multiplexer.vhd

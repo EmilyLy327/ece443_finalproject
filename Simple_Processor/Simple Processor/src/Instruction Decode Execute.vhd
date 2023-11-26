@@ -121,18 +121,15 @@ register_file: entity work.register_file
 -- JR control unit
  JRControl <= '1' when ((alu_op="00") and (instr(3 downto 0)="1000")) else '0';
 
--- ALU control unit
+ALU control unit
 ALUControl: entity work.ALU_control port map
   (
    ALUOp => alu_op,
    ALU_Funct => instr(2 downto 0),
    ALU_Control => ALU_Control
    );	 
-   
--- multiplexer alu_src
- read_data2 <= imm_ext when alu_src='1' else reg_read_data_2;
 
--- ALU unit which performs operations on register values or immediates
+ALU unit which performs operations on register values or immediates
 alu: entity work.ALU port map
   (
    a => reg_read_data_1,
@@ -141,6 +138,10 @@ alu: entity work.ALU port map
    alu_result => ALU_out,
    zero => zero_flag
    );
+
+-- multiplexer alu_src
+ read_data2 <= imm_ext when alu_src='1' else reg_read_data_2;
+
 -- immediate shift 1
  im_shift_1 <= imm_ext(14 downto 0) & '0';
  no_sign_ext <= (not im_shift_1) + x"0001";

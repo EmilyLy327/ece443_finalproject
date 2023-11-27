@@ -1,9 +1,0 @@
-.\src\half_adder.vhd
-.\src\full_adder.vhd
-.\src\sixteen_bit_adder.vhd
-.\src\sixteen_bit_subtractor.vhd
-.\src\sixteen_bit_multiplier.vhd
-.\src\sixteen_bit_multiplexer.vhd
-.\src\alu.vhd
-.\src\Test Bench\alu_TB.vhd
-.\src\Test Bench\alu_TB.vhd

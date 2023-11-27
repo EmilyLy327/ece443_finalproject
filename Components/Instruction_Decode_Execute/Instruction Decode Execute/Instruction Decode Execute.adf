@@ -24,3 +24,9 @@ FAMILY=
 .\src\Instruction Decode Execute.vhd=VHDL Source Code
 .\src\Instruction Memory.vhd=VHDL Source Code
 .\src\Instruction Fetch.vhd=VHDL Source Code
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=instruction_fetch|Behavioral|0 
+ShowHide=ShowTopLevel
+Selected=

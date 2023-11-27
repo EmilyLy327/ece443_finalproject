@@ -1,0 +1,24 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+Instruction_Decode_Execute=1
+Built-in symbols=0
+Register_File=0
+Data_Memory=0
+[COMPILESTATUS|.\src\Data Memory.vhd]
+FileTimeLow=31072618
+Status=Modified
+[COMPILESTATUS|.\src\TestBench\data_memory_TB.vhd]
+FileTimeLow=31072617
+Status=Modified
+[COMPILESTATUS|.\src\TestBench\data_memory_TB_runtest.do]
+FileTimeLow=31072615
+Status=Modified
+[COMPILESTATUS|.\..\DataMemory\src\datamemory.asdb]
+FileTimeLow=31072617
+Status=Modified
+[COMPILESTATUS|.\..\DataMemory\src\datamemory.awc]
+FileTimeLow=31072617
+Status=Modified
+[CACHEDOC|Aldec.Project.Generic.7|.\Data Memory\Data Memory.adf|]
+Path=
+[Gui config]
+RunFor=100 ns

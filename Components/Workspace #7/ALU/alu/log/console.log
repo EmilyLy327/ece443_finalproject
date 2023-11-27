@@ -1,0 +1,4 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: Architecture 'test' of entity 'tb_alu' not found in library 'alu'.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed

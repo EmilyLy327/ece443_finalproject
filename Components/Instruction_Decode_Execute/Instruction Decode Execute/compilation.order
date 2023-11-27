@@ -1,0 +1,3 @@
+.\src\Instruction Decode Execute.vhd
+.\src\Instruction Memory.vhd
+.\src\Instruction Fetch.vhd

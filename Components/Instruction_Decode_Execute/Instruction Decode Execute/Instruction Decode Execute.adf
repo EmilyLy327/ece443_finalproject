@@ -1,0 +1,26 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=Instruction_Decode_Execute
+[Library]
+Instruction_Decode_Execute=.\Instruction_Decode_Execute\Instruction_Decode_Execute.lib
+[$LibMap$]
+Instruction_Decode_Execute=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+[Files]
+/Instruction Decode Execute.vhd=-1
+/Instruction Memory.vhd=-1
+/Instruction Fetch.vhd=-1
+[Files.Data]
+.\src\Instruction Decode Execute.vhd=VHDL Source Code
+.\src\Instruction Memory.vhd=VHDL Source Code
+.\src\Instruction Fetch.vhd=VHDL Source Code

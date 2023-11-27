@@ -1,0 +1,6 @@
+6
+~E 1 "../src/Instruction Fetch.vhd" 5 Instruction_Fetch
+~A 1 "../src/Instruction Fetch.vhd" 14 Behavioral
+~E 1 "../src/Instruction Memory.vhd" 5 Instruction_Memory
+~A 1 "../src/Instruction Memory.vhd" 12 Behavioral
+~E 1 "../src/Instruction Decode Execute.vhd" 20 Processor

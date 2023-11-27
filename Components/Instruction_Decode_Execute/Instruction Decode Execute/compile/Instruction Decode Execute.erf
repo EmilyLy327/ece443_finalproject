@@ -1,0 +1,13 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd" 
+MESSAGE "Compile Entity "Processor"" 
+MESSAGE "Compile Architecture "Structural" of Entity "Processor"" 
+ERROR COMP96_0569: "Case expression must be of a locally static subtype. Use -relax to allow expressions of a nonstatic subtype." "C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd" 120 18
+ERROR COMP96_0367: "Improper array length (8). Expected length is 16." "C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd" 124 31
+MESSAGE "File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Memory.vhd" 
+MESSAGE "Compile Entity "Instruction_Memory"" 
+MESSAGE "Compile Architecture "Behavioral" of Entity "Instruction_Memory"" 
+MESSAGE "File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Fetch.vhd" 
+MESSAGE "Compile Entity "Instruction_Fetch"" 
+MESSAGE "Compile Architecture "Behavioral" of Entity "Instruction_Fetch"" 
+FAILURE "Compile failure 2 Errors 0 Warnings  Analysis time :  78.0 [ms]" 

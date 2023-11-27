@@ -1,0 +1,23 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+Instruction_Decode_Execute=1
+Built-in symbols=0
+Register_File=0
+[COMPILESTATUS|.\src\Register File.vhd]
+FileTimeLow=31072614
+Status=Modified
+[COMPILESTATUS|.\src\TestBench\registerfile_TB.vhd]
+FileTimeLow=31072459
+Status=Compiled
+[COMPILESTATUS|.\src\TestBench\registerfile_TB_runtest.do]
+FileTimeLow=31072459
+Status=Modified
+[COMPILESTATUS|.\..\RegisterFile\src\registerfilewave.asdb]
+FileTimeLow=31072459
+Status=Modified
+[COMPILESTATUS|.\..\RegisterFile\src\registerfilewave.awc]
+FileTimeLow=31072459
+Status=Modified
+[CACHEDOC|Aldec.Project.Generic.7|.\Register File\Register File.adf|]
+Path=
+[Gui config]
+RunFor=100 ns

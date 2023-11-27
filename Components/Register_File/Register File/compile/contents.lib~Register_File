@@ -1,6 +1,6 @@
-7
+8
 ~E 1 "../src/Register File.vhd" 17 RegisterFile
-~A 1 "../src/Register File.vhd" 27 Behavioral
+~A 1 "../src/Register File.vhd" 33 Behavioral
 ~E 1 "../src/TestBench/registerfile_TB.vhd" 7 registerfile_tb
 ~A 1 "../src/TestBench/registerfile_TB.vhd" 10 TB_ARCHITECTURE
 ~C 1 "../src/TestBench/registerfile_TB.vhd" 99 testbench_for_registerfile

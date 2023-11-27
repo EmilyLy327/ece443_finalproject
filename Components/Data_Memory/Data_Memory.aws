@@ -1,0 +1,12 @@
+[Version]
+Version=12.0
+[Designs]
+data memory=.\Data Memory\Data Memory.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+data memory=1

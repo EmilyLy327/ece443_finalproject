@@ -22,7 +22,7 @@ use IEEE.numeric_std.all;
 
 entity sixteen_bit_adder is
   port (
-    A, B : in SIGNED(15 downto 0);  -- 16 bit inputs
+    A, B : in SIGNED(15 downto 0);    -- 16 bit inputs
     Sum : out SIGNED(15 downto 0)	  -- 16 bit outputs
   );
 end sixteen_bit_adder;
@@ -45,7 +45,7 @@ begin
   A_std_vector <= std_logic_vector(A);	-- Convert SIGNED inputs to std_logic_vector
   B_std_vector <= std_logic_vector(B);
 
-  adders: for i in 0 to 15 generate  -- create 16 full adders
+  adders: for i in 0 to 15 generate  	-- create 16 full adders
     FA: full_adder port map (
       A => A_std_vector(i),
       B => B_std_vector(i),

@@ -6,35 +6,35 @@ FileTimeLow=949473397
 FileTimeHigh=31071191
 Status=Modified
 [COMPILESTATUS|.\src\ALU.vhd]
-FileTimeLow=136540361
-FileTimeHigh=31073257
-Status=Modified
+FileTimeLow=2343128795
+FileTimeHigh=31073286
+Status=Compiled
 [COMPILESTATUS|.\src\Register File.vhd]
-FileTimeLow=136570369
-FileTimeHigh=31073257
-Status=Modified
+FileTimeLow=2344589124
+FileTimeHigh=31073286
+Status=Compiled
 [COMPILESTATUS|.\src\Data Memory.vhd]
-FileTimeLow=136550368
-FileTimeHigh=31073257
-Status=Modified
+FileTimeLow=2343868966
+FileTimeHigh=31073286
+Status=Compiled
 [CACHEDOC|Aldec.Project.Generic.7|.\Simple Processor\Simple Processor.adf|]
 Path=
 [COMPILESTATUS|.\src\ALU Control Unit.vhd]
-FileTimeLow=136530362
-FileTimeHigh=31073257
-Status=Modified
+FileTimeLow=2346799628
+FileTimeHigh=31073286
+Status=Compiled
 [COMPILESTATUS|.\src\Control Unit.vhd]
 FileTimeLow=136540361
 FileTimeHigh=31073257
-Status=Modified
+Status=Compiled
 [COMPILESTATUS|.\src\Instruction Memory.vhd]
-FileTimeLow=136560366
-FileTimeHigh=31073257
-Status=Modified
+FileTimeLow=2345319302
+FileTimeHigh=31073286
+Status=Compiled
 [COMPILESTATUS|.\src\Instruction Decode Execute.vhd]
 FileTimeLow=437071995
 FileTimeHigh=31073286
-Status=Modified
+Status=Error
 [COMPILESTATUS|.\src\tb.vhd]
 FileTimeLow=2086301018
 FileTimeHigh=31071196
@@ -50,7 +50,7 @@ WindowWorkspaceInfo=LAAAAAAAAAADAAAA/////////////////////2UEAADwAAAAMQcAAGMDAAAA
 [COMPILESTATUS|.\src\Testbench\tb.vhd]
 FileTimeLow=136580370
 FileTimeHigh=31073257
-Status=Modified
+Status=Warning
 [Gui config]
 RunFor=100 ns
 [General]
@@ -120,17 +120,17 @@ ZoomFactor=0
 Frame=0
 WindowWorkspaceInfo="LAAAAAAAAAABAAAA/////////////////////2gBAACZAAAAfwcAAEMDAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAAAAAAA"
 [COMPILESTATUS|.\src\Instruction Fetch.vhd]
-FileTimeLow=1449214464
-FileTimeHigh=31073285
-Status=Modified
+FileTimeLow=2346069464
+FileTimeHigh=31073286
+Status=Compiled
 [COMPILESTATUS|.\src\half_adder.vhd]
-FileTimeLow=136590374
-FileTimeHigh=31073257
-Status=Modified
+FileTimeLow=2341668545
+FileTimeHigh=31073286
+Status=Compiled
 [COMPILESTATUS|.\src\full_adder.vhd]
 FileTimeLow=136580370
 FileTimeHigh=31073257
-Status=Modified
+Status=Compiled
 [COMPILESTATUS|.\src\sixteen_bit_adder.vhd]
 FileTimeLow=136590374
 FileTimeHigh=31073257
@@ -138,20 +138,20 @@ Status=Modified
 [COMPILESTATUS|.\src\sixteen_bit_subtractor.vhd]
 FileTimeLow=136610378
 FileTimeHigh=31073257
-Status=Modified
+Status=Compiled
 [COMPILESTATUS|.\src\sixteen_bit_multiplier.vhd]
 FileTimeLow=136600382
 FileTimeHigh=31073257
-Status=Modified
+Status=Compiled
 [COMPILESTATUS|.\src\sixteen_bit_multiplexer.vhd]
 FileTimeLow=136600382
 FileTimeHigh=31073257
 Status=Modified
 [COMPILESTATUS|.\src\sixteen_bit_adder.vhd]
-FileTimeLow=136590374
-FileTimeHigh=31073257
-Status=Modified
+FileTimeLow=2342388628
+FileTimeHigh=31073286
+Status=Compiled
 [COMPILESTATUS|.\src\sixteen_bit_multiplexer.vhd]
 FileTimeLow=136600382
 FileTimeHigh=31073257
-Status=Modified
+Status=Compiled

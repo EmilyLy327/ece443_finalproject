@@ -12,47 +12,55 @@
 -------------------------------------------------------------------------------
 
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-USE IEEE.numeric_std.all;  
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.all;  
 
-entity instruction_memory is
-port (
- pc: in std_logic_vector(15 downto 0);
- instruction: out  std_logic_vector(15 downto 0)
-);
-end instruction_memory;
+entity Instruction_Memory is
+    port (
+        pc: in std_logic_vector(15 downto 0);
+        instruction: out std_logic_vector(15 downto 0)
+    );
+end Instruction_Memory;
 
-architecture Behavioral of instruction_memory is
-signal rom_addr: std_logic_vector(3 downto 0);
- -- lw $3, 0($0) -- pc=0
- -- Loop: sltiu  $1, $3, 11= pc = 2
- -- beq $1, $0, Skip = 4 --PCnext=PC_current+2+BranchAddr
- -- add $4, $4, $3 = 6
- -- addi $3, $3, 1 = 8
- -- beq $0, $0, Loop--a
- -- Skip c = 12 = 4 + 2 + br
- type ROM_type is array (0 to 15 ) of std_logic_vector(15 downto 0);
- constant rom_data: ROM_type:=(
-   "1000000110000000",
-   "0010110010001011",
-   "1100010000000011",
-   "0001000111000000",
-   "1110110110000001",
-   "1100000001111011",
-   "0000000000000000",
-   "0000000000000000",
-   "0000000000000000",
-   "0000000000000000",
-   "0000000000000000",
-   "0000000000000000",
-   "0000000000000000",
-   "0000000000000000",
-   "0000000000000000",
-   "0000000000000000"
-  );
+architecture Behavioral of Instruction_Memory is
+	signal rom_address: std_logic_vector(3 downto 0);
+	-- ldi $r0, 10
+	-- ldi $r1, 5
+	-- ldi $r2, 0
+	-- ldi $r3, 0
+	-- ldi $r4, 0
+	-- ldi $r5, 0
+	-- ldi $r6, 0
+	-- ldi $r7, 0
+	-- add $r2, $r0, $r1
+	-- mult $r3, $r0, $r1
+	-- sub $r4, $r0, $r1
+	-- sh $r3, 0x0B
+	-- sh $r4, 0x0A
+	-- lh $r6, 0x0A
+	-- lh $r7, 0x0B
+    type ROM_type is array (0 to 15 ) of std_logic_vector(15 downto 0);
+    constant rom_data: ROM_type := (
+	X"500A", 
+	X"5105", 
+	X"5200", 
+	X"5300", 
+	X"5400", 
+	X"5500", 
+	X"5600", 
+	X"5700",
+    X"0201", 
+	X"1301", 
+	X"4401", 
+	X"630B", 
+	X"640A", 
+	X"760A", 
+	X"770B", 
+	others => (others => '0')
+    );
+	
 begin
-
- rom_addr <= pc(4 downto 1);
-  instruction <= rom_data(to_integer(unsigned(rom_addr))) when pc < x"0020" else x"0000";
-
+    rom_address <= pc(4 downto 1);
+    instruction <= rom_data(to_integer(unsigned(rom_address)));
+	
 end Behavioral;

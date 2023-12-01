@@ -18,7 +18,8 @@
 --     ...
 -- 
 -- ***POINT OF INQUIRY***
--- Do we need this?? We should only have to do the arithmetic operations and nothing else
+-- Do we need this?? We should only have to do the arithmetic operations and nothing else 
+-- I don't think we need this as this is written using our decode execute file... i think
 -------------------------------------------------------------------------------
 
 library IEEE;

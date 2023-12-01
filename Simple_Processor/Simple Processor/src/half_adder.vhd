@@ -77,7 +77,7 @@ architecture structural of half_adder is
   
   begin	
 	  
-   -- Instantiage AND and XOR gates 
+   -- Instantiate AND and XOR gates 
    U1: and_gate 
      port map(
           a => A,

@@ -1,0 +1,737 @@
+# Library Manager: Library "alu" contents cleared.
+acom -reorder -O3 -e 100 -work alu -2002  $dsn/src/half_adder.vhd $dsn/src/full_adder.vhd $dsn/src/sixteen_bit_adder.vhd $dsn/src/sixteen_bit_subtractor.vhd $dsn/src/sixteen_bit_multiplier.vhd $dsn/src/sixteen_bit_multiplexer.vhd $dsn/src/alu.vhd "$dsn/src/Test Bench/alu_TB.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/ALU/ALU/alu/src/half_adder.vhd
+# Compile Entity "and_gate"
+# Compile Architecture "structural" of Entity "and_gate"
+# Compile Entity "xor_gate"
+# Compile Architecture "structural" of Entity "xor_gate"
+# Compile Entity "half_adder"
+# Compile Architecture "structural" of Entity "half_adder"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/ALU/ALU/alu/src/full_adder.vhd
+# Compile Entity "Full_Adder"
+# Compile Architecture "structural" of Entity "Full_Adder"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/ALU/ALU/alu/src/sixteen_bit_adder.vhd
+# Compile Entity "sixteen_bit_adder"
+# Compile Architecture "structural" of Entity "sixteen_bit_adder"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/ALU/ALU/alu/src/sixteen_bit_subtractor.vhd
+# Compile Entity "sixteen_bit_subtractor"
+# Compile Architecture "structural" of Entity "sixteen_bit_subtractor"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/ALU/ALU/alu/src/sixteen_bit_multiplier.vhd
+# Compile Entity "sixteen_bit_multiplier"
+# Compile Architecture "Behavioral" of Entity "sixteen_bit_multiplier"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/ALU/ALU/alu/src/sixteen_bit_multiplexer.vhd
+# Compile Entity "mux_16bit"
+# Compile Architecture "structural" of Entity "mux_16bit"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/ALU/ALU/alu/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "structural" of Entity "ALU"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/ALU/ALU/alu/src/Test Bench/alu_TB.vhd
+# Compile Entity "tb_alu"
+# Compile Architecture "test" of Entity "tb_alu"
+# Top-level unit(s) detected:
+# Entity => tb_alu
+# Entity => mux_16bit
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+tb_alu tb_alu test
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6687 kB (elbread=434 elab2=6103 kernel=148 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\ece443_finalproject\Components\ALU\ALU\alu\src\wave.asdb
+#  7:01 PM, Thursday, November 30, 2023
+#  Simulation has been initialized
+# VSIM: 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/ALU/ALU/alu/src/wave.asdb'.
+run @100ns
+# EXECUTION:: NOTE   : other selected
+# EXECUTION:: Time: 0 ps,  Iteration: 0,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 1,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 2,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 7,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 7,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 8,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 8,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 10,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 10,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 11,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 11,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 14,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 14,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 15,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 16,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 18,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 21,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 24,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 27,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 30,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 33,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 36,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 39,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 42,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 45,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 48,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 1,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 2,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 7,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 8,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 9,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 10,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 11,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 13,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 14,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 15,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 16,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 18,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 19,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 21,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 22,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : R = 126
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /tb_alu,  Process: monitor.
+# EXECUTION:: NOTE   : Status = 0
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /tb_alu,  Process: monitor.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 1,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 2,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 7,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 8,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 9,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 15,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 16,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 18,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 19,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 21,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 22,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 24,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 25,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 27,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 28,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 30,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 31,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 33,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 34,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 37,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 40,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 43,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 46,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 49,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 52,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 55,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: stopped at time: 100 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+tb_alu tb_alu test
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6687 kB (elbread=434 elab2=6103 kernel=148 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\ece443_finalproject\Components\ALU\ALU\alu\src\wave.asdb
+#  7:02 PM, Thursday, November 30, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/ALU/ALU/alu/src/wave.asdb'.
+run @200ns
+# EXECUTION:: NOTE   : other selected
+# EXECUTION:: Time: 0 ps,  Iteration: 0,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 1,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 2,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 7,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 7,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 8,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 8,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 10,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 10,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 11,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 11,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 14,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 14,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 15,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 16,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 18,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 21,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 24,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 27,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 30,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 33,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 36,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 39,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 42,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 45,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 48,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 1,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 2,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 7,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 8,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 9,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 10,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 11,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 13,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 14,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 15,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 16,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 18,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 19,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 21,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 22,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : R = 126
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /tb_alu,  Process: monitor.
+# EXECUTION:: NOTE   : Status = 0
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /tb_alu,  Process: monitor.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 1,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 2,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 7,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 8,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 9,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 15,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 16,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 18,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 19,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 21,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 22,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 24,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 25,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 27,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 28,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 30,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 31,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 33,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 34,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 37,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 40,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 43,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 46,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 49,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 52,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 55,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+tb_alu tb_alu test
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6687 kB (elbread=434 elab2=6103 kernel=148 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\ece443_finalproject\Components\ALU\ALU\alu\src\wave.asdb
+#  7:02 PM, Thursday, November 30, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/ALU/ALU/alu/src/wave.asdb'.
+run @400ns
+# EXECUTION:: NOTE   : other selected
+# EXECUTION:: Time: 0 ps,  Iteration: 0,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 1,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 2,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 7,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 7,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 8,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 8,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 10,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 10,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 11,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 11,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 14,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 14,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 15,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 16,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 18,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 21,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 24,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 27,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 30,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 33,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 36,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 39,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 42,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 45,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 48,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 1,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 2,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 7,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 8,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 9,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 10,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 11,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 13,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 14,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 15,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 16,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 18,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 19,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 21,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 22,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : R = 126
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /tb_alu,  Process: monitor.
+# EXECUTION:: NOTE   : Status = 0
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /tb_alu,  Process: monitor.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 1,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 2,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 7,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 8,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 9,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 15,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 16,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 18,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 19,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 21,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 22,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 24,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 25,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 27,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 28,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 30,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 31,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 33,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 34,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 37,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 40,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 43,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 46,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 49,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 52,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 55,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: stopped at time: 400 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run @150ns
+# VSIM: Error: 150ns is less than current simulation time.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+tb_alu tb_alu test
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6687 kB (elbread=434 elab2=6103 kernel=148 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\ece443_finalproject\Components\ALU\ALU\alu\src\wave.asdb
+#  7:03 PM, Thursday, November 30, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/ALU/ALU/alu/src/wave.asdb'.
+run @150ns
+# EXECUTION:: NOTE   : other selected
+# EXECUTION:: Time: 0 ps,  Iteration: 0,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 1,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 2,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 7,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 7,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 8,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 8,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 10,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 10,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 11,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 11,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 14,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 14,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 15,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 16,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 18,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 21,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 24,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 27,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 30,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 33,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 36,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 39,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 42,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 45,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : adder selected
+# EXECUTION:: Time: 0 ps,  Iteration: 48,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 1,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 2,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 7,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 8,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 9,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 10,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 11,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 13,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 14,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 15,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 16,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 18,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 19,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 21,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : subtractor selected
+# EXECUTION:: Time: 50 ns,  Iteration: 22,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : R = 126
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /tb_alu,  Process: monitor.
+# EXECUTION:: NOTE   : Status = 0
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /tb_alu,  Process: monitor.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 1,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 2,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 7,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 8,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 9,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 15,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 16,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 18,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 19,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 21,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 22,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 24,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 25,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 27,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 28,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 30,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 31,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 33,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 34,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 37,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 40,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 43,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 46,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 49,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 52,  Instance: /tb_alu/dut,  Process: line__71.
+# EXECUTION:: NOTE   : multiplier selected
+# EXECUTION:: Time: 100 ns,  Iteration: 55,  Instance: /tb_alu/dut,  Process: line__71.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+# Waveform file 'untitled.awc' connected to 'C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/ALU/ALU/alu/src/untitled.asdb'.
+# Adding file C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\ece443_finalproject\Components\ALU\ALU\alu\src\untitled.asdb ... Done
+# Adding file C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\ece443_finalproject\Components\ALU\ALU\alu\src\untitled.awc ... Done

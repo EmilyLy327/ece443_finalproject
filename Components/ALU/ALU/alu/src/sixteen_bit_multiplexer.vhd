@@ -24,7 +24,7 @@ entity mux_16bit is
   port (
   A0, A1, A2, A3, A4, A5, A6, A7 : in signed(15 downto 0);	 --16-bit inputs
   	sel : in signed(2 downto 0);
-    result: out signed(15 downto 0)	 --16-bit output  
+    result: out signed(15 downto 0)	 						 --16-bit output  
   );
 end mux_16bit;
 

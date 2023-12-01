@@ -1,8 +1,6 @@
-112
+114
 ~E 1 "../src/alu.vhd" 7 alu
 ~A 1 "../src/alu.vhd" 15 structural
-~E 0 "" 0 alu_tb
-~A 0 "" 0 testbench
 ~E 1 "../src/half_adder.vhd" 22 and_gate
 ~A 1 "../src/half_adder.vhd" 28 structural
 ~E 1 "../src/full_adder.vhd" 32 Full_Adder

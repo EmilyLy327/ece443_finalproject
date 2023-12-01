@@ -1,14 +1,15 @@
-.\src\Data Memory.vhd
-.\src\ALU.vhd
-.\src\ALU Control Unit.vhd
-.\src\Register File.vhd
-.\src\Control Unit.vhd
-.\src\Instruction Memory.vhd
-.\src\Instruction Decode Execute.vhd
 .\src\half_adder.vhd
 .\src\full_adder.vhd
 .\src\sixteen_bit_adder.vhd
 .\src\sixteen_bit_subtractor.vhd
 .\src\sixteen_bit_multiplier.vhd
 .\src\sixteen_bit_multiplexer.vhd
+.\src\ALU.vhd
+.\src\Data Memory.vhd
+.\src\Register File.vhd
+.\src\Control Unit.vhd
+.\src\Instruction Memory.vhd
+.\src\Instruction Fetch.vhd
+.\src\Instruction Decode Execute.vhd
+.\src\ALU Control Unit.vhd
 .\src\Testbench\tb.vhd

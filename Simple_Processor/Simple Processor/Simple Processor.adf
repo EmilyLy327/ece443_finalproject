@@ -3,17 +3,13 @@ Current Flow=Multivendor
 VCS=0
 version=4
 Current Config=compile
-
 [Configurations]
 compile=Simple_Processor
-
 [Library]
 Simple_Processor=.\Simple_Processor\Simple_Processor.lib
-
 [$LibMap$]
 Simple_Processor=.
 Active_lib=
-
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
@@ -22,10 +18,8 @@ FLOWTOOLS=ONLY_IMPL
 ON_SERVERFARM_SYNTH=0
 ON_SERVERFARM_IMPL=0
 ON_SERVERFARM_SIM=0
-
 [IMPLEMENTATION]
 UCF=
-
 [folders]
 name0=ALINT-PRO Workspaces
 directory0=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\Simple_Processor\Simple Processor\
@@ -63,47 +57,43 @@ extension10=do;tcl;pl
 name11=Waveform Files
 directory11=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\Simple_Processor\Simple Processor\
 extension11=asdb;awc;asdbc;asdbe
-
-[Groups]
-Testbench=1
-
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
-
 [SpecTracer]
 WindowVisible=0
-
 [Files]
-/Data Memory.vhd=-1
-/ALU.vhd=-1
-/ALU Control Unit.vhd=-1
-/Register File.vhd=-1
-/Control Unit.vhd=-1
-/Instruction Memory.vhd=-1
-/Instruction Decode Execute.vhd=-1
 /half_adder.vhd=-1
 /full_adder.vhd=-1
 /sixteen_bit_adder.vhd=-1
 /sixteen_bit_subtractor.vhd=-1
 /sixteen_bit_multiplier.vhd=-1
 /sixteen_bit_multiplexer.vhd=-1
+/ALU.vhd=-1
+/Data Memory.vhd=-1
+/Register File.vhd=-1
+/Control Unit.vhd=-1
+/Instruction Memory.vhd=-1
+/Instruction Fetch.vhd=-1
+/Instruction Decode Execute.vhd=-1
+/ALU Control Unit.vhd=-1
 Testbench/tb.vhd=-1
-
 [Files.Data]
-.\src\Data Memory.vhd=VHDL Source Code
-.\src\ALU.vhd=VHDL Source Code
-.\src\ALU Control Unit.vhd=VHDL Source Code
-.\src\Register File.vhd=VHDL Source Code
-.\src\Control Unit.vhd=VHDL Source Code
-.\src\Instruction Memory.vhd=VHDL Source Code
-.\src\Instruction Decode Execute.vhd=VHDL Source Code
 .\src\half_adder.vhd=VHDL Source Code
 .\src\full_adder.vhd=VHDL Source Code
 .\src\sixteen_bit_adder.vhd=VHDL Source Code
 .\src\sixteen_bit_subtractor.vhd=VHDL Source Code
 .\src\sixteen_bit_multiplier.vhd=VHDL Source Code
 .\src\sixteen_bit_multiplexer.vhd=VHDL Source Code
+.\src\ALU.vhd=VHDL Source Code
+.\src\Data Memory.vhd=VHDL Source Code
+.\src\Register File.vhd=VHDL Source Code
+.\src\Control Unit.vhd=VHDL Source Code
+.\src\Instruction Memory.vhd=VHDL Source Code
+.\src\Instruction Fetch.vhd=VHDL Source Code
+.\src\Instruction Decode Execute.vhd=VHDL Source Code
+.\src\ALU Control Unit.vhd=VHDL Source Code
 .\src\Testbench\tb.vhd=VHDL Test Bench
-
+[Groups]
+Testbench=1

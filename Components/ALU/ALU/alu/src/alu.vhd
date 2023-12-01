@@ -5,10 +5,10 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity alu is
-	port(A, B : in signed(15 downto 0); -- the 16 bit inputs 
-	R : out signed(15 downto 0);		-- the selected 16 bit result 
-	sel : in signed(2 downto 0); -- selects the operation 
-	status : out std_logic_vector(2 downto 0) -- the status of the ALU can be signal overflow, zero result, or a negative result
+	port(A, B : in signed(15 downto 0); 		-- the 16 bit inputs 
+	R : out signed(15 downto 0);				-- the selected 16 bit result 
+	sel : in signed(2 downto 0); 				-- selects the operation 
+	status : out std_logic_vector(2 downto 0) 	-- the status of the ALU can be signal overflow, zero result, or a negative result
 	);
 end entity alu;
 
@@ -39,9 +39,9 @@ end component;
 
 component mux_16bit
 	port (
-  		A0, A1, A2, A3, A4, A5, A6, A7 : in signed(15 downto 0);	 --16-bit inputs
+  		A0, A1, A2, A3, A4, A5, A6, A7 : in signed(15 downto 0);		--16-bit inputs
   		sel : in signed(2 downto 0);
-    	result: out signed(15 downto 0)	 --16-bit output  
+    	result: out signed(15 downto 0)	 								--16-bit output  
   	);
 end component;
 
@@ -71,19 +71,19 @@ begin
 	process (sel, adder_result, multiplier_result, subtractor_result)
 	begin
 	   case sel is
-		   when "000" => -- select adder case
+		   when "000" =>   -- select adder case
 			    report "adder selected";
                 result <= adder_result;
-            when "001" => -- select multiplier case
+            when "001" =>  -- select multiplier case
 				report "multiplier selected";
 				result <= multiplier_result(15 downto 0);
-			when "010" =>	-- passthrough A
+			when "010" =>  -- passthrough A
 				report "passthrough A selected";
 				result <= A;
-			when "011" =>	-- passthrough B
+			when "011" =>  -- passthrough B
 				report "passthrough B selected";
 				result <= B;
-			when "100" => -- select subtractor case
+			when "100" =>  -- select subtractor case
 				report "subtractor selected";
 				result <= subtractor_result;
             when others =>

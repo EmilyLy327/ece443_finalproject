@@ -1,13 +1,13 @@
-timestamp=1700955137589
+timestamp=1701401148816
 
 [~A]
-ModifyID=11
+ModifyID=12
 Version=74
 
 [~MFT]
-0=40|0Simple_Processor.mgf|69113|34041
-1=29|1Simple_Processor.mgf|137466|90430
-3=30|3Simple_Processor.mgf|44977|36650
+0=9|0Simple_Processor.mgf|70014|35442
+1=0|1Simple_Processor.mgf|137466|90430
+3=1|3Simple_Processor.mgf|44977|38864
 
 [alu]
 A/behavioral=+21|../src/ALU.vhd|26|1*87432
@@ -112,14 +112,12 @@ Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|15c33034574eabeb9
 Version/structural=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3eb06f00a6fb5effa566eed9fac598f928f
 
 [processor]
-A/behavioral=A/Behavioral 21|../src/Instruction Decode Execute.vhd|31|1*94978
-BinI32/behavioral=3*33792
-I=0*34920
-I/behavioral=I/Behavioral 0*48704
-M=11|0|ve8|1700759515534|../src/Instruction Decode Execute.vhd|0*34516*0x53e06e3af7b114c411936089a184edbf4ca37371|0*34820*0x23b75c12e3e89f2ef000564498faa8c2
+A/behavioral=+21|../src/Instruction Decode Execute.vhd|31|1*94978
+I=0*70014
+M=11|2|vef|1701401148802|../src/Instruction Decode Execute.vhd|0*69569*0xe0d1210022410a489f27ec04380aec354270ce05|0*69914*0x23b75c12e3e89f2ef000564498faa8c2
 M/behavioral=M/Behavioral 21|0|ve8|1700952321135|../src/Instruction Decode Execute.vhd|0*35202*0x77b8753a891e3bf2e0cb5d6de0655ec04d50dbc2|0*38926*0x20116f55b147878295aeff36dce7fc50
-R=../src/Instruction Decode Execute.vhd|23
-Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|0ba77dee7e73996b5655ae47cd2cf07e7c4c90057ca4c0d4118ab0a747448336f92d3e40fee4cfe01b2446a61b23af99
+R=../src/Instruction Decode Execute.vhd|21
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|0ba77dee7e73996b5655ae47cd2cf07e7c4c90057ca4c0d4118ab0a747448336dc0e25ba368986f6265c41d83d2e9904
 Version/behavioral=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff41bda08a46adc7800f3edb79896768cc0
 
 [register_file]
@@ -198,7 +196,7 @@ full_adder=Full_Adder 11|0*53176|
 half_adder=11|0*51548|
 instruction_memory=11|0*32220|
 mux_16bit=11|0*60676|
-processor=Processor 11|0*34301|
+processor=Processor 11|0*69352|
 register_file=11|0*26313|
 sixteen_bit_adder=11|0*54733|
 sixteen_bit_multiplier=11|0*58817|

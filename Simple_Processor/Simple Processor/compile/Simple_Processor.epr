@@ -1,15 +1,2 @@
-"C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Processor/src/Data Memory.vhd" VHDL Simple_Processor 1 0 0 -02
-"C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Processor/src/ALU.vhd" VHDL Simple_Processor 1 0 0 -02
-"C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Processor/src/ALU Control Unit.vhd" VHDL Simple_Processor 1 0 0 -02
-"C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Processor/src/Register File.vhd" VHDL Simple_Processor 1 0 0 -02
-"C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Processor/src/Control Unit.vhd" VHDL Simple_Processor 1 0 0 -02
-"C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Memory.vhd" VHDL Simple_Processor 1 0 0 -02
-"C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd" VHDL Simple_Processor 0 0 0 -02
-"C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Processor/src/half_adder.vhd" VHDL Simple_Processor 1 0 0 -02
-"C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Processor/src/full_adder.vhd" VHDL Simple_Processor 1 0 0 -02
-"C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Processor/src/sixteen_bit_adder.vhd" VHDL Simple_Processor 1 0 0 -02
-"C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Processor/src/sixteen_bit_subtractor.vhd" VHDL Simple_Processor 1 0 0 -02
-"C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Processor/src/sixteen_bit_multiplier.vhd" VHDL Simple_Processor 1 0 0 -02
-"C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Processor/src/sixteen_bit_multiplexer.vhd" VHDL Simple_Processor 1 0 0 -02
-"C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/tb.vhd" VHDL Simple_Processor 1 0 0 -02
+"C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd" VHDL Simple_Processor 0 0 0 -02
 . . 0 0 0

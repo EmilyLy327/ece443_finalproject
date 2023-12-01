@@ -29,18 +29,37 @@ end entity Processor;
 
 architecture Structural of Processor is
 
+	-- instruction decoding/encoding signals
     signal opcode : signed(2 downto 0);
     signal internal_i_type, internal_r_type : std_logic; -- store bits from the instruction signal that represent the type of instruction
     signal i_type_reg, r_type_reg : std_logic; -- intermediate signals to hold instruction decode fields   
-	signal source_register, destination_register, source_operand, destination_operand : signed(3 downto 0);
-    
-    -- updated immediate value length 
-    signal immediate_value : signed(15 downto 0);
+	signal instruction_type : std_logic_vector(1 downto 0);
 	
+	
+	-- instruction fields for signals 
+	signal immediate_value : signed(15 downto 0);
+	--signal source_register, destination_register, source_operand, destination_operand : signed(3 downto 0);
+	
+	-- control signals
 	signal reg_write_enable : std_logic;
+	signal mem_read_en, mem_write_en : std_logic;
+	
+	-- ALU signals
+	signal regfile_read_data1, regfile_read_data2 : signed(15 downto 0);
+    signal alu_result : signed(15 downto 0);
+	
+	-- data memory signals
+    signal data_memory_read_data, data_memory_write_data : signed(15 downto 0);	
+		
+	-- register file signals
+	signal reg_write_dest, reg_read_addr_1, reg_read_addr_2 : signed(2 downto 0);
+ 	signal reg_write_data, reg_read_data_1, reg_read_data_2: signed(15 downto 0);
+	 
+	-- memory signals
+	signal mem_read_data: signed(15 downto 0);
 	
 	
- -- components
+ 	-- COMPONENTS
     component RegisterFile
         port (
             clk : in std_logic;
@@ -69,17 +88,6 @@ architecture Structural of Processor is
         	mem_read_data: out signed(15 downto 0)
         );
     end component DataMemory;
-
-    signal regfile_read_data1, regfile_read_data2 : signed(15 downto 0);
-    signal alu_result : signed(15 downto 0);
-    signal data_memory_read_data, data_memory_write_data : signed(15 downto 0);	
-	signal instruction_type : std_logic_vector(1 downto 0);	
-	
-	signal reg_write_dest, reg_read_addr_1, reg_read_addr_2 : signed(2 downto 0);
- 	signal reg_write_data, reg_read_data_1, reg_read_data_2: signed(15 downto 0);
-	 
-	signal mem_read_en, mem_write_en : std_logic;
-	signal mem_read_data: signed(15 downto 0);
 	
 begin
 

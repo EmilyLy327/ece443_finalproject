@@ -53,4 +53,4 @@ MESSAGE "File: C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Process
 MESSAGE "Compile Entity "processor_tb"" 
 MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"" 
 MESSAGE "Compile Configuration "TESTBENCH_FOR_processor"" 
-SUCCESS "Compile success 0 Errors 1 Warnings  Analysis time :  0.4 [s]" 
+SUCCESS "Compile success 0 Errors 1 Warnings  Analysis time :  0.3 [s]" 

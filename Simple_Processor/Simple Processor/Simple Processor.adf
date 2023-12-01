@@ -3,13 +3,17 @@ Current Flow=Multivendor
 VCS=0
 version=4
 Current Config=compile
+
 [Configurations]
 compile=Simple_Processor
+
 [Library]
 Simple_Processor=.\Simple_Processor\Simple_Processor.lib
+
 [$LibMap$]
 Simple_Processor=.
 Active_lib=
+
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
@@ -18,8 +22,10 @@ FLOWTOOLS=ONLY_IMPL
 ON_SERVERFARM_SYNTH=0
 ON_SERVERFARM_IMPL=0
 ON_SERVERFARM_SIM=0
+
 [IMPLEMENTATION]
 UCF=
+
 [folders]
 name0=ALINT-PRO Workspaces
 directory0=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\Simple_Processor\Simple Processor\
@@ -57,12 +63,18 @@ extension10=do;tcl;pl
 name11=Waveform Files
 directory11=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\Simple_Processor\Simple Processor\
 extension11=asdb;awc;asdbc;asdbe
+
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+
 [SpecTracer]
 WindowVisible=0
+
+[Groups]
+Testbench=1
+
 [Files]
 /half_adder.vhd=-1
 /full_adder.vhd=-1
@@ -79,8 +91,7 @@ WindowVisible=0
 /Instruction Decode Execute.vhd=-1
 /ALU Control Unit.vhd=-1
 Testbench/tb.vhd=-1
-Testbench/processor_TB.vhd=-1
-Testbench/processor_TB_runtest.do=-1
+
 [Files.Data]
 .\src\half_adder.vhd=VHDL Source Code
 .\src\full_adder.vhd=VHDL Source Code
@@ -99,5 +110,4 @@ Testbench/processor_TB_runtest.do=-1
 .\src\Testbench\tb.vhd=VHDL Test Bench
 .\src\Testbench\processor_TB.vhd=VHDL Test Bench
 .\src\Testbench\processor_TB_runtest.do=Macro
-[Groups]
-Testbench=1
+

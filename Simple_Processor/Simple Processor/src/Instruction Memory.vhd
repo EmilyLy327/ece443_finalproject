@@ -15,12 +15,12 @@ library IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.all;  
 
-entity Instruction_Memory is
+entity InstructionMemory is
     port (
         pc: in std_logic_vector(15 downto 0);
         instruction: out std_logic_vector(15 downto 0)
     );
-end Instruction_Memory;
+end InstructionMemory;
 
 architecture Behavioral of Instruction_Memory is
 	signal rom_address: std_logic_vector(3 downto 0);

@@ -14,27 +14,28 @@
 --
 -------------------------------------------------------------------------------
 
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity Processor is
     port (
-        clk : in std_logic;
-        reset : in std_logic;
-        instruction : in signed(15 downto 0);
-        result : out signed(15 downto 0)  
-    );
+		clk,reset: in std_logic;
+		pc_out, alu_result: out signed(15 downto 0)
+	);
 end entity Processor;
 
 architecture Structural of Processor is
+
+	-- PC signals
+	signal pc_current: signed(15 downto 0);
 
 	-- instruction decoding/encoding signals
     signal opcode : signed(2 downto 0);
     signal internal_i_type, internal_r_type : std_logic; -- store bits from the instruction signal that represent the type of instruction
     signal i_type_reg, r_type_reg : std_logic; -- intermediate signals to hold instruction decode fields   
-	signal instruction_type : std_logic_vector(1 downto 0);
-	
+	signal instruction_type : signed(1 downto 0);
+	signal instruction: signed(15 downto 0);
 	
 	-- instruction fields for signals 
 	signal immediate_value : signed(15 downto 0);
@@ -46,7 +47,7 @@ architecture Structural of Processor is
 	
 	-- ALU signals
 	signal regfile_read_data1, regfile_read_data2 : signed(15 downto 0);
-    signal alu_result : signed(15 downto 0);
+	signal ALU_Output: signed(15 downto 0);
 	
 	-- data memory signals
     signal data_memory_read_data, data_memory_write_data : signed(15 downto 0);	
@@ -57,6 +58,16 @@ architecture Structural of Processor is
 	 
 	-- memory signals
 	signal mem_read_data: signed(15 downto 0);
+	
+	-- control unit signals
+	--signal cu_reg_dst, cu_mem_to_reg, cu_alu_op : signed(1 downto 0);
+    --signal cu_alu_src, cu_reg_write, cu_sign_or_zero : std_logic;
+	signal reg_dst,mem_to_reg,alu_op: signed(1 downto 0);
+ 	signal mem_read,mem_write,alu_src,reg_write: std_logic;
+	signal sign_or_zero: std_logic;
+	
+	-- other
+	signal result : signed(15 downto 0);
 	
 	
  	-- COMPONENTS
@@ -80,14 +91,30 @@ architecture Structural of Processor is
     end component ALU;
 
     component DataMemory
-        port (
-            clk: in std_logic;					
-        	mem_access_addr: in signed(15 downto 0);
-        	mem_write_data: in signed(15 downto 0);
-        	mem_write_en, mem_read: in std_logic;
-        	mem_read_data: out signed(15 downto 0)
-        );
+	    port (
+	        clk: in std_logic;					
+	    	mem_access_addr: in signed(15 downto 0);
+	    	mem_write_data: in signed(15 downto 0);
+	    	mem_write_en, mem_read: in std_logic;
+	    	mem_read_data: out signed(15 downto 0)
+	    );
     end component DataMemory;
+	
+	component InstructionMemory is
+	    port (
+	        pc: in signed(15 downto 0);
+	        instruction: out signed(15 downto 0)
+	    );
+	end component InstructionMemory;
+	
+	component ControlUnit is
+	  port (
+	    opcode : in signed(2 downto 0);
+	    reset : in std_logic;
+	    reg_dst, mem_to_reg, alu_op : out signed(1 downto 0);
+	    mem_read, mem_write, alu_src, reg_write, sign_or_zero : out std_logic
+	  );
+	end component ControlUnit;
 	
 begin
 
@@ -135,19 +162,36 @@ begin
             sel => opcode,
             A => regfile_read_data1,
             B => (others => '0'), -- Operand B is not used for some instructions
-            R => alu_result
+            R => ALU_Output
         );
-
-    DataMemory_Inst : DataMemory
-        port map (
-			clk => clk,
-			mem_access_addr => alu_result,
-            mem_write_data => read_data_2,
-			mem_write_en => mem_write_en,
-			mem_read => mem_read_en,
-			mem_read_data => mem_read_data
-        );
-
+		
+	--ControlUnit_Inst: ControlUnit
+    --   port map (
+    --        opcode => opcode,
+    --        reset => reset,
+    --        reg_dst => cu_reg_dst,
+    --        mem_to_reg => cu_mem_to_reg,
+    --        alu_op => cu_alu_op,
+    --        mem_read => mem_read_en,
+    --        mem_write => mem_write_en,
+    --        alu_src => cu_alu_src,
+    --        reg_write => cu_reg_write,
+    --        sign_or_zero => cu_sign_or_zero
+    --    );
+	
+	control: entity work.control_unit_VHDL
+   		port map
+   		(reset => reset,
+    		opcode => opcode,
+    		reg_dst => reg_dst,
+    		mem_to_reg => mem_to_reg,
+    		alu_op => alu_op,
+    		mem_read => mem_read,
+    		mem_write => mem_write,
+    		alu_src => alu_src,
+    		reg_write => reg_write,
+    		sign_or_zero => sign_or_zero
+    	);
 
 	-- initialization or assignment of values
 	i_type_reg <= '0'; -- Assign initial value
@@ -161,7 +205,7 @@ begin
 			-- Case statement with intermediate signals
              case instruction_type is
 			    when "00" => -- R-Type
-                    result <= alu_result;
+                    result <= ALU_Output;
                 when "01" => -- I-Type, Load Immediate
                     result <= immediate_value;
                 when "10" => -- I-Type, Store halfword
@@ -175,5 +219,5 @@ begin
             end case;
         end if;
     end process;
-
+	alu_result <= result;
 end architecture Structural;

@@ -11,8 +11,9 @@
 --
 -------------------------------------------------------------------------------
 
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 ENTITY tb IS
 END tb;
@@ -23,21 +24,21 @@ ARCHITECTURE behavior OF tb IS
     PORT(
          clk : IN  std_logic;
          reset : IN  std_logic;
-         pc_out : OUT  std_logic_vector(15 downto 0);
-         alu_result : OUT  std_logic_vector(15 downto 0)
+         pc_out : OUT  signed(15 downto 0);
+         alu_result : OUT  signed(15 downto 0)
         );
     END COMPONENT;
    --Inputs
    signal clk : std_logic := '0';
    signal reset : std_logic := '0';
    --Outputs
-   signal pc_out : std_logic_vector(15 downto 0);
-   signal alu_result : std_logic_vector(15 downto 0);
+   signal pc_out : signed(15 downto 0);
+   signal alu_result : signed(15 downto 0);
    -- Clock period definitions
    constant clk_period : time := 10 ns;
 BEGIN
  -- Instantiate 
-   uut: processor PORT MAP (
+   uut: Processor PORT MAP (
           clk => clk,
           reset => reset,
           pc_out => pc_out,

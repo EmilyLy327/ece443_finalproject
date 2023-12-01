@@ -18,16 +18,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity control_unit_VHDL is
+entity ControlUnit is
   port (
     opcode : in signed(2 downto 0);
     reset : in std_logic;
     reg_dst, mem_to_reg, alu_op : out signed(1 downto 0);
     mem_read, mem_write, alu_src, reg_write, sign_or_zero : out std_logic
   );
-end control_unit_VHDL;
+end ControlUnit;
 
-architecture Behavioral of control_unit_VHDL is
+architecture Behavioral of ControlUnit is
 begin
   process (reset, opcode)
   begin

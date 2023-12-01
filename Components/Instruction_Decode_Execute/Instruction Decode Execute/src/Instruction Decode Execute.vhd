@@ -106,7 +106,8 @@ begin
 	   instruction_type <= i_type_reg & r_type_reg;
      end if;
    end process;
-	
+   
+    -- think all of this is incorrect lol
     -- extract fields based on instruction type
     --source_register <= instruction(8 downto 5);
     --destination_register <= instruction(4 downto 1);
@@ -134,7 +135,7 @@ begin
         port map (
             sel => opcode,
             A => regfile_read_data1,
-            B => (others => '0'), -- Operand B is not used for some instructions
+            B => (others => '0'),
             R => alu_result
         );
 

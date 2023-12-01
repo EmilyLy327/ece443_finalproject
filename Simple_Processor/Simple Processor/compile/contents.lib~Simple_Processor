@@ -1,4 +1,4 @@
-80
+84
 ~E 1 "../src/ALU.vhd" 18 alu
 ~A 1 "../src/ALU.vhd" 26 behavioral
 ~A 1 "../src/ALU.vhd" 26 structural
@@ -8,6 +8,8 @@
 ~A 1 "../src/half_adder.vhd" 28 structural
 ~E 1 "../src/Control Unit.vhd" 17 control_unit
 ~A 1 "../src/Control Unit.vhd" 26 Behavioral
+~E 1 "../src/Control Unit.vhd" 21 control_unit_VHDL
+~A 1 "../src/Control Unit.vhd" 30 Behavioral
 ~E 1 "../src/Data Memory.vhd" 19 Data_Memory
 ~A 1 "../src/Data Memory.vhd" 29 Behavioral
 ~E 1 "../src/Data Memory.vhd" 19 DataMemory

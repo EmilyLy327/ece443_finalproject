@@ -41,7 +41,7 @@ architecture Structural of Processor is
 	--signal source_register, destination_register, source_operand, destination_operand : signed(3 downto 0);
 	
 	-- control signals
-	signal reg_write_enable : std_logic;
+	signal write_enable : std_logic;
 	signal mem_read_en, mem_write_en : std_logic;
 	
 	-- ALU signals
@@ -52,8 +52,8 @@ architecture Structural of Processor is
     signal data_memory_read_data, data_memory_write_data : signed(15 downto 0);	
 		
 	-- register file signals
-	signal reg_write_dest, reg_read_addr_1, reg_read_addr_2 : signed(2 downto 0);
- 	signal reg_write_data, reg_read_data_1, reg_read_data_2: signed(15 downto 0);
+	signal write_addr, read_addr_1, read_addr_2 : signed(2 downto 0);
+ 	signal write_data, read_data_1, read_data_2: signed(15 downto 0);
 	 
 	-- memory signals
 	signal mem_read_data: signed(15 downto 0);
@@ -114,20 +114,20 @@ begin
     --destination_operand <= instruction(8 downto 5);
     --immediate_value <= instruction(15 downto 0);   -- this seems wrong but won't compile with the last 8 bits
 	
-	reg_read_addr_1 <= instruction(12 downto 10);
- 	reg_read_addr_2 <= instruction(9 downto 7);
+	read_addr_1 <= instruction(12 downto 10);
+ 	read_addr_2 <= instruction(9 downto 7);
 	 
 	RegisterFile_Inst : RegisterFile
         port map (
             clk => clk,
             rst => reset,
-			reg_write_en => reg_write_enable,
-            reg_read_addr_1 => reg_read_addr_1,
-            reg_read_addr_2 => reg_read_addr_2,
-            reg_write_dest => reg_write_dest,
-            reg_read_data_1 => reg_read_data_1,
-            reg_read_data_2 => reg_read_data_2,
-            reg_write_data => reg_write_data
+			reg_write_en => write_enable,
+            reg_read_addr_1 => read_addr_1,
+            reg_read_addr_2 => read_addr_2,
+            reg_write_dest => write_addr,
+            reg_read_data_1 => read_data_1,
+            reg_read_data_2 => read_data_2,
+            reg_write_data => write_data
         );
 
     ALU_Inst : ALU
@@ -142,7 +142,7 @@ begin
         port map (
 			clk => clk,
 			mem_access_addr => alu_result,
-            mem_write_data => reg_read_data_2,
+            mem_write_data => read_data_2,
 			mem_write_en => mem_write_en,
 			mem_read => mem_read_en,
 			mem_read_data => mem_read_data

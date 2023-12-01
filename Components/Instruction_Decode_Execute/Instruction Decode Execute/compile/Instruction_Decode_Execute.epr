@@ -1,4 +1,13 @@
-"C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd" VHDL Instruction_Decode_Execute 0 0 0 -02
+"C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd" VHDL Instruction_Decode_Execute 1 0 0 -02
 "C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Memory.vhd" VHDL Instruction_Decode_Execute 1 0 0 -02
 "C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Fetch.vhd" VHDL Instruction_Decode_Execute 1 0 0 -02
+"C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/ALU.vhd" VHDL Instruction_Decode_Execute 1 0 0 -02
+"C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Data Memory.vhd" VHDL Instruction_Decode_Execute 1 0 0 -02
+"C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/full_adder.vhd" VHDL Instruction_Decode_Execute 1 0 0 -02
+"C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/half_adder.vhd" VHDL Instruction_Decode_Execute 1 0 0 -02
+"C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Register File.vhd" VHDL Instruction_Decode_Execute 1 0 0 -02
+"C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_adder.vhd" VHDL Instruction_Decode_Execute 1 0 0 -02
+"C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplexer.vhd" VHDL Instruction_Decode_Execute 1 0 0 -02
+"C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplier.vhd" VHDL Instruction_Decode_Execute 1 0 0 -02
+"C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_subtractor.vhd" VHDL Instruction_Decode_Execute 1 0 0 -02
 . . 0 0 0

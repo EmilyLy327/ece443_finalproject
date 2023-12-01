@@ -21,7 +21,7 @@ entity DataMemory is
         clk: in std_logic;						 -- processor clock
         mem_access_addr: in signed(15 downto 0); -- memory address to access
         mem_write_data: in signed(15 downto 0);  -- write data to be written to memory address
-        mem_write_en, mem_read: in std_logic;			   -- write enable and read enable
+        mem_write_en, mem_read: in std_logic;	 -- write enable and read enable
         mem_read_data: out signed(15 downto 0)   -- read data from specified memory address
     );
 end entity DataMemory;

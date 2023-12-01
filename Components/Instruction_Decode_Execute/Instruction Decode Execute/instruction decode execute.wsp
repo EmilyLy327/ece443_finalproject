@@ -2,14 +2,14 @@
 Instruction_Decode_Execute=1
 Built-in symbols=0
 [COMPILESTATUS|.\src\Instruction Decode Execute.vhd]
-FileTimeLow=31072458
+FileTimeLow=31073375
 Status=Modified
 [COMPILESTATUS|.\src\Instruction Memory.vhd]
-FileTimeLow=31072439
-Status=Compiled
+FileTimeLow=31073412
+Status=Modified
 [COMPILESTATUS|.\src\Instruction Fetch.vhd]
-FileTimeLow=31072440
-Status=Compiled
+FileTimeLow=31073412
+Status=Modified
 [CACHEDOC|Aldec.Project.Generic.7|.\Instruction Decode Execute\Instruction Decode Execute.adf|]
 Path=
 [Gui config]

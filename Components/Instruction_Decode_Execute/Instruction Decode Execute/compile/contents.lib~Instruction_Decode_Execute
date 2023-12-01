@@ -1,6 +1,29 @@
-6
+13
+~E 1 "../src/ALU.vhd" 18 alu
+~A 1 "../src/ALU.vhd" 26 structural
+~E 1 "../src/half_adder.vhd" 22 and_gate
+~A 1 "../src/half_adder.vhd" 28 structural
+~E 1 "../src/Data Memory.vhd" 19 DataMemory
+~A 1 "../src/Data Memory.vhd" 29 Behavioral
+~E 1 "../src/full_adder.vhd" 32 Full_Adder
+~A 1 "../src/full_adder.vhd" 39 structural
+~E 1 "../src/half_adder.vhd" 52 half_adder
+~A 1 "../src/half_adder.vhd" 60 structural
 ~E 1 "../src/Instruction Fetch.vhd" 5 Instruction_Fetch
-~A 1 "../src/Instruction Fetch.vhd" 14 Behavioral
+~A 1 "../src/Instruction Fetch.vhd" 27 Behavioral
 ~E 1 "../src/Instruction Memory.vhd" 5 Instruction_Memory
-~A 1 "../src/Instruction Memory.vhd" 12 Behavioral
-~E 1 "../src/Instruction Decode Execute.vhd" 20 Processor
+~A 1 "../src/Instruction Memory.vhd" 25 Behavioral
+~E 1 "../src/sixteen_bit_multiplexer.vhd" 23 mux_16bit
+~A 1 "../src/sixteen_bit_multiplexer.vhd" 31 structural
+~E 1 "../src/Instruction Fetch.vhd" 21 Processor
+~A 1 "../src/Instruction Decode Execute.vhd" 30 Structural
+~E 1 "../src/Register File.vhd" 23 RegisterFile
+~A 1 "../src/Register File.vhd" 33 Behavioral
+~E 1 "../src/sixteen_bit_adder.vhd" 23 sixteen_bit_adder
+~A 1 "../src/sixteen_bit_adder.vhd" 30 structural
+~E 1 "../src/sixteen_bit_multiplier.vhd" 8 sixteen_bit_multiplier
+~A 1 "../src/sixteen_bit_multiplier.vhd" 16 Behavioral
+~E 1 "../src/sixteen_bit_subtractor.vhd" 26 sixteen_bit_subtractor
+~A 1 "../src/sixteen_bit_subtractor.vhd" 34 structural
+~E 1 "../src/half_adder.vhd" 37 xor_gate
+~A 1 "../src/half_adder.vhd" 43 structural

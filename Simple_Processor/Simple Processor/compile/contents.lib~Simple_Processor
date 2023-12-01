@@ -1,4 +1,4 @@
-79
+80
 ~E 1 "../src/ALU.vhd" 18 alu
 ~A 1 "../src/ALU.vhd" 26 behavioral
 ~A 1 "../src/ALU.vhd" 26 structural
@@ -11,6 +11,7 @@
 ~E 1 "../src/Data Memory.vhd" 19 Data_Memory
 ~A 1 "../src/Data Memory.vhd" 29 Behavioral
 ~E 1 "../src/Data Memory.vhd" 19 DataMemory
+~A 1 "../src/Data Memory.vhd" 29 Behavioral
 ~E 1 "../src/full_adder.vhd" 32 Full_Adder
 ~A 1 "../src/full_adder.vhd" 39 structural
 ~E 1 "../src/half_adder.vhd" 52 half_adder

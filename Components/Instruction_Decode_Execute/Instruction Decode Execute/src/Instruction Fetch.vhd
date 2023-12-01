@@ -1,3 +1,16 @@
+-------------------------------------------------------------------------------
+--
+-- Title       : Data Memory
+-- Design      : Simple Processor
+-- Author      : Emily Ly and Brice Zimmerman
+-- Company     : Old Dominion University
+--
+-------------------------------------------------------------------------------
+--
+-- Description : 
+--
+-------------------------------------------------------------------------------
+
 library IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.all;

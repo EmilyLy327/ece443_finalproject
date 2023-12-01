@@ -3,30 +3,87 @@ Current Flow=Generic
 VCS=0
 version=4
 Current Config=compile
+
 [Configurations]
 compile=Instruction_Decode_Execute
+
 [Library]
 Instruction_Decode_Execute=.\Instruction_Decode_Execute\Instruction_Decode_Execute.lib
+
 [$LibMap$]
 Instruction_Decode_Execute=.
 Active_lib=
+
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
+fileopenfolder=C:\My_Designs\ece443_finalproject\Components\Instruction_Decode_Execute\Instruction Decode Execute\src
+
 [Files]
 /Instruction Decode Execute.vhd=-1
 /Instruction Memory.vhd=-1
 /Instruction Fetch.vhd=-1
+/ALU.vhd=-1
+/Data Memory.vhd=-1
+/full_adder.vhd=-1
+/half_adder.vhd=-1
+/Register File.vhd=-1
+/sixteen_bit_adder.vhd=-1
+/sixteen_bit_multiplexer.vhd=-1
+/sixteen_bit_multiplier.vhd=-1
+/sixteen_bit_subtractor.vhd=-1
+
 [Files.Data]
 .\src\Instruction Decode Execute.vhd=VHDL Source Code
 .\src\Instruction Memory.vhd=VHDL Source Code
 .\src\Instruction Fetch.vhd=VHDL Source Code
+.\src\ALU.vhd=VHDL Source Code
+.\src\Data Memory.vhd=VHDL Source Code
+.\src\full_adder.vhd=VHDL Source Code
+.\src\half_adder.vhd=VHDL Source Code
+.\src\Register File.vhd=VHDL Source Code
+.\src\sixteen_bit_adder.vhd=VHDL Source Code
+.\src\sixteen_bit_multiplexer.vhd=VHDL Source Code
+.\src\sixteen_bit_multiplier.vhd=VHDL Source Code
+.\src\sixteen_bit_subtractor.vhd=VHDL Source Code
+
 [SpecTracer]
 WindowVisible=0
+
 [HierarchyViewer]
-HierarchyInformation=instruction_fetch|Behavioral|0 
+HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+
+[Folders]
+Name0=Event Lists
+Directory0=C:\My_Designs\ece443_finalproject\Components\Instruction_Decode_Execute\Instruction Decode Execute\
+Extension0=lst
+Name1=Logs
+Directory1=C:\My_Designs\ece443_finalproject\Components\Instruction_Decode_Execute\Instruction Decode Execute\
+Extension1=log;htm;xml;txt
+Name2=Waveforms
+Directory2=C:\My_Designs\ece443_finalproject\Components\Instruction_Decode_Execute\Instruction Decode Execute\
+Extension2=asdb;awc;asdbc;asdbe
+Name3=Makefiles
+Directory3=C:\My_Designs\ece443_finalproject\Components\Instruction_Decode_Execute\Instruction Decode Execute\
+Extension3=mak
+Name4=Memory
+Directory4=C:\My_Designs\ece443_finalproject\Components\Instruction_Decode_Execute\Instruction Decode Execute\
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=C:\My_Designs\ece443_finalproject\Components\Instruction_Decode_Execute\Instruction Decode Execute\
+Extension5=dll
+Name6=PDF
+Directory6=C:\My_Designs\ece443_finalproject\Components\Instruction_Decode_Execute\Instruction Decode Execute\
+Extension6=pdf
+Name7=HTML
+Directory7=C:\My_Designs\ece443_finalproject\Components\Instruction_Decode_Execute\Instruction Decode Execute\
+Extension7=htm;html
+Name8=ALINT-PRO Workspaces
+Directory8=C:\My_Designs\ece443_finalproject\Components\Instruction_Decode_Execute\Instruction Decode Execute\
+Extension8=alintws
+

@@ -1,4 +1,4 @@
-13
+21
 ~E 1 "../src/ALU.vhd" 18 alu
 ~A 1 "../src/ALU.vhd" 26 behavioral
 ~A 1 "../src/ALU.vhd" 26 structural
@@ -22,6 +22,7 @@
 ~A 1 "../src/sixteen_bit_multiplexer.vhd" 31 structural
 ~E 1 "../src/Instruction Decode Execute.vhd" 21 Processor
 ~A 1 "../src/Instruction Decode Execute.vhd" 31 behavioral
+~A 1 "../src/Instruction Decode Execute.vhd" 30 Structural
 ~E 1 "../src/Register File.vhd" 18 register_file
 ~A 1 "../src/Register File.vhd" 31 Behavioral
 ~E 1 "../src/Register File.vhd" 23 RegisterFile

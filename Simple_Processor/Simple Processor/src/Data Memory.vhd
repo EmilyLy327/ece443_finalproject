@@ -16,19 +16,19 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity Data_Memory is
+entity DataMemory is
     port (
-        clk: in std_logic;								   -- processor clock
-        mem_access_addr: in std_logic_vector(15 downto 0); -- memory address to access
-        mem_write_data: in std_logic_vector(15 downto 0);  -- write data to be written to memory address
+        clk: in std_logic;						 -- processor clock
+        mem_access_addr: in signed(15 downto 0); -- memory address to access
+        mem_write_data: in signed(15 downto 0);  -- write data to be written to memory address
         mem_write_en, mem_read: in std_logic;			   -- write enable and read enable
-        mem_read_data: out std_logic_vector(15 downto 0)   -- read data from specified memory address
+        mem_read_data: out signed(15 downto 0)   -- read data from specified memory address
     );
-end entity Data_Memory;
+end entity DataMemory;
 
 architecture Behavioral of Data_Memory is
-    signal ram_addr: std_logic_vector(7 downto 0);						   -- memory addresses used for indexing the ram array
-    type DataMemType is array (0 to 255) of std_logic_vector(15 downto 0); -- defines the array type for the ram, each are 16-bits
+    signal ram_addr: signed(7 downto 0);						   -- memory addresses used for indexing the ram array
+    type DataMemType is array (0 to 255) of signed(15 downto 0); -- defines the array type for the ram, each are 16-bits
     signal RAM: DataMemType := (others => (others => '0'));				   -- actual ram array init with 0's
 begin
     ram_addr <= mem_access_addr(8 downto 1);						   -- populate the ram addresses from memory

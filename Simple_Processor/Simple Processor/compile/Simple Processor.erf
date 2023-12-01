@@ -25,7 +25,7 @@ MESSAGE "File: C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Process
 MESSAGE "Compile Entity "alu"" 
 MESSAGE "Compile Architecture "structural" of Entity "ALU"" 
 MESSAGE "File: C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Processor/src/Data Memory.vhd" 
-MESSAGE "Compile Entity "Data_Memory"" 
+MESSAGE "Compile Entity "DataMemory"" 
 MESSAGE "Compile Architecture "Behavioral" of Entity "Data_Memory"" 
 MESSAGE "File: C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Processor/src/Register File.vhd" 
 MESSAGE "Compile Entity "RegisterFile"" 
@@ -49,4 +49,8 @@ MESSAGE "File: C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Process
 MESSAGE "Compile Entity "tb"" 
 MESSAGE "Compile Architecture "behavior" of Entity "tb"" 
 WARNING ELAB1_0026: "There is no default binding for component "Processor". (Port "pc_out" is not on the entity)." "C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/tb.vhd" 40 0
-SUCCESS "Compile success 0 Errors 1 Warnings  Analysis time :  0.3 [s]" 
+MESSAGE "File: C:/My_Designs/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/processor_TB.vhd" 
+MESSAGE "Compile Entity "processor_tb"" 
+MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"" 
+MESSAGE "Compile Configuration "TESTBENCH_FOR_processor"" 
+SUCCESS "Compile success 0 Errors 1 Warnings  Analysis time :  0.4 [s]" 

@@ -79,6 +79,8 @@ WindowVisible=0
 /Instruction Decode Execute.vhd=-1
 /ALU Control Unit.vhd=-1
 Testbench/tb.vhd=-1
+Testbench/processor_TB.vhd=-1
+Testbench/processor_TB_runtest.do=-1
 [Files.Data]
 .\src\half_adder.vhd=VHDL Source Code
 .\src\full_adder.vhd=VHDL Source Code
@@ -95,5 +97,7 @@ Testbench/tb.vhd=-1
 .\src\Instruction Decode Execute.vhd=VHDL Source Code
 .\src\ALU Control Unit.vhd=VHDL Source Code
 .\src\Testbench\tb.vhd=VHDL Test Bench
+.\src\Testbench\processor_TB.vhd=VHDL Test Bench
+.\src\Testbench\processor_TB_runtest.do=Macro
 [Groups]
 Testbench=1

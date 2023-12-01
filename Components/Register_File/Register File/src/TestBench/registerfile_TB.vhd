@@ -14,25 +14,25 @@ architecture TB_ARCHITECTURE of registerfile_tb is
 		clk : in STD_LOGIC;
 		rst : in STD_LOGIC;
 		reg_write_en : in STD_LOGIC;
-		reg_write_dest : in STD_LOGIC_VECTOR(2 downto 0);
-		reg_write_data : in STD_LOGIC_VECTOR(15 downto 0);
-		reg_read_addr_1 : in STD_LOGIC_VECTOR(2 downto 0);
-		reg_read_addr_2 : in STD_LOGIC_VECTOR(2 downto 0);
-		reg_read_data_1 : out STD_LOGIC_VECTOR(15 downto 0);
-		reg_read_data_2 : out STD_LOGIC_VECTOR(15 downto 0) );
+		reg_write_dest : in SIGNED(2 downto 0);
+		reg_write_data : in SIGNED(15 downto 0);
+		reg_read_addr_1 : in SIGNED(2 downto 0);
+		reg_read_addr_2 : in SIGNED(2 downto 0);
+		reg_read_data_1 : out SIGNED(15 downto 0);
+		reg_read_data_2 : out SIGNED(15 downto 0) );
 	end component;
 
 	-- Stimulus signals - signals mapped to the input and inout ports of tested entity
 	signal clk : STD_LOGIC;
 	signal rst : STD_LOGIC;
 	signal reg_write_en : STD_LOGIC;
-	signal reg_write_dest : STD_LOGIC_VECTOR(2 downto 0);
-	signal reg_write_data : STD_LOGIC_VECTOR(15 downto 0);
-	signal reg_read_addr_1 : STD_LOGIC_VECTOR(2 downto 0);
-	signal reg_read_addr_2 : STD_LOGIC_VECTOR(2 downto 0);
+	signal reg_write_dest : SIGNED(2 downto 0);
+	signal reg_write_data : SIGNED(15 downto 0);
+	signal reg_read_addr_1 : SIGNED(2 downto 0);
+	signal reg_read_addr_2 : SIGNED(2 downto 0);
 	-- Observed signals - signals mapped to the output ports of tested entity
-	signal reg_read_data_1 : STD_LOGIC_VECTOR(15 downto 0);
-	signal reg_read_data_2 : STD_LOGIC_VECTOR(15 downto 0);
+	signal reg_read_data_1 : SIGNED(15 downto 0);
+	signal reg_read_data_2 : SIGNED(15 downto 0);
 	
 	constant CLOCK_PERIOD : time := 10 ns;
 

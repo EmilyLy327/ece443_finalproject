@@ -1,4 +1,4 @@
-21
+73
 ~E 1 "../src/ALU.vhd" 18 alu
 ~A 1 "../src/ALU.vhd" 26 behavioral
 ~A 1 "../src/ALU.vhd" 26 structural
@@ -10,6 +10,7 @@
 ~A 1 "../src/Control Unit.vhd" 26 Behavioral
 ~E 1 "../src/Data Memory.vhd" 19 Data_Memory
 ~A 1 "../src/Data Memory.vhd" 29 Behavioral
+~E 1 "../src/Data Memory.vhd" 19 DataMemory
 ~E 1 "../src/full_adder.vhd" 32 Full_Adder
 ~A 1 "../src/full_adder.vhd" 39 structural
 ~E 1 "../src/half_adder.vhd" 52 half_adder
@@ -23,6 +24,8 @@
 ~E 1 "../src/Instruction Decode Execute.vhd" 21 Processor
 ~A 1 "../src/Instruction Decode Execute.vhd" 31 behavioral
 ~A 1 "../src/Instruction Decode Execute.vhd" 30 Structural
+~E 1 "../src/Testbench/processor_TB.vhd" 7 processor_tb
+~A 1 "../src/Testbench/processor_TB.vhd" 10 TB_ARCHITECTURE
 ~E 1 "../src/Register File.vhd" 18 register_file
 ~A 1 "../src/Register File.vhd" 31 Behavioral
 ~E 1 "../src/Register File.vhd" 23 RegisterFile
@@ -35,5 +38,6 @@
 ~A 1 "../src/sixteen_bit_subtractor.vhd" 34 structural
 ~E 1 "../src/Testbench/tb.vhd" 17 tb
 ~A 1 "../src/Testbench/tb.vhd" 20 behavior
+~C 1 "../src/Testbench/processor_TB.vhd" 68 testbench_for_processor
 ~E 1 "../src/half_adder.vhd" 37 xor_gate
 ~A 1 "../src/half_adder.vhd" 43 structural

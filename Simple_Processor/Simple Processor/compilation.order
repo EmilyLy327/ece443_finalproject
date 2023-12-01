@@ -13,3 +13,4 @@
 .\src\Instruction Decode Execute.vhd
 .\src\ALU Control Unit.vhd
 .\src\Testbench\tb.vhd
+.\src\Testbench\processor_TB.vhd

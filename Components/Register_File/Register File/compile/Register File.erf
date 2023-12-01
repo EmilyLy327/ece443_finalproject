@@ -6,4 +6,4 @@ MESSAGE "File: C:/My_Designs/ece443_finalproject/Components/Register_File/Regist
 MESSAGE "Compile Entity "registerfile_tb"" 
 MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "registerfile_tb"" 
 MESSAGE "Compile Configuration "TESTBENCH_FOR_registerfile"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]" 

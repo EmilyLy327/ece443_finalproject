@@ -41,6 +41,6 @@ TestBench/registerfile_TB_runtest.do=-1
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=registerfile|Behavioral|0 registerfile_tb|TB_ARCHITECTURE|0 
+HierarchyInformation=registerfile_tb|TB_ARCHITECTURE|0  
 ShowHide=ShowTopLevel
 Selected=

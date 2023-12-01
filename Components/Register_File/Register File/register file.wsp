@@ -3,10 +3,10 @@ Instruction_Decode_Execute=1
 Built-in symbols=0
 Register_File=0
 [COMPILESTATUS|.\src\Register File.vhd]
-FileTimeLow=31072614
-Status=Modified
+FileTimeLow=31073391
+Status=Compiled
 [COMPILESTATUS|.\src\TestBench\registerfile_TB.vhd]
-FileTimeLow=31072459
+FileTimeLow=31073391
 Status=Compiled
 [COMPILESTATUS|.\src\TestBench\registerfile_TB_runtest.do]
 FileTimeLow=31072459

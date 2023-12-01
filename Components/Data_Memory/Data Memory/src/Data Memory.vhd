@@ -16,7 +16,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity Data_Memory is
+entity DataMemory is
     port (
         clk: in std_logic;								   -- processor clock
         mem_access_addr: in std_logic_vector(15 downto 0); -- memory address to access
@@ -24,7 +24,7 @@ entity Data_Memory is
         mem_write_en, mem_read: in std_logic;			   -- write enable and read enable
         mem_read_data: out std_logic_vector(15 downto 0)   -- read data from specified memory address
     );
-end entity Data_Memory;
+end entity DataMemory;
 
 architecture Behavioral of Data_Memory is
     signal ram_addr: std_logic_vector(7 downto 0);						   -- memory addresses used for indexing the ram array

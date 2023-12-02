@@ -1,408 +1,43 @@
-# Design: Design "Instruction Decode Execute" has been set as active.
 acom -O3 -e 100 -work Instruction_Decode_Execute -2002  "$dsn/src/Instruction Decode Execute.vhd" "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd" $dsn/src/ALU.vhd "$dsn/src/Data Memory.vhd" $dsn/src/full_adder.vhd $dsn/src/half_adder.vhd "$dsn/src/Register File.vhd" $dsn/src/sixteen_bit_adder.vhd $dsn/src/sixteen_bit_multiplexer.vhd $dsn/src/sixteen_bit_multiplier.vhd $dsn/src/sixteen_bit_subtractor.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd
 # Compile Entity "Processor"
 # Compile Architecture "Structural" of Entity "Processor"
-# Error: COMP96_0569: Instruction Decode Execute.vhd : (120, 18): Case expression must be of a locally static subtype. Use -relax to allow expressions of a nonstatic subtype.
-# Error: COMP96_0367: Instruction Decode Execute.vhd : (124, 31): Improper array length (8). Expected length is 16.
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Memory.vhd
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Memory.vhd
 # Compile Entity "Instruction_Memory"
 # Compile Architecture "Behavioral" of Entity "Instruction_Memory"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Fetch.vhd
-# Compile Entity "Processor"
-# Warning: COMP96_0994: Instruction Fetch.vhd : (21, 1): Multiple entity "Processor" found in "C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Fetch.vhd", "C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd".
-# Compile Architecture "Structural" of Entity "Processor"
-# Warning: COMP96_0994: Instruction Fetch.vhd : (30, 1): Multiple architecture "Structural" of entity "Processor" found in "C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Fetch.vhd", "C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd".
-# Warning: ELAB1_0026: Instruction Fetch.vhd : (120, 0): There is no default binding for component "RegisterFile". (No entity named "RegisterFile" was found).
-# Warning: ELAB1_0026: Instruction Fetch.vhd : (133, 0): There is no default binding for component "ALU". (No entity named "ALU" was found).
-# Warning: ELAB1_0026: Instruction Fetch.vhd : (141, 0): There is no default binding for component "DataMemory". (No entity named "DataMemory" was found).
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/ALU.vhd
-# Compile Entity "alu"
-# Compile Architecture "structural" of Entity "ALU"
-# Warning: ELAB1_0026: ALU.vhd : (78, 0): There is no default binding for component "sixteen_bit_adder". (No entity named "sixteen_bit_adder" was found).
-# Warning: ELAB1_0026: ALU.vhd : (79, 0): There is no default binding for component "sixteen_bit_subtractor". (No entity named "sixteen_bit_subtractor" was found).
-# Warning: ELAB1_0026: ALU.vhd : (80, 0): There is no default binding for component "sixteen_bit_multiplier". (No entity named "sixteen_bit_multiplier" was found).
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Data Memory.vhd
-# Compile Entity "DataMemory"
-# Compile Architecture "Behavioral" of Entity "Data_Memory"
-# Error: COMP96_0056: Data Memory.vhd : (29, 1): Cannot find referenced entity declaration "Data_Memory".
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/full_adder.vhd
-# Compile Entity "Full_Adder"
-# Compile Architecture "structural" of Entity "Full_Adder"
-# Error: COMP96_0078: full_adder.vhd : (53, 20): Unknown identifier "Half_Adder".
-# Error: COMP96_0055: full_adder.vhd : (53, 15): Cannot find context item "work.Half_Adder".
-# Error: COMP96_0078: full_adder.vhd : (61, 20): Unknown identifier "Half_Adder".
-# Error: COMP96_0055: full_adder.vhd : (61, 15): Cannot find context item "work.Half_Adder".
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/half_adder.vhd
-# Compile Entity "and_gate"
-# Compile Architecture "structural" of Entity "and_gate"
-# Compile Entity "xor_gate"
-# Compile Architecture "structural" of Entity "xor_gate"
-# Compile Entity "half_adder"
-# Compile Architecture "structural" of Entity "half_adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Register File.vhd
-# Compile Entity "RegisterFile"
-# Compile Architecture "Behavioral" of Entity "RegisterFile"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_adder.vhd
-# Compile Entity "sixteen_bit_adder"
-# Compile Architecture "structural" of Entity "sixteen_bit_adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplexer.vhd
-# Compile Entity "mux_16bit"
-# Compile Architecture "structural" of Entity "mux_16bit"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplier.vhd
-# Compile Entity "sixteen_bit_multiplier"
-# Compile Architecture "Behavioral" of Entity "sixteen_bit_multiplier"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_subtractor.vhd
-# Compile Entity "sixteen_bit_subtractor"
-# Compile Architecture "structural" of Entity "sixteen_bit_subtractor"
-# Compile failure 7 Errors 8 Warnings  Analysis time :  0.5 [s]
-acom -O3 -e 100 -work Instruction_Decode_Execute -2002  "$dsn/src/Instruction Decode Execute.vhd" "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd" $dsn/src/ALU.vhd "$dsn/src/Data Memory.vhd" $dsn/src/full_adder.vhd $dsn/src/half_adder.vhd "$dsn/src/Register File.vhd" $dsn/src/sixteen_bit_adder.vhd $dsn/src/sixteen_bit_multiplexer.vhd $dsn/src/sixteen_bit_multiplier.vhd $dsn/src/sixteen_bit_subtractor.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd
-# Compile Entity "Processor"
-# Compile Architecture "Structural" of Entity "Processor"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Memory.vhd
-# Compile Entity "Instruction_Memory"
-# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Fetch.vhd
-# Compile Entity "Processor"
-# Compile Architecture "Structural" of Entity "Processor"
-# Warning: COMP96_0994: Instruction Fetch.vhd : (30, 1): Multiple architecture "Structural" of entity "Processor" found in "C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Fetch.vhd", "C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd".
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/ALU.vhd
-# Compile Entity "alu"
-# Compile Architecture "structural" of Entity "ALU"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Data Memory.vhd
-# Compile Entity "DataMemory"
-# Compile Architecture "Behavioral" of Entity "Data_Memory"
-# Error: COMP96_0056: Data Memory.vhd : (29, 1): Cannot find referenced entity declaration "Data_Memory".
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/full_adder.vhd
-# Compile Entity "Full_Adder"
-# Compile Architecture "structural" of Entity "Full_Adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/half_adder.vhd
-# Compile Entity "and_gate"
-# Compile Architecture "structural" of Entity "and_gate"
-# Compile Entity "xor_gate"
-# Compile Architecture "structural" of Entity "xor_gate"
-# Compile Entity "half_adder"
-# Compile Architecture "structural" of Entity "half_adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Register File.vhd
-# Compile Entity "RegisterFile"
-# Compile Architecture "Behavioral" of Entity "RegisterFile"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_adder.vhd
-# Compile Entity "sixteen_bit_adder"
-# Compile Architecture "structural" of Entity "sixteen_bit_adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplexer.vhd
-# Compile Entity "mux_16bit"
-# Compile Architecture "structural" of Entity "mux_16bit"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplier.vhd
-# Compile Entity "sixteen_bit_multiplier"
-# Compile Architecture "Behavioral" of Entity "sixteen_bit_multiplier"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_subtractor.vhd
-# Compile Entity "sixteen_bit_subtractor"
-# Compile Architecture "structural" of Entity "sixteen_bit_subtractor"
-# Compile failure 1 Errors 1 Warnings  Analysis time :  0.4 [s]
-acom -O3 -e 100 -work Instruction_Decode_Execute -2002  "$dsn/src/Instruction Decode Execute.vhd" "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd" $dsn/src/ALU.vhd "$dsn/src/Data Memory.vhd" $dsn/src/full_adder.vhd $dsn/src/half_adder.vhd "$dsn/src/Register File.vhd" $dsn/src/sixteen_bit_adder.vhd $dsn/src/sixteen_bit_multiplexer.vhd $dsn/src/sixteen_bit_multiplier.vhd $dsn/src/sixteen_bit_subtractor.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd
-# Compile Entity "Processor"
-# Compile Architecture "Structural" of Entity "Processor"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Memory.vhd
-# Compile Entity "Instruction_Memory"
-# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Fetch.vhd
-# Compile Entity "Processor"
-# Compile Architecture "Structural" of Entity "Processor"
-# Warning: COMP96_0994: Instruction Fetch.vhd : (30, 1): Multiple architecture "Structural" of entity "Processor" found in "C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Fetch.vhd", "C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd".
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/ALU.vhd
-# Compile Entity "alu"
-# Compile Architecture "structural" of Entity "ALU"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Data Memory.vhd
-# Compile Entity "DataMemory"
-# Compile Architecture "Behavioral" of Entity "Data_Memory"
-# Error: COMP96_0056: Data Memory.vhd : (29, 1): Cannot find referenced entity declaration "Data_Memory".
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/full_adder.vhd
-# Compile Entity "Full_Adder"
-# Compile Architecture "structural" of Entity "Full_Adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/half_adder.vhd
-# Compile Entity "and_gate"
-# Compile Architecture "structural" of Entity "and_gate"
-# Compile Entity "xor_gate"
-# Compile Architecture "structural" of Entity "xor_gate"
-# Compile Entity "half_adder"
-# Compile Architecture "structural" of Entity "half_adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Register File.vhd
-# Compile Entity "RegisterFile"
-# Compile Architecture "Behavioral" of Entity "RegisterFile"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_adder.vhd
-# Compile Entity "sixteen_bit_adder"
-# Compile Architecture "structural" of Entity "sixteen_bit_adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplexer.vhd
-# Compile Entity "mux_16bit"
-# Compile Architecture "structural" of Entity "mux_16bit"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplier.vhd
-# Compile Entity "sixteen_bit_multiplier"
-# Compile Architecture "Behavioral" of Entity "sixteen_bit_multiplier"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_subtractor.vhd
-# Compile Entity "sixteen_bit_subtractor"
-# Compile Architecture "structural" of Entity "sixteen_bit_subtractor"
-# Compile failure 1 Errors 1 Warnings  Analysis time :  0.2 [s]
-acom -O3 -e 100 -work Instruction_Decode_Execute -2002  "$dsn/src/Instruction Decode Execute.vhd" "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd" $dsn/src/ALU.vhd "$dsn/src/Data Memory.vhd" $dsn/src/full_adder.vhd $dsn/src/half_adder.vhd "$dsn/src/Register File.vhd" $dsn/src/sixteen_bit_adder.vhd $dsn/src/sixteen_bit_multiplexer.vhd $dsn/src/sixteen_bit_multiplier.vhd $dsn/src/sixteen_bit_subtractor.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd
-# Compile Entity "Processor"
-# Compile Architecture "Structural" of Entity "Processor"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Memory.vhd
-# Compile Entity "Instruction_Memory"
-# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Fetch.vhd
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Fetch.vhd
 # Compile Entity "Instruction_Fetch"
 # Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/ALU.vhd
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/ALU.vhd
 # Compile Entity "alu"
 # Compile Architecture "structural" of Entity "ALU"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Data Memory.vhd
-# Compile Entity "DataMemory"
-# Compile Architecture "Behavioral" of Entity "Data_Memory"
-# Error: COMP96_0056: Data Memory.vhd : (29, 1): Cannot find referenced entity declaration "Data_Memory".
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/full_adder.vhd
-# Compile Entity "Full_Adder"
-# Compile Architecture "structural" of Entity "Full_Adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/half_adder.vhd
-# Compile Entity "and_gate"
-# Compile Architecture "structural" of Entity "and_gate"
-# Compile Entity "xor_gate"
-# Compile Architecture "structural" of Entity "xor_gate"
-# Compile Entity "half_adder"
-# Compile Architecture "structural" of Entity "half_adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Register File.vhd
-# Compile Entity "RegisterFile"
-# Compile Architecture "Behavioral" of Entity "RegisterFile"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_adder.vhd
-# Compile Entity "sixteen_bit_adder"
-# Compile Architecture "structural" of Entity "sixteen_bit_adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplexer.vhd
-# Compile Entity "mux_16bit"
-# Compile Architecture "structural" of Entity "mux_16bit"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplier.vhd
-# Compile Entity "sixteen_bit_multiplier"
-# Compile Architecture "Behavioral" of Entity "sixteen_bit_multiplier"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_subtractor.vhd
-# Compile Entity "sixteen_bit_subtractor"
-# Compile Architecture "structural" of Entity "sixteen_bit_subtractor"
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.4 [s]
-acom -O3 -e 100 -work Instruction_Decode_Execute -2002  "$dsn/src/Instruction Decode Execute.vhd" "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd" $dsn/src/ALU.vhd "$dsn/src/Data Memory.vhd" $dsn/src/full_adder.vhd $dsn/src/half_adder.vhd "$dsn/src/Register File.vhd" $dsn/src/sixteen_bit_adder.vhd $dsn/src/sixteen_bit_multiplexer.vhd $dsn/src/sixteen_bit_multiplier.vhd $dsn/src/sixteen_bit_subtractor.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd
-# Compile Entity "Processor"
-# Compile Architecture "Structural" of Entity "Processor"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Memory.vhd
-# Compile Entity "Instruction_Memory"
-# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Fetch.vhd
-# Compile Entity "Instruction_Fetch"
-# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/ALU.vhd
-# Compile Entity "alu"
-# Compile Architecture "structural" of Entity "ALU"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Data Memory.vhd
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Data Memory.vhd
 # Compile Entity "DataMemory"
 # Compile Architecture "Behavioral" of Entity "DataMemory"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/full_adder.vhd
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/full_adder.vhd
 # Compile Entity "Full_Adder"
 # Compile Architecture "structural" of Entity "Full_Adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/half_adder.vhd
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/half_adder.vhd
 # Compile Entity "and_gate"
 # Compile Architecture "structural" of Entity "and_gate"
 # Compile Entity "xor_gate"
 # Compile Architecture "structural" of Entity "xor_gate"
 # Compile Entity "half_adder"
 # Compile Architecture "structural" of Entity "half_adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Register File.vhd
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Register File.vhd
 # Compile Entity "RegisterFile"
 # Compile Architecture "Behavioral" of Entity "RegisterFile"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_adder.vhd
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_adder.vhd
 # Compile Entity "sixteen_bit_adder"
 # Compile Architecture "structural" of Entity "sixteen_bit_adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplexer.vhd
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplexer.vhd
 # Compile Entity "mux_16bit"
 # Compile Architecture "structural" of Entity "mux_16bit"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplier.vhd
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplier.vhd
 # Compile Entity "sixteen_bit_multiplier"
 # Compile Architecture "Behavioral" of Entity "sixteen_bit_multiplier"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_subtractor.vhd
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_subtractor.vhd
 # Compile Entity "sixteen_bit_subtractor"
 # Compile Architecture "structural" of Entity "sixteen_bit_subtractor"
 # Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
-acom -O3 -e 100 -work Instruction_Decode_Execute -2002  "$dsn/src/Instruction Decode Execute.vhd" "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd" $dsn/src/ALU.vhd "$dsn/src/Data Memory.vhd" $dsn/src/full_adder.vhd $dsn/src/half_adder.vhd "$dsn/src/Register File.vhd" $dsn/src/sixteen_bit_adder.vhd $dsn/src/sixteen_bit_multiplexer.vhd $dsn/src/sixteen_bit_multiplier.vhd $dsn/src/sixteen_bit_subtractor.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd
-# Compile Entity "Processor"
-# Compile Architecture "Structural" of Entity "Processor"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Memory.vhd
-# Compile Entity "Instruction_Memory"
-# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Fetch.vhd
-# Compile Entity "Instruction_Fetch"
-# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/ALU.vhd
-# Compile Entity "alu"
-# Compile Architecture "structural" of Entity "ALU"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Data Memory.vhd
-# Compile Entity "DataMemory"
-# Compile Architecture "Behavioral" of Entity "DataMemory"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/full_adder.vhd
-# Compile Entity "Full_Adder"
-# Compile Architecture "structural" of Entity "Full_Adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/half_adder.vhd
-# Compile Entity "and_gate"
-# Compile Architecture "structural" of Entity "and_gate"
-# Compile Entity "xor_gate"
-# Compile Architecture "structural" of Entity "xor_gate"
-# Compile Entity "half_adder"
-# Compile Architecture "structural" of Entity "half_adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Register File.vhd
-# Compile Entity "RegisterFile"
-# Compile Architecture "Behavioral" of Entity "RegisterFile"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_adder.vhd
-# Compile Entity "sixteen_bit_adder"
-# Compile Architecture "structural" of Entity "sixteen_bit_adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplexer.vhd
-# Compile Entity "mux_16bit"
-# Compile Architecture "structural" of Entity "mux_16bit"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplier.vhd
-# Compile Entity "sixteen_bit_multiplier"
-# Compile Architecture "Behavioral" of Entity "sixteen_bit_multiplier"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_subtractor.vhd
-# Compile Entity "sixteen_bit_subtractor"
-# Compile Architecture "structural" of Entity "sixteen_bit_subtractor"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
-acom -O3 -e 100 -work Instruction_Decode_Execute -2002  "$dsn/src/Instruction Decode Execute.vhd" "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd" $dsn/src/ALU.vhd "$dsn/src/Data Memory.vhd" $dsn/src/full_adder.vhd $dsn/src/half_adder.vhd "$dsn/src/Register File.vhd" $dsn/src/sixteen_bit_adder.vhd $dsn/src/sixteen_bit_multiplexer.vhd $dsn/src/sixteen_bit_multiplier.vhd $dsn/src/sixteen_bit_subtractor.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd
-# Compile Entity "Processor"
-# Compile Architecture "Structural" of Entity "Processor"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Memory.vhd
-# Compile Entity "Instruction_Memory"
-# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Fetch.vhd
-# Compile Entity "Instruction_Fetch"
-# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/ALU.vhd
-# Compile Entity "alu"
-# Compile Architecture "structural" of Entity "ALU"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Data Memory.vhd
-# Compile Entity "DataMemory"
-# Compile Architecture "Behavioral" of Entity "DataMemory"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/full_adder.vhd
-# Compile Entity "Full_Adder"
-# Compile Architecture "structural" of Entity "Full_Adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/half_adder.vhd
-# Compile Entity "and_gate"
-# Compile Architecture "structural" of Entity "and_gate"
-# Compile Entity "xor_gate"
-# Compile Architecture "structural" of Entity "xor_gate"
-# Compile Entity "half_adder"
-# Compile Architecture "structural" of Entity "half_adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Register File.vhd
-# Compile Entity "RegisterFile"
-# Compile Architecture "Behavioral" of Entity "RegisterFile"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_adder.vhd
-# Compile Entity "sixteen_bit_adder"
-# Compile Architecture "structural" of Entity "sixteen_bit_adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplexer.vhd
-# Compile Entity "mux_16bit"
-# Compile Architecture "structural" of Entity "mux_16bit"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplier.vhd
-# Compile Entity "sixteen_bit_multiplier"
-# Compile Architecture "Behavioral" of Entity "sixteen_bit_multiplier"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_subtractor.vhd
-# Compile Entity "sixteen_bit_subtractor"
-# Compile Architecture "structural" of Entity "sixteen_bit_subtractor"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
-acom -O3 -e 100 -work Instruction_Decode_Execute -2002  "$dsn/src/Instruction Decode Execute.vhd" "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd" $dsn/src/ALU.vhd "$dsn/src/Data Memory.vhd" $dsn/src/full_adder.vhd $dsn/src/half_adder.vhd "$dsn/src/Register File.vhd" $dsn/src/sixteen_bit_adder.vhd $dsn/src/sixteen_bit_multiplexer.vhd $dsn/src/sixteen_bit_multiplier.vhd $dsn/src/sixteen_bit_subtractor.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd
-# Compile Entity "Processor"
-# Compile Architecture "Structural" of Entity "Processor"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Memory.vhd
-# Compile Entity "Instruction_Memory"
-# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Fetch.vhd
-# Compile Entity "Instruction_Fetch"
-# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/ALU.vhd
-# Compile Entity "alu"
-# Compile Architecture "structural" of Entity "ALU"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Data Memory.vhd
-# Compile Entity "DataMemory"
-# Compile Architecture "Behavioral" of Entity "DataMemory"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/full_adder.vhd
-# Compile Entity "Full_Adder"
-# Compile Architecture "structural" of Entity "Full_Adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/half_adder.vhd
-# Compile Entity "and_gate"
-# Compile Architecture "structural" of Entity "and_gate"
-# Compile Entity "xor_gate"
-# Compile Architecture "structural" of Entity "xor_gate"
-# Compile Entity "half_adder"
-# Compile Architecture "structural" of Entity "half_adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Register File.vhd
-# Compile Entity "RegisterFile"
-# Compile Architecture "Behavioral" of Entity "RegisterFile"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_adder.vhd
-# Compile Entity "sixteen_bit_adder"
-# Compile Architecture "structural" of Entity "sixteen_bit_adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplexer.vhd
-# Compile Entity "mux_16bit"
-# Compile Architecture "structural" of Entity "mux_16bit"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplier.vhd
-# Compile Entity "sixteen_bit_multiplier"
-# Compile Architecture "Behavioral" of Entity "sixteen_bit_multiplier"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_subtractor.vhd
-# Compile Entity "sixteen_bit_subtractor"
-# Compile Architecture "structural" of Entity "sixteen_bit_subtractor"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
-acom -O3 -e 100 -work Instruction_Decode_Execute -2002  "$dsn/src/Instruction Decode Execute.vhd" "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd" $dsn/src/ALU.vhd "$dsn/src/Data Memory.vhd" $dsn/src/full_adder.vhd $dsn/src/half_adder.vhd "$dsn/src/Register File.vhd" $dsn/src/sixteen_bit_adder.vhd $dsn/src/sixteen_bit_multiplexer.vhd $dsn/src/sixteen_bit_multiplier.vhd $dsn/src/sixteen_bit_subtractor.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Decode Execute.vhd
-# Compile Entity "Processor"
-# Compile Architecture "Structural" of Entity "Processor"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Memory.vhd
-# Compile Entity "Instruction_Memory"
-# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Instruction Fetch.vhd
-# Compile Entity "Instruction_Fetch"
-# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/ALU.vhd
-# Compile Entity "alu"
-# Compile Architecture "structural" of Entity "ALU"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Data Memory.vhd
-# Compile Entity "DataMemory"
-# Compile Architecture "Behavioral" of Entity "DataMemory"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/full_adder.vhd
-# Compile Entity "Full_Adder"
-# Compile Architecture "structural" of Entity "Full_Adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/half_adder.vhd
-# Compile Entity "and_gate"
-# Compile Architecture "structural" of Entity "and_gate"
-# Compile Entity "xor_gate"
-# Compile Architecture "structural" of Entity "xor_gate"
-# Compile Entity "half_adder"
-# Compile Architecture "structural" of Entity "half_adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/Register File.vhd
-# Compile Entity "RegisterFile"
-# Compile Architecture "Behavioral" of Entity "RegisterFile"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_adder.vhd
-# Compile Entity "sixteen_bit_adder"
-# Compile Architecture "structural" of Entity "sixteen_bit_adder"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplexer.vhd
-# Compile Entity "mux_16bit"
-# Compile Architecture "structural" of Entity "mux_16bit"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_multiplier.vhd
-# Compile Entity "sixteen_bit_multiplier"
-# Compile Architecture "Behavioral" of Entity "sixteen_bit_multiplier"
-# File: C:/My_Designs/ece443_finalproject/Components/Instruction_Decode_Execute/Instruction Decode Execute/src/sixteen_bit_subtractor.vhd
-# Compile Entity "sixteen_bit_subtractor"
-# Compile Architecture "structural" of Entity "sixteen_bit_subtractor"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]

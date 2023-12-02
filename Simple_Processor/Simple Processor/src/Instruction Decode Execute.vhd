@@ -13,6 +13,7 @@
 --				detection and stalling.
 --
 -------------------------------------------------------------------------------
+--NOTE:  Need to reference instruction fetch where PC counter is
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -21,14 +22,11 @@ use ieee.numeric_std.all;
 entity Processor is
     port (
 		clk,reset: in std_logic;
-		pc_out, alu_result: out signed(15 downto 0)
+		alu_result: out signed(15 downto 0)
 	);
 end entity Processor;
 
 architecture Structural of Processor is
-
-	-- PC signals
-	signal pc_current: signed(15 downto 0);
 
 	-- instruction decoding/encoding signals
     signal opcode : signed(2 downto 0);
@@ -62,13 +60,12 @@ architecture Structural of Processor is
 	-- control unit signals
 	--signal cu_reg_dst, cu_mem_to_reg, cu_alu_op : signed(1 downto 0);
     --signal cu_alu_src, cu_reg_write, cu_sign_or_zero : std_logic;
-	signal reg_dst,mem_to_reg,alu_op: signed(1 downto 0);
- 	signal mem_read,mem_write,alu_src,reg_write: std_logic;
+	signal reg_dst, mem_to_reg, alu_op: signed(1 downto 0);
+ 	signal mem_read, mem_write, alu_src, reg_write: std_logic;
 	signal sign_or_zero: std_logic;
 	
-	-- other
+	-- other signals
 	signal result : signed(15 downto 0);
-	
 	
  	-- COMPONENTS
     component RegisterFile
@@ -84,9 +81,9 @@ architecture Structural of Processor is
 
     component ALU
         port (
-            sel : in signed(2 downto 0); -- opcode
+            sel : in signed(2 downto 0);   -- opcode
             A, B : in signed(15 downto 0); -- operand's A & B
-            R : out signed(15 downto 0)	 -- ALU result
+            R : out signed(15 downto 0)	   -- ALU result
         );
     end component ALU;
 
@@ -179,7 +176,7 @@ begin
     --        sign_or_zero => cu_sign_or_zero
     --    );
 	
-	control: entity work.control_unit_VHDL
+	Control: entity work.ControlUnit
    		port map
    		(reset => reset,
     		opcode => opcode,
@@ -201,8 +198,9 @@ begin
     -- connect components based on instruction type
     process (clk)
     begin
-        if rising_edge(clk) then
-			-- Case statement with intermediate signals
+        
+		if rising_edge(clk) then
+			 -- Case statement with intermediate signals
              case instruction_type is
 			    when "00" => -- R-Type
                     result <= ALU_Output;
@@ -217,7 +215,32 @@ begin
                 when others =>
                     result <= (others => '0');
             end case;
-        end if;
+        
+		--if rising_edge(clk) then
+
+  			-- Check R-type control signals
+    		--if reg_write = '1' and alu_src = '0' then  
+       			result <= ALU_output;
+       
+    		-- Check I-type load immediate  
+    		--elsif mem_to_reg = "01" and mem_read = '1' then
+       			result <= immediate_value; 
+
+    		-- Check I-type store  
+    		--elsif mem_write = '1' and alu_src = '1' then
+       		--	data_memory_write_data <= regfile_read_data1;
+       			--result <= (others => '0');
+       
+    		-- Check I-type load     
+    		--elsif mem_to_reg = "10" and mem_read = '1' then
+       			--result <= data_memory_read_data;
+       			--data_memory_write_data <= (others => '0'); 
+
+    		--else  
+       			--result <= (others => '0');
+    		--end if;
+		
+		end if;
     end process;
 	alu_result <= result;
 end architecture Structural;

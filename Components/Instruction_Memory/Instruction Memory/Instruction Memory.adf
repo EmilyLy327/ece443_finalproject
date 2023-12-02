@@ -22,3 +22,7 @@ FAMILY=
 [Files.Data]
 .\src\Instruction Memory.vhd=VHDL Source Code
 .\src\Instruction Fetch.vhd=VHDL Source Code
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

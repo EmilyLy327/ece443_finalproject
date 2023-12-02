@@ -2,16 +2,16 @@ library IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.all;
 
-entity Instruction_Fetch is
+entity InstructionFetch is
     port (
         clk: in std_logic;
         reset: in std_logic;
         pc_out: out std_logic_vector(15 downto 0);
         instruction_out: out std_logic_vector(15 downto 0)
     );
-end Instruction_Fetch;
+end InstructionFetch;
 
-architecture Behavioral of Instruction_Fetch is
+architecture Behavioral of InstructionFetch is
 
 signal pc_current: std_logic_vector(15 downto 0);
 signal pc_next: std_logic_vector(15 downto 0);

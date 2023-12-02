@@ -11,5 +11,4 @@
 .\src\Instruction Memory.vhd
 .\src\Instruction Fetch.vhd
 .\src\Instruction Decode Execute.vhd
-.\src\ALU Control Unit.vhd
 .\src\Testbench\tb.vhd

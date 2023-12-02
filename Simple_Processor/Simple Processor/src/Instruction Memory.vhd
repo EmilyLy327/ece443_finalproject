@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 --
--- Title       : Instruction
+-- Title       : Instruction Memory
 -- Design      : Simple Processor
 -- Author      : Emily Ly and Brice Zimmerman
 -- Company     : Old Dominion University
 --
 -------------------------------------------------------------------------------
 --
--- Description : 
+-- Description :  This is where the instructions are stored.
 --
 -------------------------------------------------------------------------------
 
@@ -22,7 +22,7 @@ entity InstructionMemory is
     );
 end InstructionMemory;
 
-architecture Behavioral of Instruction_Memory is
+architecture Behavioral of InstructionMemory is
 	signal rom_address: std_logic_vector(3 downto 0);
 	-- ldi $r0, 10
 	-- ldi $r1, 5

@@ -3,44 +3,36 @@ Current Flow=Generic
 VCS=0
 version=4
 Current Config=compile
-
 [Configurations]
 compile=Register_File
-
 [Library]
 Register_File=.\Register_File\Register_File.lib
-
 [$LibMap$]
 Register_File=.
 Active_lib=
-
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
-
 [Groups]
 TestBench=1
-
 [Files]
 /Register File.vhd=-1
 /..\..\RegisterFile\src\registerfilewave.asdb=-1
 /..\..\RegisterFile\src\registerfilewave.awc=-1
 TestBench/registerfile_TB.vhd=-1
 TestBench/registerfile_TB_runtest.do=-1
-
 [Files.Data]
 .\src\Register File.vhd=VHDL Source Code
 .\..\RegisterFile\src\registerfilewave.asdb=Accelerated Waveform File
 .\..\RegisterFile\src\registerfilewave.awc=Accelerated Waveform Configuration
 .\src\TestBench\registerfile_TB.vhd=VHDL Test Bench
 .\src\TestBench\registerfile_TB_runtest.do=Macro
-
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=registerfile_tb|TB_ARCHITECTURE|0  
+HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=

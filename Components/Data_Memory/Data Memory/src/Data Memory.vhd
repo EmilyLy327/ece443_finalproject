@@ -26,7 +26,7 @@ entity DataMemory is
     );
 end entity DataMemory;
 
-architecture Behavioral of Data_Memory is
+architecture Behavioral of DataMemory is
     signal ram_addr: std_logic_vector(7 downto 0);						   -- memory addresses used for indexing the ram array
     type DataMemType is array (0 to 255) of std_logic_vector(15 downto 0); -- defines the array type for the ram, each are 16-bits
     signal RAM: DataMemType := (others => (others => '0'));				   -- actual ram array init with 0's

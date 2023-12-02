@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
 --
--- Title       : Register File
+-- Title       : Control Unit
 -- Design      : Simple Processor
 -- Author      : Emily Ly and Brice Zimmerman
 -- Company     : Old Dominion University

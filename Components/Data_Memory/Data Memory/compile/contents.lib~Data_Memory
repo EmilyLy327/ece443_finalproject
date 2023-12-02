@@ -1,7 +1,8 @@
-11
+12
 ~E 1 "../src/Data Memory.vhd" 19 Data_Memory
 ~A 1 "../src/Data Memory.vhd" 29 Behavioral
 ~E 1 "../src/TestBench/data_memory_TB.vhd" 7 data_memory_tb
 ~A 1 "../src/TestBench/data_memory_TB.vhd" 10 TB_ARCHITECTURE
 ~E 1 "../src/Data Memory.vhd" 19 DataMemory
+~A 1 "../src/Data Memory.vhd" 29 Behavioral
 ~C 1 "../src/TestBench/data_memory_TB.vhd" 85 testbench_for_data_memory

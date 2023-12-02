@@ -1,13 +1,13 @@
-timestamp=1700956535376
+timestamp=1701525214480
 
 [~A]
-ModifyID=10
+ModifyID=11
 Version=74
 
 [~MFT]
-0=4|0Instruction_Memory.mgf|7598|3716
-1=4|1Instruction_Memory.mgf|20346|18621
-3=4|3Instruction_Memory.mgf|3039|2754
+0=14|0Instruction_Memory.mgf|11775|3716
+1=2|1Instruction_Memory.mgf|23681|18621
+3=2|3Instruction_Memory.mgf|4067|2754
 
 [instruction_fetch]
 A/behavioral=A/Behavioral 21|../src/Instruction Fetch.vhd|14|1*20346
@@ -31,6 +31,30 @@ R=../src/Instruction Memory.vhd|5
 Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|aa5cdeefbdd8ec0382d54b92f1958785a79624349d5b8f82688a21519974b3e631e9c22db2fe3fbd1982ca338cf60117
 Version/behavioral=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4382ff6877c5b77b6fd607653d41ce6c7
 
+[instructionfetch]
+A/behavioral=A/Behavioral 21|../src/Instruction Fetch.vhd|14|1*23681
+BinW64/behavioral=3*4067
+I=0*10732
+I/behavioral=I/Behavioral 0*11775
+M=11|2|vef|1701525214448|../src/Instruction Fetch.vhd|0*10274*0x465e03eae6190da0739d46411f238412b7326eb3|0*10634*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=M/Behavioral 21|2|vef|1701525214453|../src/Instruction Fetch.vhd|0*10982*0xe034761feb790aeba5275496ab26f26d7ba476e1|0*11663*0x20116f55b147878295aeff36dce7fc50
+R=../src/Instruction Fetch.vhd|5
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|5e7c45779c57f8522d6767cf5c3cf1b47b8e456790017f73a533bc13f0d314310fef254551f1ca741a26480b644cc2c4
+Version/behavioral=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4e70f809a88ec1a761feb33863c058e2a
+
+[instructionmemory]
+A/behavioral=A/Behavioral 21|../src/Instruction Memory.vhd|12|1*21965
+BinW64/behavioral=3*3672
+I=0*8529
+I/behavioral=I/Behavioral 0*9788
+M=11|2|vef|1701525214420|../src/Instruction Memory.vhd|0*8117*0xc626976170d7f35405f339c46e654c92e1c1bfe7|0*8429*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=M/Behavioral 21|2|vef|1701525214423|../src/Instruction Memory.vhd|0*8780*0x19108c27862683de8d9ec3c67e596e5587250436|0*9674*0x20116f55b147878295aeff36dce7fc50
+R=../src/Instruction Memory.vhd|5
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|d1182ed61ea73a0e641d9f9e1227a7c4d3caa2c06897ecf2be9fc860412dcc1363c18662d4bc6c8b12e9284a5e0c9ca7
+Version/behavioral=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4610b9d4c966d5033b0cd75a4ae8b2de8
+
 [~U]
 instruction_fetch=Instruction_Fetch 11|0*4161|
 instruction_memory=Instruction_Memory 11|0*0|
+instructionfetch=InstructionFetch 11|0*10050|
+instructionmemory=InstructionMemory 11|0*7906|

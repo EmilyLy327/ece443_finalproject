@@ -3,44 +3,36 @@ Current Flow=Generic
 VCS=0
 version=4
 Current Config=compile
-
 [Configurations]
 compile=Data_Memory
-
 [Library]
 Data_Memory=.\Data_Memory\Data_Memory.lib
-
 [$LibMap$]
 Data_Memory=.
 Active_lib=
-
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
-
 [Groups]
 TestBench=1
-
 [Files]
 /Data Memory.vhd=-1
 /..\..\DataMemory\src\datamemory.asdb=-1
 /..\..\DataMemory\src\datamemory.awc=-1
 TestBench/data_memory_TB.vhd=-1
 TestBench/data_memory_TB_runtest.do=-1
-
 [Files.Data]
 .\src\Data Memory.vhd=VHDL Source Code
 .\..\DataMemory\src\datamemory.asdb=Accelerated Waveform File
 .\..\DataMemory\src\datamemory.awc=Accelerated Waveform Configuration
 .\src\TestBench\data_memory_TB.vhd=VHDL Test Bench
 .\src\TestBench\data_memory_TB_runtest.do=Macro
-
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=data_memory|Behavioral|0 data_memory_tb|TB_ARCHITECTURE|0 
+HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=

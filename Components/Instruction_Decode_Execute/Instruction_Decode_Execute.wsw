@@ -14,3 +14,6 @@ tab=lu
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\Instruction Decode Execute\src/Register File.vhd|]
 TemplateId=0
 tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\Instruction Decode Execute\src/ALU.vhd|]
+TemplateId=0
+tab=lu

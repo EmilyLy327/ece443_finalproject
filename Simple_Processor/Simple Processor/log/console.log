@@ -1,91 +1,36 @@
-acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/half_adder.vhd $dsn/src/full_adder.vhd $dsn/src/sixteen_bit_adder.vhd $dsn/src/sixteen_bit_subtractor.vhd $dsn/src/sixteen_bit_multiplier.vhd $dsn/src/sixteen_bit_multiplexer.vhd $dsn/src/ALU.vhd "$dsn/src/Data Memory.vhd" "$dsn/src/Register File.vhd" "$dsn/src/Control Unit.vhd" "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd" "$dsn/src/Instruction Decode Execute.vhd" "$dsn/src/ALU Control Unit.vhd" $dsn/src/Testbench/tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/half_adder.vhd
-# Compile Entity "and_gate"
-# Compile Architecture "structural" of Entity "and_gate"
-# Compile Entity "xor_gate"
-# Compile Architecture "structural" of Entity "xor_gate"
-# Compile Entity "half_adder"
-# Compile Architecture "structural" of Entity "half_adder"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/full_adder.vhd
-# Compile Entity "Full_Adder"
-# Compile Architecture "structural" of Entity "Full_Adder"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/sixteen_bit_adder.vhd
-# Compile Entity "sixteen_bit_adder"
-# Compile Architecture "structural" of Entity "sixteen_bit_adder"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/sixteen_bit_subtractor.vhd
-# Compile Entity "sixteen_bit_subtractor"
-# Compile Architecture "structural" of Entity "sixteen_bit_subtractor"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/sixteen_bit_multiplier.vhd
-# Compile Entity "sixteen_bit_multiplier"
-# Compile Architecture "Behavioral" of Entity "sixteen_bit_multiplier"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/sixteen_bit_multiplexer.vhd
-# Compile Entity "mux_16bit"
-# Compile Architecture "structural" of Entity "mux_16bit"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/ALU.vhd
-# Compile Entity "alu"
-# Compile Architecture "structural" of Entity "ALU"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Data Memory.vhd
-# Compile Entity "DataMemory"
-# Compile Architecture "Behavioral" of Entity "DataMemory"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Register File.vhd
-# Compile Entity "RegisterFile"
-# Compile Architecture "Behavioral" of Entity "RegisterFile"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Control Unit.vhd
-# Compile Entity "ControlUnit"
-# Compile Architecture "Behavioral" of Entity "ControlUnit"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Memory.vhd
-# Compile Entity "Instruction_Memory"
-# Compile Architecture "Behavioral" of Entity "Instruction_Memory"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Fetch.vhd
-# Compile Entity "Instruction_Fetch"
-# Compile Architecture "Behavioral" of Entity "Instruction_Fetch"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd
-# Compile Entity "Processor"
-# Compile Architecture "Structural" of Entity "Processor"
-# Error: COMP96_0100: Instruction Decode Execute.vhd : (185, 7): Actual parameter type in port map does not match the type of the formal port 'opcode'.
-# Error: COMP96_0100: Instruction Decode Execute.vhd : (186, 7): Actual parameter type in port map does not match the type of the formal port 'reg_dst'.
-# Error: COMP96_0100: Instruction Decode Execute.vhd : (187, 7): Actual parameter type in port map does not match the type of the formal port 'mem_to_reg'.
-# Error: COMP96_0100: Instruction Decode Execute.vhd : (188, 7): Actual parameter type in port map does not match the type of the formal port 'alu_op'.
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/ALU Control Unit.vhd
-# Compile Entity "ALU_control"
-# Compile Architecture "Behavioral" of Entity "ALU_control"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/tb.vhd
-# Compile Entity "tb"
-# Compile Architecture "behavior" of Entity "tb"
-# Compile failure 4 Errors 0 Warnings  Analysis time :  0.5 [s]
 acom -O3 -e 100 -work Simple_Processor -2002  "$dsn/src/Instruction Decode Execute.vhd"
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd
+# Error: COMP96_0016: Instruction Decode Execute.vhd : (18, 1): Design unit declaration expected.
 # Compile Entity "Processor"
 # Compile Architecture "Structural" of Entity "Processor"
-# Error: COMP96_0100: Instruction Decode Execute.vhd : (182, 7): Actual parameter type in port map does not match the type of the formal port 'opcode'.
-# Error: COMP96_0100: Instruction Decode Execute.vhd : (183, 7): Actual parameter type in port map does not match the type of the formal port 'reg_dst'.
-# Error: COMP96_0100: Instruction Decode Execute.vhd : (184, 7): Actual parameter type in port map does not match the type of the formal port 'mem_to_reg'.
-# Error: COMP96_0100: Instruction Decode Execute.vhd : (185, 7): Actual parameter type in port map does not match the type of the formal port 'alu_op'.
-# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work Simple_Processor -2002  "$dsn/src/Instruction Fetch.vhd"
+# Error: COMP96_0100: Instruction Decode Execute.vhd : (183, 7): Actual parameter type in port map does not match the type of the formal port 'opcode'.
+# Error: COMP96_0100: Instruction Decode Execute.vhd : (184, 7): Actual parameter type in port map does not match the type of the formal port 'reg_dst'.
+# Error: COMP96_0100: Instruction Decode Execute.vhd : (185, 7): Actual parameter type in port map does not match the type of the formal port 'mem_to_reg'.
+# Error: COMP96_0100: Instruction Decode Execute.vhd : (186, 7): Actual parameter type in port map does not match the type of the formal port 'alu_op'.
+# Error: COMP96_0016: Instruction Decode Execute.vhd : (248, 1): Design unit declaration expected.
+# Compile Entity "Processor"
+# Warning: COMP96_0994: Instruction Decode Execute.vhd : (254, 1): Multiple entity "Processor" found in "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd", "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd".
+# Compile Architecture "Structural" of Entity "Processor"
+# Error: COMP96_0018: Instruction Decode Execute.vhd : (267, 17): Identifier expected.
+# Error: COMP96_0018: Instruction Decode Execute.vhd : (268, 26): Identifier expected.
+# Compile failure 8 Errors 1 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  "$dsn/src/Control Unit.vhd"
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Fetch.vhd
-# Compile Entity "InstructionFetch"
-# Compile Architecture "Behavioral" of Entity "InstructionFetch"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work Simple_Processor -2002  "$dsn/src/Instruction Memory.vhd"
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Memory.vhd
-# Compile Entity "InstructionMemory"
-# Compile Architecture "Behavioral" of Entity "InstructionMemory"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Control Unit.vhd
+# Compile Entity "ControlUnit"
+# Compile Architecture "Behavioral" of Entity "ControlUnit"
 # Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
 acom -O3 -e 100 -work Simple_Processor -2002  "$dsn/src/Instruction Decode Execute.vhd"
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd
+# Error: COMP96_0016: Instruction Decode Execute.vhd : (18, 1): Design unit declaration expected.
 # Compile Entity "Processor"
 # Compile Architecture "Structural" of Entity "Processor"
-# Error: COMP96_0019: Instruction Decode Execute.vhd : (243, 7): Keyword 'process' expected.
-# Error: COMP96_0015: Instruction Decode Execute.vhd : (244, 9): ';' expected.
-# Error: COMP96_0016: Instruction Decode Execute.vhd : (244, 16): Design unit declaration expected.
-# Error: COMP96_0019: Instruction Decode Execute.vhd : (246, 28): Keyword 'of' expected.
-# Error: COMP96_0018: Instruction Decode Execute.vhd : (246, 28): Identifier expected.
-# Compile failure 5 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work Simple_Processor -2002  "$dsn/src/Instruction Decode Execute.vhd"
-# 
+# Error: COMP96_0100: Instruction Decode Execute.vhd : (183, 7): Actual parameter type in port map does not match the type of the formal port 'opcode'.
+# Error: COMP96_0100: Instruction Decode Execute.vhd : (184, 7): Actual parameter type in port map does not match the type of the formal port 'reg_dst'.
+# Error: COMP96_0100: Instruction Decode Execute.vhd : (185, 7): Actual parameter type in port map does not match the type of the formal port 'mem_to_reg'.
+# Error: COMP96_0100: Instruction Decode Execute.vhd : (186, 7): Actual parameter type in port map does not match the type of the formal port 'alu_op'.
+# Error: COMP96_0016: Instruction Decode Execute.vhd : (248, 1): Design unit declaration expected.
+# Compile Entity "Processor"
+# Warning: COMP96_0994: Instruction Decode Execute.vhd : (254, 1): Multiple entity "Processor" found in "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd", "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproje

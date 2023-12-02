@@ -1,4 +1,4 @@
-137
+142
 ~E 1 "../src/ALU.vhd" 18 alu
 ~A 1 "../src/ALU.vhd" 26 behavioral
 ~A 1 "../src/ALU.vhd" 26 structural
@@ -30,7 +30,7 @@
 ~A 1 "../src/Instruction Memory.vhd" 25 Behavioral
 ~E 1 "../src/sixteen_bit_multiplexer.vhd" 23 mux_16bit
 ~A 1 "../src/sixteen_bit_multiplexer.vhd" 31 structural
-~E 1 "../src/Instruction Decode Execute.vhd" 22 Processor
+~E 1 "../src/Instruction Decode Execute.vhd" 254 Processor
 ~A 1 "../src/Instruction Decode Execute.vhd" 31 behavioral
 ~A 1 "../src/Instruction Decode Execute.vhd" 28 structural
 ~E 1 "../src/Testbench/processor_TB.vhd" 7 processor_tb

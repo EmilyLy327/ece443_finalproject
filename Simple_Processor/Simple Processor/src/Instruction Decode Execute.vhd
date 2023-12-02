@@ -15,6 +15,7 @@
 -------------------------------------------------------------------------------
 --NOTE:  Need to reference instruction fetch where PC counter is
 
+/* 
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -243,4 +244,143 @@ begin
 		end if;
     end process;
 	alu_result <= result;
+end architecture Structural;
+*/
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity Processor is
+    port (
+        clk, reset: in std_logic;
+        alu_result: out signed(15 downto 0) 
+    );
+end Processor;
+
+architecture Structural of Processor is
+
+    -- Program Counter
+    signal pc_counter : signed(15 downto 0);
+    
+    -- Instruction Memory
+    signal pc : in std_logic_vector(15 downto 0);
+    signal instruction : out std_logic_vector(15 downto 0);
+    
+	-- Instruction decoding
+    signal opcode : std_logic_vector(2 downto 0);
+    signal i_type, r_type : std_logic; 
+    signal instruction_type : signed(1 downto 0);
+    
+    -- Register File 
+    signal write_data, read_data_1, read_data_2 : signed(15 downto 0);
+    signal write_addr, read_addr_1, read_addr_2: signed(2 downto 0);  
+
+    -- ALU
+    signal alu_result_s : signed(15 downto 0);
+
+    -- Data Memory  
+    signal data_mem_write_data, data_mem_read_data : signed(15 downto 0);
+    
+    -- Control Signals
+    signal reg_write : std_logic;
+    signal mem_read, mem_write : std_logic;
+	
+begin
+
+    -- Program Counter
+    pc_counter : process(clk) 
+    begin
+        if reset = '1' then
+           pc_counter <= (others => '0');
+        elsif rising_edge(clk) then
+           pc_counter <= pc_counter + 1; 
+        end if;
+    end process;
+
+    -- Instruction Memory
+    InstructionMemory: entity work.InstructionMemory 
+        port map(
+            pc_counter => pc,
+            instruction => instruction
+        );
+
+    -- Instruction Decode  
+    instr_decode : process(instruction)
+	begin
+    	opcode <= instruction(15 downto 13);
+    	i_type <= instruction(12); 
+    	r_type <= instruction(11);
+	end process;
+    
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            instruction_type <= r_type & i_type; 
+        end if;
+    end process;
+
+    -- Register File
+    RegisterFile_Inst: entity work.RegisterFile
+       port map(
+           clk => clk,
+           rst => reset,
+           -- Control signals
+           reg_write_en => reg_write,
+           -- Address signals  
+           reg_read_addr_1 => instruction(11 downto 9),
+           reg_read_addr_2 => instruction(8 downto 6),
+           reg_write_dest => instruction(4 downto 2),
+           -- Data signals
+           reg_write_data => write_data,
+           reg_read_data_1 => read_data_1,
+           reg_read_data_2 => read_data_2
+       );
+
+    -- ALU
+    ALU_Inst: entity work.ALU
+        port map(
+            sel => opcode,
+            A => read_data_1, 
+            B => (others => '0'),
+            R => alu_result_s  
+        );
+
+    -- Data Memory
+    DataMemory: entity work.DataMemory
+        port map(
+            clk => clk,
+            mem_access_addr => alu_result_s,
+            mem_write_data => read_data_2, 
+            mem_write_en => mem_write,
+            mem_read => mem_read,
+            mem_read_data => data_mem_read_data
+        );
+
+    -- Control Unit 
+    ControlUnit: entity work.ControlUnit
+       port map(
+           opcode => opcode,  
+           reset => reset,
+           reg_write => reg_write,
+           mem_read => mem_read,
+           mem_write => mem_write           
+       );
+
+    -- Writeback  
+    process(clk)
+    begin
+        if rising_edge(clk) then  
+            case instruction_type is
+                when "00" => -- R-type
+                    write_data <= alu_result_s;
+                    alu_result <= alu_result_s;
+                when "01" => -- I-type (load immediate) 
+                    write_data <= data_mem_read_data;  
+                    alu_result <= data_mem_read_data;
+                when others => null;  
+            end case;
+        end if;
+    end process;
+    
 end architecture Structural;

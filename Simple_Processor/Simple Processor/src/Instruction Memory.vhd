@@ -60,7 +60,7 @@ architecture Behavioral of InstructionMemory is
     );
 	
 begin
-    rom_address <= pc(4 downto 1);
+    rom_address <= pc(3 downto 0);
     instruction <= rom_data(to_integer(unsigned(rom_address)));
 	
 end Behavioral;

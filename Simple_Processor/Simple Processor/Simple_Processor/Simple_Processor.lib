@@ -1,13 +1,13 @@
-timestamp=1701526215556
+timestamp=1701546275789
 
 [~A]
-ModifyID=137
+ModifyID=142
 Version=74
 
 [~MFT]
-0=3|0Simple_Processor.mgf|782340|725267
-1=1|1Simple_Processor.mgf|3572702|3430096
-3=1|3Simple_Processor.mgf|958562|945226
+0=8|0Simple_Processor.mgf|787395|730321
+1=2|1Simple_Processor.mgf|3575685|3433079
+3=2|3Simple_Processor.mgf|959936|946600
 
 [alu]
 A/behavioral=+21|../src/ALU.vhd|26|1*87432
@@ -68,15 +68,15 @@ Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|ecd33309eced7ffdf
 Version/behavioral=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4a5b7239d9d02ca957648f0f0852bbe5a
 
 [controlunit]
-A/behavioral=A/Behavioral 21|../src/Control Unit.vhd|30|1*3564078
-BinW64/behavioral=3*954713
+A/behavioral=A/Behavioral 21|../src/Control Unit.vhd|30|1*3574422
+BinW64/behavioral=3*958957
 I=0*758261
-I/behavioral=I/Behavioral 0*777095
+I/behavioral=I/Behavioral 0*784647
 M=11|2|vef|1701517572604|../src/Control Unit.vhd|0*757748*0x663cdaa664d941cadf759097a02f59e1a18da3c6|0*758173*0x23b75c12e3e89f2ef000564498faa8c2
-M/behavioral=M/Behavioral 21|2|vef|1701525345658|../src/Control Unit.vhd|0*758546*0x491ea03b006a4ab9a207f4bdcf40cab76efa8434|0*760316*0x20116f55b147878295aeff36dce7fc50
+M/behavioral=M/Behavioral 21|2|vef|1701546223829|../src/Control Unit.vhd|0*758546*0x491ea03b006a4ab9a207f4bdcf40cab76efa8434|0*760316*0x20116f55b147878295aeff36dce7fc50
 R=../src/Control Unit.vhd|21
 Version=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|49bc9eef0cc431a4d98f9f55b61f1581a1b72c74b362bfaf9c7235d71f436ac2149759522d555bd0391196ae91e39306
-Version/behavioral=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4e5a9ae06b9d4fdc1237dc5283c9e6bdf
+Version/behavioral=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff42f0e33023eb89814b2b9825dd88f4e96
 
 [data_memory]
 A/behavioral=A/Behavioral 21|../src/Data Memory.vhd|29|1*2072277
@@ -156,15 +156,15 @@ Version=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|5e7c45779c57f85
 Version/behavioral=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff48bd1a3176c52040e67bd7d288ab92bfd
 
 [instructionmemory]
-A/behavioral=A/Behavioral 21|../src/Instruction Memory.vhd|25|1*3572702
-BinW64/behavioral=3*958562
+A/behavioral=A/Behavioral 21|../src/Instruction Memory.vhd|25|1*3575685
+BinW64/behavioral=3*959936
 I=0*761337
-I/behavioral=I/Behavioral 0*782340
+I/behavioral=I/Behavioral 0*787395
 M=11|2|vef|1701517572647|../src/Instruction Memory.vhd|0*760925*0xc626976170d7f35405f339c46e654c92e1c1bfe7|0*761237*0x23b75c12e3e89f2ef000564498faa8c2
-M/behavioral=M/Behavioral 21|2|vef|1701526215531|../src/Instruction Memory.vhd|0*781332*0x9d07270958fe4953fc14edb81e4030ecd40104f5|0*782226*0x20116f55b147878295aeff36dce7fc50
+M/behavioral=M/Behavioral 21|2|vef|1701546275763|../src/Instruction Memory.vhd|0*786387*0xd36af53d8169af83a509315d72c09be5e91e4685|0*787281*0x20116f55b147878295aeff36dce7fc50
 R=../src/Instruction Memory.vhd|18
 Version=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|d1182ed61ea73a0e641d9f9e1227a7c4d3caa2c06897ecf2be9fc860412dcc134f6837a465c82672d0ea1b3c7f714269
-Version/behavioral=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff41c3706db2f52ca67481c6256b8fc905f
+Version/behavioral=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff494f2ae8c7fffe4ca257780fe5c5273ef
 
 [mux_16bit]
 A/structural=21|../src/sixteen_bit_multiplexer.vhd|31|1*3555221
@@ -180,12 +180,12 @@ Version/structural=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|763a
 [processor]
 A/behavioral=+21|../src/Instruction Decode Execute.vhd|31|1*94978
 A/structural=+21|../src/Instruction Decode Execute.vhd|28|1*3068520
-I=0*779060
-M=11|2|vef|1701525794260|../src/Instruction Decode Execute.vhd|0*778679*0xcd63f60716d6321159683131ee8a22b47b42462a|0*778960*0x23b75c12e3e89f2ef000564498faa8c2
+I=0*786144
+M=11|2|vef|1701546243122|../src/Instruction Decode Execute.vhd|0*785762*0x7c3e3a873dd8352e2dc4e62efe6bc96ea564d61a|0*786044*0x23b75c12e3e89f2ef000564498faa8c2
 M/behavioral=M/Behavioral 21|0|ve8|1700952321135|../src/Instruction Decode Execute.vhd|0*35202*0x77b8753a891e3bf2e0cb5d6de0655ec04d50dbc2|0*38926*0x20116f55b147878295aeff36dce7fc50
 M/structural=M/Structural 21|0|ve8|1701466151209|../src/Instruction Decode Execute.vhd|0*664262*0xe58d09a72490af8fe66ca04ccb153d6f5be7468b|0*667293*0x20116f55b147878295aeff36dce7fc50
-R=../src/Instruction Decode Execute.vhd|22
-Version=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|0ba77dee7e73996b5655ae47cd2cf07e7c4c90057ca4c0d4118ab0a747448336057606003395302a9cdc7db27f6713ae
+R=../src/Instruction Decode Execute.vhd|254
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|0ba77dee7e73996b5655ae47cd2cf07e7c4c90057ca4c0d4118ab0a7474483366d1eeef1cfc95d0e58621db60f227ffe
 Version/behavioral=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff41bda08a46adc7800f3edb79896768cc0
 Version/structural=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3ebe37bf7cab3192e82091e31096d863566
 
@@ -301,7 +301,7 @@ instruction_memory=Instruction_Memory 11|0*767667|
 instructionfetch=InstructionFetch 11|0*779303|
 instructionmemory=InstructionMemory 11|0*760714|
 mux_16bit=11|0*748468|
-processor=Processor 11|0*778460|
+processor=Processor 11|0*785543|
 processor_tb=11|0*243330|
 register_file=11|0*26313|
 registerfile=RegisterFile 11|0*755245|

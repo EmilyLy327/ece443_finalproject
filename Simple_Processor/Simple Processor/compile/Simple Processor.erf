@@ -1,5 +1,15 @@
 WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
-MESSAGE "File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Memory.vhd" 
-MESSAGE "Compile Entity "InstructionMemory"" 
-MESSAGE "Compile Architecture "Behavioral" of Entity "InstructionMemory"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]" 
+MESSAGE "File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd" 
+ERROR COMP96_0016: "Design unit declaration expected." "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd" 18 1
+MESSAGE "Compile Entity "Processor"" 
+MESSAGE "Compile Architecture "Structural" of Entity "Processor"" 
+ERROR COMP96_0100: "Actual parameter type in port map does not match the type of the formal port 'opcode'." "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd" 183 7
+ERROR COMP96_0100: "Actual parameter type in port map does not match the type of the formal port 'reg_dst'." "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd" 184 7
+ERROR COMP96_0100: "Actual parameter type in port map does not match the type of the formal port 'mem_to_reg'." "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd" 185 7
+ERROR COMP96_0100: "Actual parameter type in port map does not match the type of the formal port 'alu_op'." "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd" 186 7
+ERROR COMP96_0016: "Design unit declaration expected." "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd" 248 1
+MESSAGE "Compile Entity "Processor"" 
+WARNING COMP96_0994: "Multiple entity "Processor" found in "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd", "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd"." "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd" 254 1
+MESSAGE "Compile Architecture "Structural" of Entity "Processor"" 
+ERROR COMP96_0018: "Identifier expected." "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd" 264 26
+FAILURE "Compile failure 7 Errors 1 Warnings  Analysis time :  63.0 [ms]" 

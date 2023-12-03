@@ -80,8 +80,7 @@ Testbench=1
 /Instruction Fetch.vhd=-1
 /Instruction Decode Execute.vhd=-1
 Testbench/tb.vhd=-1
-/Instruction Memory.vhd=-1
-/Instruction Memory.vhd=-1
+/Instruction Fetch.vhd=-1
 [Files.Data]
 .\src\half_adder.vhd=VHDL Source Code
 .\src\full_adder.vhd=VHDL Source Code
@@ -97,5 +96,4 @@ Testbench/tb.vhd=-1
 .\src\Instruction Fetch.vhd=VHDL Source Code
 .\src\Instruction Decode Execute.vhd=VHDL Source Code
 .\src\Testbench\tb.vhd=VHDL Test Bench
-.\src\Instruction Memory.vhd=VHDL Source Code
-.\src\Instruction Memory.vhd=VHDL Source Code
+.\src\Instruction Fetch.vhd=VHDL Source Code

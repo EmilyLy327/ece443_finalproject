@@ -259,12 +259,8 @@ entity Processor is
 end Processor;
 
 architecture Structural of Processor is
-
-    -- Program Counter
-    signal pc_counter : signed(15 downto 0);
     
-    -- Instruction Memory
-    signal pc : in std_logic_vector(15 downto 0);
+    -- Instruction Fetch and Instruction Memory
     signal instruction : out std_logic_vector(15 downto 0);
     
 	-- Instruction decoding
@@ -288,23 +284,15 @@ architecture Structural of Processor is
 	
 begin
 
-    -- Program Counter
-    pc_counter : process(clk) 
-    begin
-        if reset = '1' then
-           pc_counter <= (others => '0');
-        elsif rising_edge(clk) then
-           pc_counter <= pc_counter + 1; 
-        end if;
-    end process;
-
-    -- Instruction Memory
-    InstructionMemory: entity work.InstructionMemory 
+    -- Instantiate instruction fetch entity
+    InstructionFetch_Inst: entity work.InstructionFetch
         port map(
-            pc_counter => pc,
-            instruction => instruction
-        );
-
+            clk => clk,
+            reset => reset,
+            pc_out => pc,  
+            instruction_out => instruction
+        );		
+		
     -- Instruction Decode  
     instr_decode : process(instruction)
 	begin

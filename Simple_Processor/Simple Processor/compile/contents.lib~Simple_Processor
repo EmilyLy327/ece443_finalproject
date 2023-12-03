@@ -1,4 +1,4 @@
-142
+144
 ~E 1 "../src/ALU.vhd" 18 alu
 ~A 1 "../src/ALU.vhd" 26 behavioral
 ~A 1 "../src/ALU.vhd" 26 structural
@@ -25,7 +25,7 @@
 ~E 1 "../src/Instruction Memory.vhd" 18 Instruction_Memory
 ~A 1 "../src/Instruction Memory.vhd" 25 Behavioral
 ~E 1 "../src/Instruction Fetch.vhd" 18 InstructionFetch
-~A 1 "../src/Instruction Fetch.vhd" 27 Behavioral
+~A 1 "../src/Instruction Fetch.vhd" 28 Behavioral
 ~E 1 "../src/Instruction Memory.vhd" 18 InstructionMemory
 ~A 1 "../src/Instruction Memory.vhd" 25 Behavioral
 ~E 1 "../src/sixteen_bit_multiplexer.vhd" 23 mux_16bit

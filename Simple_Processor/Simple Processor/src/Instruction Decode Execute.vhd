@@ -247,43 +247,39 @@ begin
 end architecture Structural;
 */
 
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity Processor is
     port (
         clk, reset: in std_logic;
-        alu_result: out signed(15 downto 0) 
+        alu_result: out signed(15 downto 0)  
     );
-end Processor;
+end entity Processor;
 
 architecture Structural of Processor is
-    
-    -- Instruction Fetch and Instruction Memory
-    signal instruction : out std_logic_vector(15 downto 0);
-    
-	-- Instruction decoding
-    signal opcode : std_logic_vector(2 downto 0);
-    signal i_type, r_type : std_logic; 
-    signal instruction_type : signed(1 downto 0);
-    
-    -- Register File 
-    signal write_data, read_data_1, read_data_2 : signed(15 downto 0);
-    signal write_addr, read_addr_1, read_addr_2: signed(2 downto 0);  
 
-    -- ALU
-    signal alu_result_s : signed(15 downto 0);
-
-    -- Data Memory  
-    signal data_mem_write_data, data_mem_read_data : signed(15 downto 0);
+    -- Instruction Fetch Signals
+    signal instruction : signed(15 downto 0);
+    
+    -- Instruction Decode Signals
+    signal opcode: signed(2 downto 0);
+    signal i_type, r_type: std_logic;   
+    signal instruction_type: signed(1 downto 0);
+    
+    -- Datapath Signals
+    signal regfile_read_data1, regfile_read_data2, regfile_write_data : signed(15 downto 0);
+    signal alu_result_sig : signed(15 downto 0); 
+    signal data_mem_read_data, data_mem_write_data : signed(15 downto 0);
     
     -- Control Signals
-    signal reg_write : std_logic;
-    signal mem_read, mem_write : std_logic;
-	
-begin
+    signal reg_write: std_logic;
+    signal mem_read, mem_write: std_logic;
 
+    -- NOTE:  We do not need component declarations as we're going to be calling them by instantiating that entity
+		--IE ALU, Instruction Fetch, Data Memory, etc.
+	
     -- Instantiate instruction fetch entity
     InstructionFetch_Inst: entity work.InstructionFetch
         port map(
@@ -346,7 +342,7 @@ begin
         );
 
     -- Control Unit 
-    ControlUnit: entity work.ControlUnit
+    ControlUnit_Inst: entity work.ControlUnit
        port map(
            opcode => opcode,  
            reset => reset,

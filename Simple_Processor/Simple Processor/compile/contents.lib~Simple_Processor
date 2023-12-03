@@ -1,4 +1,4 @@
-144
+167
 ~E 1 "../src/ALU.vhd" 18 alu
 ~A 1 "../src/ALU.vhd" 26 behavioral
 ~A 1 "../src/ALU.vhd" 26 structural
@@ -24,15 +24,15 @@
 ~A 1 "../src/Instruction Fetch.vhd" 27 Behavioral
 ~E 1 "../src/Instruction Memory.vhd" 18 Instruction_Memory
 ~A 1 "../src/Instruction Memory.vhd" 25 Behavioral
-~E 1 "../src/Instruction Fetch.vhd" 18 InstructionFetch
+~E 1 "../src/Instruction Fetch.vhd" 19 InstructionFetch
 ~A 1 "../src/Instruction Fetch.vhd" 28 Behavioral
 ~E 1 "../src/Instruction Memory.vhd" 18 InstructionMemory
 ~A 1 "../src/Instruction Memory.vhd" 25 Behavioral
 ~E 1 "../src/sixteen_bit_multiplexer.vhd" 23 mux_16bit
 ~A 1 "../src/sixteen_bit_multiplexer.vhd" 31 structural
-~E 1 "../src/Instruction Decode Execute.vhd" 254 Processor
+~E 1 "../src/Instruction Decode Execute.vhd" 23 Processor
 ~A 1 "../src/Instruction Decode Execute.vhd" 31 behavioral
-~A 1 "../src/Instruction Decode Execute.vhd" 28 structural
+~A 1 "../src/Instruction Decode Execute.vhd" 28 Structural
 ~E 1 "../src/Testbench/processor_TB.vhd" 7 processor_tb
 ~A 1 "../src/Testbench/processor_TB.vhd" 10 TB_ARCHITECTURE
 ~E 1 "../src/Register File.vhd" 18 register_file

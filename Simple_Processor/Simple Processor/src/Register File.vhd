@@ -23,9 +23,9 @@ USE IEEE.NUMERIC_STD.ALL;
 entity RegisterFile is
     port (
         clk, rst, reg_write_en: in std_logic;
-        reg_write_dest: in signed(2 downto 0);
+        reg_write_dest: in std_logic_vector(2 downto 0);
         reg_write_data: in signed(15 downto 0);
-        reg_read_addr_1, reg_read_addr_2: in signed(2 downto 0);
+        reg_read_addr_1, reg_read_addr_2: in std_logic_vector(2 downto 0);
         reg_read_data_1, reg_read_data_2: out signed(15 downto 0)
     );
 end entity RegisterFile;

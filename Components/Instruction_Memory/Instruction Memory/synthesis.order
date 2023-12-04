@@ -1,2 +1,2 @@
 i<>.\src\Instruction Memory.vhd
-i<>.\src\Instruction Fetch.vhd
+i<>.\src\InstructionMemory_TB.vhd

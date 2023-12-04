@@ -1,3 +1,2 @@
-register_file ENTITY
-Processor ENTITY
-ALU_control ENTITY
+Processor_TB ENTITY
+mux_16bit ENTITY

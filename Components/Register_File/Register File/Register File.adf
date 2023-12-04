@@ -4,7 +4,7 @@ VCS=0
 version=4
 Current Config=compile
 [Configurations]
-compile=Register_File
+compile=register_file
 [Library]
 Register_File=.\Register_File\Register_File.lib
 [$LibMap$]
@@ -20,19 +20,19 @@ FAMILY=
 TestBench=1
 [Files]
 /Register File.vhd=-1
-/..\..\RegisterFile\src\registerfilewave.asdb=-1
-/..\..\RegisterFile\src\registerfilewave.awc=-1
+/..\..\RegisterFile\src\untitled.asdb=-1
+/..\..\RegisterFile\src\untitled.awc=-1
 TestBench/registerfile_TB.vhd=-1
 TestBench/registerfile_TB_runtest.do=-1
 [Files.Data]
 .\src\Register File.vhd=VHDL Source Code
-.\..\RegisterFile\src\registerfilewave.asdb=Accelerated Waveform File
-.\..\RegisterFile\src\registerfilewave.awc=Accelerated Waveform Configuration
+.\..\RegisterFile\src\untitled.asdb=Accelerated Waveform File
+.\..\RegisterFile\src\untitled.awc=Accelerated Waveform Configuration
 .\src\TestBench\registerfile_TB.vhd=VHDL Test Bench
 .\src\TestBench\registerfile_TB_runtest.do=Macro
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=registerfile_tb|testbench_for_registerfile|1
 ShowHide=ShowTopLevel
 Selected=

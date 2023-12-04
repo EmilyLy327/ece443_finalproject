@@ -109,10 +109,13 @@ begin
        );
 	
 	-- grabbing the write destination   
-	reg_write_dest <= "111" when  reg_dist= "10" else
-        instruction(6 downto 4) when  reg_dist= "01" else
-        instruction(9 downto 7);
-		
+	-- reg_write_dest <= "111" when  reg_dist= "10" else
+    --    instruction(6 downto 4) when  reg_dist= "01" else
+    --    instruction(9 downto 7);
+	reg_write_dest <= 
+  		instruction(9 downto 7) when reg_dist = "00" else
+  		instruction(6 downto 4);
+	
 	temp_sig <= (others => instruction(6)); -- create temp bit of the seventh instruction
 	sign_extend_immediate <= temp_sig & instruction(6 downto 0); -- performing sign extenion with lower 7 bits
 	zero_extend_immediate <= "000000000" & instruction(6 downto 0);
@@ -159,15 +162,15 @@ begin
     -- Writeback  
     process(clk)
     begin
-        if rising_edge(clk) then  
-            case instruction_type is
-                when "00" => -- R-type
-                    write_data <= std_logic_vector(alu_result_sig);
-                    alu_result <= alu_result_sig;
-                when "01" => -- I-type (load immediate) 
-                    write_data <= std_logic_vector(data_mem_read_data);  
-                    alu_result <= data_mem_read_data;
-                when others => null;  
+	  	if rising_edge(clk) then
+    		case instruction_type is
+      			when "00" => -- R-type
+        			alu_result <= alu_result_sig;
+        			write_data <= std_logic_vector(alu_result_sig);
+      			when "01" => -- I-type 
+        			alu_result <= data_mem_read_data;
+        			write_data <= std_logic_vector(data_mem_read_data); 
+      			when others => null; 
             end case;
         end if;
     end process;

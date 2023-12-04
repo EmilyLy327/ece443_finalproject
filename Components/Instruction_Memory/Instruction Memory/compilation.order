@@ -1,2 +1,2 @@
 .\src\Instruction Memory.vhd
-.\src\Instruction Fetch.vhd
+.\src\Testbench\InstructionMemory_TB.vhd

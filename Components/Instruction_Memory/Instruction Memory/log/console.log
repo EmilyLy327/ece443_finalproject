@@ -1,13 +1,89 @@
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: Architecture 'Behavioral' of entity 'Instruction_Fetch' not found in library 'instruction_memory'.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd"
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd"
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
 # Compile Entity "InstructionMemory"
 # Compile Architecture "Behavioral" of Entity "InstructionMemory"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd
-# Compile Entity "InstructionFetch"
-# Compile Architecture "Behavioral" of Entity "InstructionFetch"
-# Compile success 0 Errors 0 Warnings  Analysis time :  79.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  $dsn/src/Testbench/InstructionMemory_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Memory/Instruction Memory/src/Testbench/InstructionMemory_TB.vhd
+# Compile Entity "InstructionMemory_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "InstructionMemory_tb"
+# Error: COMP96_0161: Testbench/InstructionMemory_TB.vhd : (31, 9): The target of this assignment must be a formal of the subprogram "CLK_GEN" or one of its parents.
+# Error: COMP96_0071: Testbench/InstructionMemory_TB.vhd : (31, 20): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Testbench/InstructionMemory_TB.vhd : (31, 15): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "InstructionMemory"
+# Compile Architecture "Behavioral" of Entity "InstructionMemory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  $dsn/src/Testbench/InstructionMemory_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Memory/Instruction Memory/src/Testbench/InstructionMemory_TB.vhd
+# Compile Entity "InstructionMemory_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "InstructionMemory_tb"
+# Error: COMP96_0161: Testbench/InstructionMemory_TB.vhd : (31, 9): The target of this assignment must be a formal of the subprogram "CLK_GEN" or one of its parents.
+# Error: COMP96_0071: Testbench/InstructionMemory_TB.vhd : (31, 20): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Testbench/InstructionMemory_TB.vhd : (31, 15): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  $dsn/src/Testbench/InstructionMemory_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Memory/Instruction Memory/src/Testbench/InstructionMemory_TB.vhd
+# Compile Entity "InstructionMemory_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "InstructionMemory_tb"
+# Error: COMP96_0161: Testbench/InstructionMemory_TB.vhd : (31, 9): The target of this assignment must be a formal of the subprogram "CLK_GEN" or one of its parents.
+# Error: COMP96_0115: Testbench/InstructionMemory_TB.vhd : (38, 19): Actual is not a globally static expression.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  $dsn/src/Testbench/InstructionMemory_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Memory/Instruction Memory/src/Testbench/InstructionMemory_TB.vhd
+# Compile Entity "InstructionMemory_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "InstructionMemory_tb"
+# Error: COMP96_0161: Testbench/InstructionMemory_TB.vhd : (31, 9): The target of this assignment must be a formal of the subprogram "CLK_GEN" or one of its parents.
+# Error: COMP96_0367: Testbench/InstructionMemory_TB.vhd : (38, 19): Improper array length (4). Expected length is 16.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Instruction_Memory -2002  $dsn/src/Testbench/InstructionMemory_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Memory/Instruction Memory/src/Testbench/InstructionMemory_TB.vhd
+# Compile Entity "InstructionMemory_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "InstructionMemory_tb"
+# Error: COMP96_0161: Testbench/InstructionMemory_TB.vhd : (31, 9): The target of this assignment must be a formal of the subprogram "CLK_GEN" or one of its parents.
+# Error: COMP96_0367: Testbench/InstructionMemory_TB.vhd : (38, 19): Improper array length (4). Expected length is 16.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+# Library Manager: Library "instruction_memory" contents cleared.
+acom -reorder -O3 -e 100 -work Instruction_Memory -2002  $dsn/src/Testbench/InstructionMemory_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Memory/Instruction Memory/src/Testbench/InstructionMemory_TB.vhd
+# Compile Entity "InstructionMemory_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "InstructionMemory_tb"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => InstructionMemory_tb
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Memory/Instruction Memory/src/Testbench/InstructionMemory_TB.vhd
+# Compile Architecture "TB_ARCHITECTURE" of Entity "InstructionMemory_tb"
+# Error: COMP96_0161: Testbench/InstructionMemory_TB.vhd : (31, 9): The target of this assignment must be a formal of the subprogram "CLK_GEN" or one of its parents.
+# Error: COMP96_0078: Testbench/InstructionMemory_TB.vhd : (36, 23): Unknown identifier "InstructionMemory".
+# Error: COMP96_0055: Testbench/InstructionMemory_TB.vhd : (36, 18): Cannot find context item "work.InstructionMemory".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# Library Manager: Library "instruction_memory" contents cleared.
+acom -reorder -O3 -e 100 -work Instruction_Memory -2002  "$dsn/src/Instruction Memory.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd
+# Compile Entity "InstructionMemory"
+# Compile Architecture "Behavioral" of Entity "InstructionMemory"
+# Top-level unit(s) detected:
+# Entity => InstructionMemory
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work instruction_memory -2002  $dsn/src/Testbench/InstructionMemory_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Memory/Instruction Memory/src/Testbench/InstructionMemory_TB.vhd
+# Compile Entity "InstructionMemory_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "InstructionMemory_tb"
+# Error: COMP96_0161: Testbench/InstructionMemory_TB.vhd : (31, 9): The target of this assignment must be a formal of the subprogram "CLK_GEN" or one of its parents.
+# Error: COMP96_0367: Testbench/InstructionMemory_TB.vhd : (38, 19): Improper array length (4). Expected length is 16.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]

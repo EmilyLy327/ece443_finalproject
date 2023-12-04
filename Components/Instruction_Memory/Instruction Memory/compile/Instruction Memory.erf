@@ -1,8 +1,7 @@
 WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
-MESSAGE "File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Memory/Instruction Memory/src/Instruction Memory.vhd" 
-MESSAGE "Compile Entity "InstructionMemory"" 
-MESSAGE "Compile Architecture "Behavioral" of Entity "InstructionMemory"" 
-MESSAGE "File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Memory/Instruction Memory/src/Instruction Fetch.vhd" 
-MESSAGE "Compile Entity "InstructionFetch"" 
-MESSAGE "Compile Architecture "Behavioral" of Entity "InstructionFetch"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  79.0 [ms]" 
+MESSAGE "File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Memory/Instruction Memory/src/Testbench/InstructionMemory_TB.vhd" 
+MESSAGE "Compile Entity "InstructionMemory_tb"" 
+MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "InstructionMemory_tb"" 
+ERROR COMP96_0161: "The target of this assignment must be a formal of the subprogram "CLK_GEN" or one of its parents." "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Memory/Instruction Memory/src/Testbench/InstructionMemory_TB.vhd" 31 9
+ERROR COMP96_0367: "Improper array length (4). Expected length is 16." "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Memory/Instruction Memory/src/Testbench/InstructionMemory_TB.vhd" 38 19
+FAILURE "Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]" 

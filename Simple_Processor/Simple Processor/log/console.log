@@ -1,8 +1,33 @@
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: Architecture 'behavior' of entity 'tb' not found in library 'simple_processor'.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/half_adder.vhd $dsn/src/full_adder.vhd $dsn/src/sixteen_bit_adder.vhd $dsn/src/sixteen_bit_subtractor.vhd $dsn/src/sixteen_bit_multiplier.vhd $dsn/src/sixteen_bit_multiplexer.vhd $dsn/src/ALU.vhd "$dsn/src/Data Memory.vhd" "$dsn/src/Register File.vhd" "$dsn/src/Control Unit.vhd" "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd" "$dsn/src/Instruction Decode Execute.vhd" $dsn/src/Testbench/tb.vhd
+acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/Testbench/tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/tb.vhd
+# Compile Entity "Processor_TB"
+# Compile Architecture "Testbench" of Entity "Processor_TB"
+# Error: COMP96_0127: Testbench/tb.vhd : (32, 36): Improper aggregate length. Expected length is 16.
+# Error: COMP96_0077: Testbench/tb.vhd : (83, 19): Undefined type of expression. Expected type 'SIGNED'.
+# Error: COMP96_0131: Testbench/tb.vhd : (90, 38): Illegal operand for type conversion.
+# Error: COMP96_0131: Testbench/tb.vhd : (93, 38): Illegal operand for type conversion.
+# Error: COMP96_0367: Testbench/tb.vhd : (93, 31): Improper array length (15). Expected length is 16.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/Testbench/tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/tb.vhd
+# Compile Entity "Processor_TB"
+# Compile Architecture "Testbench" of Entity "Processor_TB"
+# Error: COMP96_0127: Testbench/tb.vhd : (32, 36): Improper aggregate length. Expected length is 16.
+# Error: COMP96_0077: Testbench/tb.vhd : (83, 19): Undefined type of expression. Expected type 'SIGNED'.
+# Error: COMP96_0078: Testbench/tb.vhd : (101, 40): Unknown identifier "conv_integer".
+# Error: COMP96_0133: Testbench/tb.vhd : (101, 40): Cannot find object declaration.
+# Error: COMP96_0289: Testbench/tb.vhd : (101, 40): Prefix of index must be an array.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  "$dsn/src/Control Unit.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Control Unit.vhd
+# Compile Entity "ControlUnit"
+# Compile Architecture "Behavioral" of Entity "ControlUnit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+# Library Manager: Library "simple_processor" contents cleared.
+acom -reorder -O3 -e 100 -work Simple_Processor -2002  $dsn/src/half_adder.vhd $dsn/src/full_adder.vhd $dsn/src/sixteen_bit_adder.vhd $dsn/src/sixteen_bit_subtractor.vhd $dsn/src/sixteen_bit_multiplier.vhd $dsn/src/sixteen_bit_multiplexer.vhd $dsn/src/ALU.vhd "$dsn/src/Data Memory.vhd" "$dsn/src/Register File.vhd" "$dsn/src/Control Unit.vhd" "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd" "$dsn/src/Instruction Decode Execute.vhd" $dsn/src/Testbench/tb.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/half_adder.vhd
 # Compile Entity "and_gate"
@@ -17,38 +42,4 @@ acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/half_adder.vhd $dsn/src/f
 # File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/sixteen_bit_adder.vhd
 # Compile Entity "sixteen_bit_adder"
 # Compile Architecture "structural" of Entity "sixteen_bit_adder"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/sixteen_bit_subtractor.vhd
-# Compile Entity "sixteen_bit_subtractor"
-# Compile Architecture "structural" of Entity "sixteen_bit_subtractor"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/sixteen_bit_multiplier.vhd
-# Compile Entity "sixteen_bit_multiplier"
-# Compile Architecture "Behavioral" of Entity "sixteen_bit_multiplier"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/sixteen_bit_multiplexer.vhd
-# Compile Entity "mux_16bit"
-# Compile Architecture "structural" of Entity "mux_16bit"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/ALU.vhd
-# Compile Entity "alu"
-# Compile Architecture "structural" of Entity "ALU"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Data Memory.vhd
-# Compile Entity "DataMemory"
-# Compile Architecture "Behavioral" of Entity "DataMemory"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Register File.vhd
-# Compile Entity "RegisterFile"
-# Compile Architecture "Behavioral" of Entity "RegisterFile"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Control Unit.vhd
-# Compile Entity "ControlUnit"
-# Compile Architecture "Behavioral" of Entity "ControlUnit"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Memory.vhd
-# Compile Entity "InstructionMemory"
-# Compile Architecture "Behavioral" of Entity "InstructionMemory"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Fetch.vhd
-# Compile Entity "InstructionFetch"
-# Compile Architecture "Behavioral" of Entity "InstructionFetch"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd
-# Compile Entity "Processor"
-# Compile Architecture "Structural" of Entity "Processor"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/tb.vhd
-# Compile Entity "tb"
-# Compile Architecture "behavior" of Entity "tb"
-# Warning: ELAB1_0026: Testbench/tb.vhd : (41, 0): There is no default binding for component "Processor". (Port "pc_out" is not on the entity).
-# Compile success 0 Errors 1 Warnings  Analysis time :  0.5 [s]
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/sixteen

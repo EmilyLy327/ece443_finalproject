@@ -23,7 +23,7 @@ entity InstructionMemory is
 end InstructionMemory;
 
 architecture Behavioral of InstructionMemory is
-	signal rom_address: std_logic_vector(3 downto 0);
+	signal rom_address: std_logic_vector(7 downto 0);
 	-- ldi $r0, 10
 	-- ldi $r1, 5
 	-- ldi $r2, 0
@@ -39,7 +39,7 @@ architecture Behavioral of InstructionMemory is
 	-- sh $r4, 0x0A
 	-- lh $r6, 0x0A
 	-- lh $r7, 0x0B
-    type ROM_type is array (0 to 15 ) of std_logic_vector(15 downto 0);
+    type ROM_type is array (0 to 255) of std_logic_vector(15 downto 0);  -- 256 RAM
     constant rom_data: ROM_type := (
 	X"500A", 
 	X"5105", 
@@ -60,7 +60,7 @@ architecture Behavioral of InstructionMemory is
     );
 	
 begin
-    rom_address <= pc(3 downto 0);
+    rom_address <= pc(7 downto 0);	-- 8 bit PC address space
     instruction <= rom_data(to_integer(unsigned(rom_address)));
 	
 end Behavioral;

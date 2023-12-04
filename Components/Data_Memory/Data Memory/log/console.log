@@ -1,7 +1,1 @@
 # Waveform file 'C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Data_Memory/DataMemory/src/datamemory.awc' connected to 'C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Data_Memory/DataMemory/src/datamemory.asdb'.
-acom -O3 -e 100 -work Data_Memory -2002  "$dsn/src/Data Memory.vhd"
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Data_Memory/Data Memory/src/Data Memory.vhd
-# Compile Entity "DataMemory"
-# Compile Architecture "Behavioral" of Entity "DataMemory"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]

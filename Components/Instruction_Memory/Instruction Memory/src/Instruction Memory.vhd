@@ -1,3 +1,16 @@
+-------------------------------------------------------------------------------
+--
+-- Title       : Instruction Memory 
+-- Design      : Simple Processor
+-- Author      : Emily Ly and Brice Zimmerman
+-- Company     : Old Dominion University
+--
+-------------------------------------------------------------------------------
+--
+-- Description :  This is where the instructions are stored.
+--
+-------------------------------------------------------------------------------
+
 library IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.all;  
@@ -47,7 +60,7 @@ architecture Behavioral of InstructionMemory is
     );
 	
 begin
-    rom_address <= pc(4 downto 1);
+    rom_address <= pc(3 downto 0);
     instruction <= rom_data(to_integer(unsigned(rom_address)));
 	
 end Behavioral;

@@ -4,7 +4,7 @@ VCS=0
 version=4
 Current Config=compile
 [Configurations]
-compile=Instruction_Memory
+compile=instruction_memory
 [Library]
 Instruction_Memory=.\Instruction_Memory\Instruction_Memory.lib
 [$LibMap$]
@@ -18,11 +18,13 @@ FLOWTOOLS=NONE
 FAMILY=
 [Files]
 /Instruction Memory.vhd=-1
-/Instruction Fetch.vhd=-1
+Testbench/InstructionMemory_TB.vhd=-1
 [Files.Data]
 .\src\Instruction Memory.vhd=VHDL Source Code
-.\src\Instruction Fetch.vhd=VHDL Source Code
+.\src\Testbench\InstructionMemory_TB.vhd=VHDL Test Bench
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=instructionmemory|Behavioral|0
 ShowHide=ShowTopLevel
 Selected=
+[Groups]
+Testbench=1

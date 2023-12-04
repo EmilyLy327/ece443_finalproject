@@ -1,9 +1,10 @@
-11
-~E 1 "../src/Instruction Fetch.vhd" 5 Instruction_Fetch
-~A 1 "../src/Instruction Fetch.vhd" 14 Behavioral
-~E 1 "../src/Instruction Memory.vhd" 5 Instruction_Memory
-~A 1 "../src/Instruction Memory.vhd" 12 Behavioral
-~E 1 "../src/Instruction Fetch.vhd" 5 InstructionFetch
-~A 1 "../src/Instruction Fetch.vhd" 14 Behavioral
-~E 1 "../src/Instruction Memory.vhd" 5 InstructionMemory
-~A 1 "../src/Instruction Memory.vhd" 12 Behavioral
+19
+~E 0 "" 0 Instruction_Fetch
+~A 0 "" 0 Behavioral
+~E 0 "" 0 Instruction_Memory
+~A 0 "" 0 Behavioral
+~E 0 "" 0 InstructionFetch
+~A 0 "" 0 Behavioral
+~E 1 "../src/Instruction Memory.vhd" 18 InstructionMemory
+~A 1 "../src/Instruction Memory.vhd" 25 Behavioral
+~E 1 "../src/Testbench/InstructionMemory_TB.vhd" 18 InstructionMemory_tb

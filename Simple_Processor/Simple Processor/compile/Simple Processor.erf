@@ -43,7 +43,18 @@ MESSAGE "File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalp
 MESSAGE "Compile Entity "Processor"" 
 MESSAGE "Compile Architecture "Structural" of Entity "Processor"" 
 MESSAGE "File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/tb.vhd" 
-MESSAGE "Compile Entity "tb"" 
-MESSAGE "Compile Architecture "behavior" of Entity "tb"" 
-WARNING ELAB1_0026: "There is no default binding for component "Processor". (Port "pc_out" is not on the entity)." "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/tb.vhd" 41 0
-SUCCESS "Compile success 0 Errors 1 Warnings  Analysis time :  0.5 [s]" 
+MESSAGE "Compile Entity "Processor_TB"" 
+MESSAGE "Compile Architecture "Testbench" of Entity "Processor_TB"" 
+MESSAGE "Incorrect order of units detected." 
+MESSAGE "Automatic reorder and incremental recompilation of required units in progress." 
+MESSAGE "Top-level unit(s) detected:" 
+MESSAGE "Entity => Processor_TB" 
+MESSAGE "Entity => mux_16bit" 
+MESSAGE "File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/tb.vhd" 
+MESSAGE "Compile Architecture "Testbench" of Entity "Processor_TB"" 
+ERROR COMP96_0127: "Improper aggregate length. Expected length is 16." "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/tb.vhd" 32 36
+ERROR COMP96_0077: "Undefined type of expression. Expected type 'SIGNED'." "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/tb.vhd" 83 19
+ERROR COMP96_0078: "Unknown identifier "conv_integer"." "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/tb.vhd" 100 40
+ERROR COMP96_0133: "Cannot find object declaration." "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/tb.vhd" 100 40
+ERROR COMP96_0289: "Prefix of index must be an array." "C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/tb.vhd" 100 40
+FAILURE "Compile failure 5 Errors 0 Warnings  Analysis time :  0.5 [s]" 

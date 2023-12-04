@@ -20,7 +20,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity ControlUnit is
   port (
-    opcode : in std_logic_vector(2 downto 0);
+    opcode : in std_logic_vector(15 downto 13);
     reset : in std_logic;
     reg_dst, mem_to_reg, alu_op : out std_logic_vector(1 downto 0);
     mem_read, mem_write, alu_src, reg_write, sign_or_zero : out std_logic

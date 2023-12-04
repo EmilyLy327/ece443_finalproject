@@ -1,0 +1,30 @@
+Active-HDL 12.0.118.7745 2023-12-04 08:58:11
+
+Elaboration top modules:
+Architecture                  TB_ARCHITECTURE(instructionfetch_tb)
+
+
+-----------------------------------------------------------------------------------------------------------------
+Entity              | Architecture    | Library           | Info | Compiler Version        | Compilation Options
+-----------------------------------------------------------------------------------------------------------------
+instructionfetch_tb | TB_ARCHITECTURE | instruction_fetch |      | 12.0.118.7745 (Windows) | -O3
+InstructionFetch    | Behavioral      | instruction_fetch |      | 12.0.118.7745 (Windows) | -O3
+InstructionMemory   | Behavioral      | instruction_fetch |      | 12.0.118.7745 (Windows) | -O3
+-----------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------
+VHDL Package                          | Library           | Info | Compiler Version        | Compilation Options
+-----------------------------------------------------------------------------------------------------------------
+standard                              | std               |      |                         | <unavailable>
+TEXTIO                                | std               |      |                         | <unavailable>
+std_logic_1164                        | ieee              |      |                         | <unavailable>
+NUMERIC_STD                           | ieee              |      |                         | <unavailable>
+-----------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------
+Library                               | Comment
+-----------------------------------------------------------------------------------------------------------------
+ieee                                  | Standard IEEE packages library
+instruction_fetch                     | None
+std                                   | Standard VHDL library
+-----------------------------------------------------------------------------------------------------------------

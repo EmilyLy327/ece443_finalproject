@@ -57,7 +57,7 @@ architecture Behavioral of InstructionMemory is
 	X"640A", 
 	X"760A", 
 	X"770B", 
-	others => (others => '0')
+	others => X"0000"
     );
 	
 begin

@@ -1,36 +1,57 @@
-timestamp=1701695118030
+timestamp=1701698291753
 
 [~A]
-ModifyID=4
+ModifyID=23
 Version=74
 
 [~MFT]
-0=8|0Instruction_Fetch.mgf|5185|1272
-1=2|1Instruction_Fetch.mgf|3313|1721
-3=2|3Instruction_Fetch.mgf|1182|396
+0=8|0Instruction_Fetch.mgf|35583|29074
+1=2|1Instruction_Fetch.mgf|84169|77165
+3=2|3Instruction_Fetch.mgf|20222|19544
 
 [instructionfetch]
-A/behavioral=A/Behavioral 21|../src/Instruction Fetch.vhd|28|1*1721
-BinW64/behavioral=3*396
-I=0*682
-I/behavioral=I/Behavioral 0*3869
-M=11|2|vef|1701695028525|../src/Instruction Fetch.vhd|0*224*0x465e03eae6190da0739d46411f238412b7326eb3|0*584*0x23b75c12e3e89f2ef000564498faa8c2
-M/behavioral=M/Behavioral 21|2|vef|1701695080558|../src/Instruction Fetch.vhd|0*3078*0xfa57a860f851bda473b3131611ae5b3d8b3fec17|0*3757*0x20116f55b147878295aeff36dce7fc50
+A/behavioral=A/Behavioral 21|../src/Instruction Fetch.vhd|28|1*84169
+BinI32/behavioral=3*20222
+I=0*6129
+I/behavioral=I/Behavioral 0*35583
+M=11|0|ve8|1701697004228|../src/Instruction Fetch.vhd|0*5671*0x33f53da7afbfaf131fd2455aa480adc1f8aabd9a|0*6031*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=M/Behavioral 21|0|ve8|1701698291730|../src/Instruction Fetch.vhd|0*34792*0x5aa8320c37fd5aa9331fe6642a324b4b3a7db390|0*35471*0x20116f55b147878295aeff36dce7fc50
 R=../src/Instruction Fetch.vhd|19
-Version=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|5e7c45779c57f8522d6767cf5c3cf1b47b8e456790017f73a533bc13f0d31431694692d6fc9b903df685b75841728cef
-Version/behavioral=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff46b2f7032cf5cefb003692f2eefc76ba1
+Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|5e7c45779c57f8522d6767cf5c3cf1b47b8e456790017f73a533bc13f0d3143167f3fa93508d12c25b33afea4938a89b
+Version/behavioral=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff49a2c0aa22552d2563e862be5286b56ac
+
+[instructionfetch_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|../src/TestBench/instructionfetch_TB.vhd|10|1*82226
+BinI32/tb_architecture=3*19831
+I=0*11237
+I/tb_architecture=I/TB_ARCHITECTURE 0*34298
+M=11|0|ve8|1701697093252|../src/TestBench/instructionfetch_TB.vhd|0*10879*0x3f092cfcfde50e4aada09f1d7a69df9324487468|0*11124*0x23b75c12e3e89f2ef000564498faa8c2
+M/tb_architecture=M/TB_ARCHITECTURE 21|0|ve8|1701698175607|../src/TestBench/instructionfetch_TB.vhd|0*20054*0xc55fae76d5fd4bfa7b2d5b04023dfaeb297b4c9f|0*20798*0x20116f55b147878295aeff36dce7fc50
+R=../src/TestBench/instructionfetch_TB.vhd|7
+Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|5e7c45779c57f8522d6767cf5c3cf1b4d4abdaa17b5aad7a7e71274cd526bf7722ef679124dfaf943ae6234db1430d9b
+Version/tb_architecture=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534bea823153bfbccf9628e89a9144569dad7d
 
 [instructionmemory]
-A/behavioral=A/Behavioral 21|../src/Instruction Memory.vhd|26|1*3313
-BinW64/behavioral=3*1182
-I=0*1555
-I/behavioral=I/Behavioral 0*5185
-M=11|2|vef|1701695078229|../src/Instruction Memory.vhd|0*1143*0xc626976170d7f35405f339c46e654c92e1c1bfe7|0*1455*0x23b75c12e3e89f2ef000564498faa8c2
-M/behavioral=M/Behavioral 21|2|vef|1701695118008|../src/Instruction Memory.vhd|0*4175*0xf8314f5c7bc4cb047cd43aaaa1645f28fd4138ce|0*5071*0x20116f55b147878295aeff36dce7fc50
-R=../src/Instruction Memory.vhd|18
-Version=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|d1182ed61ea73a0e641d9f9e1227a7c4d3caa2c06897ecf2be9fc860412dcc139a1d498792bfc62ea258b09ddd834982
-Version/behavioral=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff464cee7d0d8e004f626fc6b54f4161d8c
+A/behavioral=A/Behavioral 21|../src/Instruction Memory.vhd|26|1*80481
+BinI32/behavioral=3*19544
+I=0*8092
+I/behavioral=I/Behavioral 0*34039
+M=11|0|ve8|1701697004269|../src/Instruction Memory.vhd|0*7680*0x1f8bf3c867e4ee1c0fb086a05473b1b2d7e08df7|0*7992*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=M/Behavioral 21|0|ve8|1701698175590|../src/Instruction Memory.vhd|0*22232*0x0b5ffeda012ed6a9284b077ba3418ae7c6b35c45|0*23151*0x20116f55b147878295aeff36dce7fc50
+R=../src/Instruction Memory.vhd|19
+Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|d1182ed61ea73a0e641d9f9e1227a7c4d3caa2c06897ecf2be9fc860412dcc1381450488733753c0ed80a90bbfe55ece
+Version/behavioral=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff436d452d9df30da749cd775f735bf10a3
+
+[testbench_for_instructionfetch]
+Configures=instructionfetch_tb.TB_ARCHITECTURE
+E=1*83686
+I=0*34610
+M=2|0|ve8|1701698175610|../src/TestBench/instructionfetch_TB.vhd|0*21242*0xb4d39a8efec06cb58bce74530775e8dc50b6c53d|0*21600*0x20116f55b147878295aeff36dce7fc50
+R=../src/TestBench/instructionfetch_TB.vhd|63
+Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|5efd636a07bb57613e35fadc81a5c3e5928dbe9ac18da2699ea0fcbd30b444c6e615442f0d78565d16fb36922c11620f79384f058b50a770e222afa5fe21da57
 
 [~U]
-instructionfetch=InstructionFetch 11|0*0|
-instructionmemory=InstructionMemory 11|0*932|
+instructionfetch=InstructionFetch 11|0*5447|
+instructionfetch_tb=11|0*10735|
+instructionmemory=InstructionMemory 11|0*7469|
+testbench_for_instructionfetch=TESTBENCH_FOR_instructionfetch 2||

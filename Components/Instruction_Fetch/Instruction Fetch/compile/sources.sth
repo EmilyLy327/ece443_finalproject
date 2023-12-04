@@ -1,0 +1,10 @@
+[Files List]
+C:\Aldec\Active-HDL-12\vlib\std/src/standard.vhd=S
+C:\Aldec\Active-HDL-12\vlib\std/src/textio.vhd=S
+C:\Aldec\Active-HDL-12\vlib\ieee/src/std_logic_1164.vhdl=S
+C:\Aldec\Active-HDL-12\vlib\ieee/src/std_logic_1164-body.vhdl=S
+C:\Aldec\Active-HDL-12\vlib\ieee/src/numeric_std.vhdl=S
+C:\Aldec\Active-HDL-12\vlib\ieee/src/numeric_std-body.vhdl=S
+C:\My_Designs\ece443_finalproject\Components\Instruction_Fetch\Instruction Fetch/src/Instruction Memory.vhd=S
+C:\My_Designs\ece443_finalproject\Components\Instruction_Fetch\Instruction Fetch/src/Instruction Fetch.vhd=S
+C:\My_Designs\ece443_finalproject\Components\Instruction_Fetch\Instruction Fetch/src/TestBench/instructionfetch_TB.vhd=S

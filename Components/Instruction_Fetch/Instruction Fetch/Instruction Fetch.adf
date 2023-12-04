@@ -24,10 +24,16 @@ UCF=
 [Files]
 /Instruction Fetch.vhd=-1
 /Instruction Memory.vhd=-1
+TestBench/instructionfetch_TB.vhd=-1
+TestBench/instructionfetch_TB_runtest.do=-1
 [Files.Data]
 .\src\Instruction Fetch.vhd=VHDL Source Code
 .\src\Instruction Memory.vhd=VHDL Source Code
+.\src\TestBench\instructionfetch_TB.vhd=VHDL Test Bench
+.\src\TestBench\instructionfetch_TB_runtest.do=Macro
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+[Groups]
+TestBench=1

@@ -1,0 +1,290 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: Architecture 'behavior' of entity 'tb' not found in library 'simple_processor'.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/half_adder.vhd $dsn/src/full_adder.vhd $dsn/src/sixteen_bit_adder.vhd $dsn/src/sixteen_bit_subtractor.vhd $dsn/src/sixteen_bit_multiplier.vhd $dsn/src/sixteen_bit_multiplexer.vhd $dsn/src/ALU.vhd "$dsn/src/Data Memory.vhd" "$dsn/src/Register File.vhd" "$dsn/src/Control Unit.vhd" "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd" "$dsn/src/Instruction Decode Execute.vhd" $dsn/src/processor.vhd $dsn/src/Testbench/tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/half_adder.vhd
+# Compile Entity "and_gate"
+# Compile Architecture "structural" of Entity "and_gate"
+# Compile Entity "xor_gate"
+# Compile Architecture "structural" of Entity "xor_gate"
+# Compile Entity "half_adder"
+# Compile Architecture "structural" of Entity "half_adder"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/full_adder.vhd
+# Compile Entity "Full_Adder"
+# Compile Architecture "structural" of Entity "Full_Adder"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/sixteen_bit_adder.vhd
+# Compile Entity "sixteen_bit_adder"
+# Compile Architecture "structural" of Entity "sixteen_bit_adder"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/sixteen_bit_subtractor.vhd
+# Compile Entity "sixteen_bit_subtractor"
+# Compile Architecture "structural" of Entity "sixteen_bit_subtractor"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/sixteen_bit_multiplier.vhd
+# Compile Entity "sixteen_bit_multiplier"
+# Compile Architecture "Behavioral" of Entity "sixteen_bit_multiplier"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/sixteen_bit_multiplexer.vhd
+# Compile Entity "mux_16bit"
+# Compile Architecture "structural" of Entity "mux_16bit"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/ALU.vhd
+# Compile Entity "alu"
+# Compile Architecture "structural" of Entity "ALU"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Data Memory.vhd
+# Compile Entity "DataMemory"
+# Compile Architecture "Behavioral" of Entity "DataMemory"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Register File.vhd
+# Compile Entity "RegisterFile"
+# Compile Architecture "Behavioral" of Entity "RegisterFile"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Control Unit.vhd
+# Compile Entity "ControlUnit"
+# Compile Architecture "Behavioral" of Entity "ControlUnit"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Instruction Memory.vhd
+# Compile Entity "InstructionMemory"
+# Compile Architecture "Behavioral" of Entity "InstructionMemory"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Instruction Fetch.vhd
+# Compile Entity "InstructionFetch"
+# Compile Architecture "Behavioral" of Entity "InstructionFetch"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Instruction Decode Execute.vhd
+# Compile Entity "InstructionDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionDecode"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/processor.vhd
+# Compile Entity "Processor"
+# Compile Architecture "Structural" of Entity "Processor"
+# Error: COMP96_0367: processor.vhd : (127, 20): Improper array length (2). Expected length is 3.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Testbench/tb.vhd
+# Compile Entity "tb"
+# Compile Architecture "behavior" of Entity "tb"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -O3 -e 100 -work Simple_Processor -2002  "$dsn/src/Instruction Decode Execute.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Instruction Decode Execute.vhd
+# Compile Entity "InstructionDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionDecode"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  "$dsn/src/Instruction Decode Execute.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Instruction Decode Execute.vhd
+# Compile Entity "InstructionDecode"
+# Error: COMP96_0015: Instruction Decode Execute.vhd : (26, 9): ';' expected.
+# Compile Architecture "Behavioral" of Entity "InstructionDecode"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  "$dsn/src/Instruction Decode Execute.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Instruction Decode Execute.vhd
+# Compile Entity "InstructionDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionDecode"
+# Error: COMP96_0122: Instruction Decode Execute.vhd : (42, 5): Symbol "decode_opcode" has already been declared in this scope.
+# Error: COMP96_0122: Instruction Decode Execute.vhd : (43, 5): Symbol "i_type" has already been declared in this scope.
+# Error: COMP96_0122: Instruction Decode Execute.vhd : (43, 5): Symbol "r_type" has already been declared in this scope.
+# Error: COMP96_0122: Instruction Decode Execute.vhd : (46, 2): Symbol "reg_dist" has already been declared in this scope.
+# Error: COMP96_0122: Instruction Decode Execute.vhd : (47, 2): Symbol "mem_to_reg_signal" has already been declared in this scope.
+# Error: COMP96_0122: Instruction Decode Execute.vhd : (48, 2): Symbol "alu_op_signal" has already been declared in this scope.
+# Error: COMP96_0122: Instruction Decode Execute.vhd : (49, 2): Symbol "sign_or_zero" has already been declared in this scope.
+# Error: COMP96_0122: Instruction Decode Execute.vhd : (50, 2): Symbol "alu_src" has already been declared in this scope.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  "$dsn/src/Instruction Decode Execute.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Instruction Decode Execute.vhd
+# Compile Entity "InstructionDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionDecode"
+# Error: COMP96_0078: Instruction Decode Execute.vhd : (65, 10): Unknown identifier "instruction_type".
+# Error: COMP96_0133: Instruction Decode Execute.vhd : (65, 10): Cannot find object declaration.
+# Error: COMP96_0078: Instruction Decode Execute.vhd : (68, 15): Unknown identifier "instruction_type".
+# Error: COMP96_0133: Instruction Decode Execute.vhd : (68, 15): Cannot find object declaration.
+# Error: COMP96_0584: Instruction Decode Execute.vhd : (68, 15): Cannot determine the type of the case expression. Enumeration type, integer type, or one-dimensional array of characters expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  "$dsn/src/Instruction Execute.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Instruction Execute.vhd
+# Compile Entity "InstructionExecute"
+# Compile Architecture "Behavioral" of Entity "InstructionExecute"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/processor.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/processor.vhd
+# Compile Entity "Processor"
+# Compile Architecture "Structural" of Entity "Processor"
+# Error: COMP96_0367: processor.vhd : (127, 20): Improper array length (2). Expected length is 3.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/processor.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/processor.vhd
+# Compile Entity "Processor"
+# Compile Architecture "Structural" of Entity "Processor"
+# Error: COMP96_0033: processor.vhd : (117, 32): Missing actual.
+# Error: COMP96_0724: processor.vhd : (117, 32): ',' or ')' expected.
+# Error: COMP96_0015: processor.vhd : (117, 33): ';' expected.
+# Error: COMP96_0033: processor.vhd : (130, 28): Missing actual.
+# Error: COMP96_0724: processor.vhd : (130, 28): ',' or ')' expected.
+# Error: COMP96_0015: processor.vhd : (130, 29): ';' expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/processor.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/processor.vhd
+# Compile Entity "Processor"
+# Compile Architecture "Structural" of Entity "Processor"
+# Error: COMP96_0018: processor.vhd : (120, 9): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/processor.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/processor.vhd
+# Compile Entity "Processor"
+# Compile Architecture "Structural" of Entity "Processor"
+# Error: COMP96_0078: processor.vhd : (117, 32): Unknown identifier "reg_read_addr_1".
+# Error: COMP96_0078: processor.vhd : (118, 32): Unknown identifier "reg_read_addr_2".
+# Error: COMP96_0078: processor.vhd : (137, 27): Unknown identifier "alu_opcode".
+# Error: COMP96_0367: processor.vhd : (149, 20): Improper array length (2). Expected length is 3.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/processor.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/processor.vhd
+# Compile Entity "Processor"
+# Compile Architecture "Structural" of Entity "Processor"
+# Error: COMP96_0078: processor.vhd : (64, 28): Unknown identifier "InstructionFetch".
+# Error: COMP96_0134: processor.vhd : (64, 28): Cannot find component declaration.
+# Error: COMP96_0078: processor.vhd : (81, 32): Unknown identifier "reg_read_addr_1".
+# Error: COMP96_0078: processor.vhd : (82, 32): Unknown identifier "reg_read_addr_2".
+# Error: COMP96_0078: processor.vhd : (101, 27): Unknown identifier "alu_opcode".
+# Error: COMP96_0078: processor.vhd : (108, 15): Unknown identifier "alu".
+# Error: COMP96_0134: processor.vhd : (108, 15): Cannot find component declaration.
+# Error: COMP96_0078: processor.vhd : (117, 22): Unknown identifier "DataMemory".
+# Error: COMP96_0134: processor.vhd : (117, 22): Cannot find component declaration.
+# Error: COMP96_0078: processor.vhd : (127, 23): Unknown identifier "ControlUnit".
+# Error: COMP96_0134: processor.vhd : (127, 23): Cannot find component declaration.
+# Compile failure 11 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/processor.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/processor.vhd
+# Compile Entity "Processor"
+# Compile Architecture "Structural" of Entity "Processor"
+# Error: COMP96_0078: processor.vhd : (117, 32): Unknown identifier "reg_read_addr_1".
+# Error: COMP96_0078: processor.vhd : (118, 32): Unknown identifier "reg_read_addr_2".
+# Error: COMP96_0078: processor.vhd : (137, 27): Unknown identifier "alu_opcode".
+# Error: COMP96_0367: processor.vhd : (149, 20): Improper array length (2). Expected length is 3.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/processor.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/processor.vhd
+# Compile Entity "Processor"
+# Compile Architecture "Structural" of Entity "Processor"
+# Error: COMP96_0078: processor.vhd : (117, 32): Unknown identifier "reg_read_addr_1".
+# Error: COMP96_0078: processor.vhd : (118, 32): Unknown identifier "reg_read_addr_2".
+# Error: COMP96_0078: processor.vhd : (137, 27): Unknown identifier "alu_opcode".
+# Error: COMP96_0367: processor.vhd : (149, 20): Improper array length (2). Expected length is 3.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  "$dsn/src/Instruction Decode.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Instruction Decode.vhd
+# Compile Entity "InstructionDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionDecode"
+# Error: COMP96_0078: Instruction Decode.vhd : (65, 10): Unknown identifier "instruction_type".
+# Error: COMP96_0133: Instruction Decode.vhd : (65, 10): Cannot find object declaration.
+# Error: COMP96_0078: Instruction Decode.vhd : (68, 15): Unknown identifier "instruction_type".
+# Error: COMP96_0133: Instruction Decode.vhd : (68, 15): Cannot find object declaration.
+# Error: COMP96_0584: Instruction Decode.vhd : (68, 15): Cannot determine the type of the case expression. Enumeration type, integer type, or one-dimensional array of characters expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/processor.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/processor.vhd
+# Compile Entity "Processor"
+# Compile Architecture "Structural" of Entity "Processor"
+# Error: COMP96_0724: processor.vhd : (119, 13): ',' or ')' expected.
+# Error: COMP96_0724: processor.vhd : (120, 67): ',' or ')' expected.
+# Error: COMP96_0015: processor.vhd : (120, 70): ';' expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/processor.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/processor.vhd
+# Compile Entity "Processor"
+# Compile Architecture "Structural" of Entity "Processor"
+# Error: COMP96_0724: processor.vhd : (120, 67): ',' or ')' expected.
+# Error: COMP96_0015: processor.vhd : (120, 70): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/processor.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/processor.vhd
+# Compile Entity "Processor"
+# Compile Architecture "Structural" of Entity "Processor"
+# Error: COMP96_0078: processor.vhd : (142, 27): Unknown identifier "alu_opcode".
+# Error: COMP96_0367: processor.vhd : (154, 20): Improper array length (2). Expected length is 3.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/processor.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/processor.vhd
+# Compile Entity "Processor"
+# Compile Architecture "Structural" of Entity "Processor"
+# Error: COMP96_0019: processor.vhd : (62, 5): Keyword 'begin' expected.
+# Error: COMP96_0016: processor.vhd : (62, 9): Design unit declaration expected.
+# Compile Entity "work"
+# Error: COMP96_0019: processor.vhd : (103, 31): Keyword 'is' expected.
+# Error: COMP96_0019: processor.vhd : (103, 31): Keyword 'end' expected.
+# Error: COMP96_0015: processor.vhd : (103, 31): ';' expected.
+# Error: COMP96_0016: processor.vhd : (103, 32): Design unit declaration expected.
+# Compile Entity "work"
+# Error: COMP96_0019: processor.vhd : (122, 32): Keyword 'is' expected.
+# Error: COMP96_0019: processor.vhd : (122, 32): Keyword 'end' expected.
+# Error: COMP96_0015: processor.vhd : (122, 32): ';' expected.
+# Error: COMP96_0016: processor.vhd : (122, 33): Design unit declaration expected.
+# Error: COMP96_0019: processor.vhd : (191, 28): Keyword 'of' expected.
+# Error: COMP96_0018: processor.vhd : (191, 28): Identifier expected.
+# Compile failure 12 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/processor.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/processor.vhd
+# Compile Entity "Processor"
+# Compile Architecture "Structural" of Entity "Processor"
+# Error: COMP96_0078: processor.vhd : (94, 28): Unknown identifier "InstructionFetch".
+# Error: COMP96_0134: processor.vhd : (94, 28): Cannot find component declaration.
+# Error: COMP96_0078: processor.vhd : (136, 27): Unknown identifier "alu_opcode".
+# Error: COMP96_0367: processor.vhd : (147, 20): Improper array length (2). Expected length is 3.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/half_adder.vhd $dsn/src/full_adder.vhd $dsn/src/sixteen_bit_adder.vhd $dsn/src/sixteen_bit_subtractor.vhd $dsn/src/sixteen_bit_multiplier.vhd $dsn/src/sixteen_bit_multiplexer.vhd $dsn/src/ALU.vhd "$dsn/src/Data Memory.vhd" "$dsn/src/Register File.vhd" "$dsn/src/Control Unit.vhd" "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd" "$dsn/src/Instruction Decode.vhd" "$dsn/src/Instruction Execute.vhd" $dsn/src/processor.vhd $dsn/src/Testbench/tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/half_adder.vhd
+# Compile Entity "and_gate"
+# Compile Architecture "structural" of Entity "and_gate"
+# Compile Entity "xor_gate"
+# Compile Architecture "structural" of Entity "xor_gate"
+# Compile Entity "half_adder"
+# Compile Architecture "structural" of Entity "half_adder"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/full_adder.vhd
+# Compile Entity "Full_Adder"
+# Compile Architecture "structural" of Entity "Full_Adder"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/sixteen_bit_adder.vhd
+# Compile Entity "sixteen_bit_adder"
+# Compile Architecture "structural" of Entity "sixteen_bit_adder"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/sixteen_bit_subtractor.vhd
+# Compile Entity "sixteen_bit_subtractor"
+# Compile Architecture "structural" of Entity "sixteen_bit_subtractor"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/sixteen_bit_multiplier.vhd
+# Compile Entity "sixteen_bit_multiplier"
+# Compile Architecture "Behavioral" of Entity "sixteen_bit_multiplier"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/sixteen_bit_multiplexer.vhd
+# Compile Entity "mux_16bit"
+# Compile Architecture "structural" of Entity "mux_16bit"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/ALU.vhd
+# Compile Entity "alu"
+# Compile Architecture "structural" of Entity "ALU"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Data Memory.vhd
+# Compile Entity "DataMemory"
+# Compile Architecture "Behavioral" of Entity "DataMemory"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Register File.vhd
+# Compile Entity "RegisterFile"
+# Compile Architecture "Behavioral" of Entity "RegisterFile"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Control Unit.vhd
+# Compile Entity "ControlUnit"
+# Compile Architecture "Behavioral" of Entity "ControlUnit"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Instruction Memory.vhd
+# Compile Entity "InstructionMemory"
+# Compile Architecture "Behavioral" of Entity "InstructionMemory"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Instruction Fetch.vhd
+# Compile Entity "InstructionFetch"
+# Compile Architecture "Behavioral" of Entity "InstructionFetch"
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor2/Simple Processor/src/Instruction Decode.vhd
+# Compile Entity "InstructionDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionDecode"
+# Error: COMP96_0078: Instruction Decode.vhd : (65, 10): Unknown identifier "instruction_type".
+# Error: COMP96_0133: Instruction Decode.vhd : (65, 10): Cannot find object declaration.
+# Error: COMP96_0078: Instruction Decode.vhd : (68, 15): Unknown identifier "instruction_type".
+# Error: COMP96_0133: Instruction Decode.vhd : (68, 15): Cannot find object declaration.
+# Error: COMP96_0584: Instruction D

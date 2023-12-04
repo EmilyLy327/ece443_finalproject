@@ -57,16 +57,7 @@ architecture Structural of Processor is
     -- Other Signals
     signal temp_sig: std_logic_vector(8 downto 0);
     signal sign_extend_immediate, zero_extend_immediate, immediate_extend: std_logic_vector(15 downto 0);
-
-    component InstructionFetch
-        port (
-            clk: in std_logic;
-            reset: in std_logic;
-            pc_out: out std_logic_vector(15 downto 0);
-            instruction_out: out std_logic_vector(15 downto 0)
-        );
-    end component;
-
+	
     component ALU
         port (
             A, B: in signed(15 downto 0);
@@ -105,19 +96,45 @@ begin
             instruction_out => instruction
         );
 
-    instr_decode : process(instruction)
-    begin
-        decode_opcode <= instruction(15 downto 13);
-        i_type <= instruction(12);
-        r_type <= instruction(11);
-    end process;
+        -- Instantiate Decoding Entity
+    	Decoding_Inst: entity work.InstructionDecode
+        port map (
+            instruction_in => instruction,
+            clk => clk,
+            reset => reset,
+            decode_opcode => decode_opcode,
+            i_type => i_type,
+            r_type => r_type,
+            reg_read_addr_1 => instruction(12 downto 10),
+            reg_read_addr_2 => instruction(9 downto 7),
+            reg_write_dest => reg_write_dest,                    	
+			sign_or_zero => sign_or_zero,	
+			alu_src => alu_src,                          
+        	reg_dist => reg_dist,                        
+        	mem_to_reg_signal => mem_to_reg_signal,      
+        	alu_op_signal => alu_op_signal       
+        );
 
-    process(clk)
-    begin
-        if rising_edge(clk) then
-            instruction_type <= r_type & i_type;
-        end if;
-    end process;
+    -- Instantiate Execution Entity
+    Execution_Inst: entity work.InstructionExecute
+        port map (
+            clk => clk,
+            reset => reset,
+            decode_opcode => decode_opcode,
+            i_type => i_type,
+            r_type => r_type,
+            read_data_1 => read_data_1,
+            read_data_2 => read_data_2,
+            instruction => instruction,
+            reg_write_dest => reg_write_dest,
+            sign_extend_immediate => sign_extend_immediate,
+            sign_or_zero => sign_or_zero,
+            alu_src => alu_src,
+            alu_opcode => alu_opcode,
+            mem_write => mem_write,
+            alu_result_sig => alu_result,
+            write_data => write_data
+        );
 
     ALU_Inst: alu
         port map (

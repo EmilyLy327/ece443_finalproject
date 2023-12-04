@@ -6,16 +6,16 @@ FileTimeLow=949473397
 FileTimeHigh=31071191
 Status=Modified
 [COMPILESTATUS|.\src\ALU.vhd]
-FileTimeLow=2343128795
-FileTimeHigh=31073286
+FileTimeLow=346585183
+FileTimeHigh=31073890
 Status=Compiled
 [COMPILESTATUS|.\src\Register File.vhd]
-FileTimeLow=3289598218
-FileTimeHigh=31073475
+FileTimeLow=346635196
+FileTimeHigh=31073890
 Status=Compiled
 [COMPILESTATUS|.\src\Data Memory.vhd]
-FileTimeLow=3289578216
-FileTimeHigh=31073475
+FileTimeLow=346595188
+FileTimeHigh=31073890
 Status=Compiled
 [CACHEDOC|Aldec.Project.Generic.7|.\Simple Processor\Simple Processor.adf|]
 Path=
@@ -24,16 +24,16 @@ FileTimeLow=2346799628
 FileTimeHigh=31073286
 Status=Compiled
 [COMPILESTATUS|.\src\Control Unit.vhd]
-FileTimeLow=249277929
-FileTimeHigh=31073580
+FileTimeLow=346595188
+FileTimeHigh=31073890
 Status=Compiled
 [COMPILESTATUS|.\src\Instruction Memory.vhd]
-FileTimeLow=4203076238
-FileTimeHigh=31073623
+FileTimeLow=346625192
+FileTimeHigh=31073890
 Status=Compiled
 [COMPILESTATUS|.\src\Instruction Decode Execute.vhd]
-FileTimeLow=3586188463
-FileTimeHigh=31073775
+FileTimeLow=2572961235
+FileTimeHigh=31073892
 Status=Modified
 [COMPILESTATUS|.\src\tb.vhd]
 FileTimeLow=2086301018
@@ -48,38 +48,38 @@ ZoomFactor=0
 Frame=0
 WindowWorkspaceInfo=LAAAAAAAAAADAAAA/////////////////////2UEAADwAAAAMQcAAGMDAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAAAAAAAAQAAAA==
 [COMPILESTATUS|.\src\Testbench\tb.vhd]
-FileTimeLow=3289608223
-FileTimeHigh=31073475
+FileTimeLow=346635196
+FileTimeHigh=31073890
 Status=Compiled
 [General]
 CurrentVersion=103
 [COMPILESTATUS|.\src\Instruction Fetch.vhd]
-FileTimeLow=93708156
-FileTimeHigh=31073773
+FileTimeLow=346615191
+FileTimeHigh=31073890
 Status=Compiled
 [COMPILESTATUS|.\src\half_adder.vhd]
-FileTimeLow=2341668545
-FileTimeHigh=31073286
+FileTimeLow=346655198
+FileTimeHigh=31073890
 Status=Compiled
 [COMPILESTATUS|.\src\full_adder.vhd]
-FileTimeLow=136580370
-FileTimeHigh=31073257
+FileTimeLow=346645197
+FileTimeHigh=31073890
 Status=Compiled
 [COMPILESTATUS|.\src\sixteen_bit_adder.vhd]
-FileTimeLow=2342388628
-FileTimeHigh=31073286
+FileTimeLow=346665197
+FileTimeHigh=31073890
 Status=Compiled
 [COMPILESTATUS|.\src\sixteen_bit_subtractor.vhd]
-FileTimeLow=136610378
-FileTimeHigh=31073257
+FileTimeLow=346685207
+FileTimeHigh=31073890
 Status=Compiled
 [COMPILESTATUS|.\src\sixteen_bit_multiplier.vhd]
-FileTimeLow=136600382
-FileTimeHigh=31073257
+FileTimeLow=346675203
+FileTimeHigh=31073890
 Status=Compiled
 [COMPILESTATUS|.\src\sixteen_bit_multiplexer.vhd]
-FileTimeLow=136600382
-FileTimeHigh=31073257
+FileTimeLow=346675203
+FileTimeHigh=31073890
 Status=Compiled
 [CACHEDOC|Aldec.Hde.HdePlugIn.7|.\Simple Processor\src/Data Memory.vhd|]
 CurrentLine=23
@@ -177,3 +177,31 @@ BookmarksLength=3
 ZoomFactor=0
 Frame=0
 WindowWorkspaceInfo="LAAAAAAAAAAAAAAA/////////////////////9wEAADbAAAAMQcAAO8CAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAAAAAAAAAAAAA=="
+[COMPILESTATUS|.\src\processor.vhd]
+FileTimeLow=346655198
+FileTimeHigh=31073890
+Status=Error
+[COMPILESTATUS|.\src\Instruction Decode Execute.vhd]
+FileTimeLow=358430292
+FileTimeHigh=31073893
+Status=Error
+[COMPILESTATUS|.\src\Instruction Execute.vhd]
+FileTimeLow=1087327123
+FileTimeHigh=31073893
+Status=Compiled
+[COMPILESTATUS|.\src\Instruction Decode.vhd]
+FileTimeLow=1079949185
+FileTimeHigh=31073896
+Status=Modified
+[COMPILESTATUS|.\src\processor.vhd]
+FileTimeLow=4122354589
+FileTimeHigh=31073895
+Status=Error
+[COMPILESTATUS|.\src\Instruction Execute.vhd]
+FileTimeLow=219770115
+FileTimeHigh=31073895
+Status=Compiled
+[COMPILESTATUS|.\src\Instruction Execute.vhd]
+FileTimeLow=1100112141
+FileTimeHigh=31073897
+Status=Compiled

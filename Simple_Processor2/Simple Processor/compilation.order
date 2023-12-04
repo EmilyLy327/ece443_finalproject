@@ -10,7 +10,7 @@
 .\src\Control Unit.vhd
 .\src\Instruction Memory.vhd
 .\src\Instruction Fetch.vhd
-.\src\Instruction Decode Execute.vhd
-.\src\Instruction Fetch.vhd
+.\src\Instruction Decode.vhd
+.\src\Instruction Execute.vhd
 .\src\processor.vhd
 .\src\Testbench\tb.vhd

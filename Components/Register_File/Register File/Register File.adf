@@ -20,19 +20,19 @@ FAMILY=
 TestBench=1
 [Files]
 /Register File.vhd=-1
-/..\..\RegisterFile\src\untitled.asdb=-1
-/..\..\RegisterFile\src\untitled.awc=-1
+/..\..\RegisterFile\src\RegisterFileTB.asdb=-1
+/..\..\RegisterFile\src\RegisterFileTB.awc=-1
 TestBench/registerfile_TB.vhd=-1
 TestBench/registerfile_TB_runtest.do=-1
 [Files.Data]
 .\src\Register File.vhd=VHDL Source Code
-.\..\RegisterFile\src\untitled.asdb=Accelerated Waveform File
-.\..\RegisterFile\src\untitled.awc=Accelerated Waveform Configuration
+.\..\RegisterFile\src\RegisterFileTB.asdb=Accelerated Waveform File
+.\..\RegisterFile\src\RegisterFileTB.awc=Accelerated Waveform Configuration
 .\src\TestBench\registerfile_TB.vhd=VHDL Test Bench
 .\src\TestBench\registerfile_TB_runtest.do=Macro
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=registerfile_tb|testbench_for_registerfile|1
+HierarchyInformation=registerfile|Behavioral|0 registerfile_tb|testbench_for_registerfile|1
 ShowHide=ShowTopLevel
 Selected=

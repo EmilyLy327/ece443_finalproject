@@ -23,15 +23,31 @@ USE IEEE.NUMERIC_STD.ALL;
 entity RegisterFile is
     port (
         clk, rst, reg_write_en: in std_logic;
-        reg_write_dest: in std_logic_vector(2 downto 0);
-        reg_write_data: in std_logic_vector(15 downto 0);
-        reg_read_addr_1, reg_read_addr_2: in std_logic_vector(2 downto 0);
-        reg_read_data_1, reg_read_data_2: out std_logic_vector(15 downto 0)
+        reg_write_dest: in signed(2 downto 0);
+        reg_write_data: in signed(15 downto 0);
+        
+		reg_read_addr_1: in signed(2 downto 0);
+		reg_read_addr_2: in signed(2 downto 0);
+		reg_read_addr_3: in signed(2 downto 0);
+		reg_read_addr_4: in signed(2 downto 0);
+		reg_read_addr_5: in signed(2 downto 0);
+		reg_read_addr_6: in signed(2 downto 0);
+		reg_read_addr_7: in signed(2 downto 0);
+		reg_read_addr_8: in signed(2 downto 0);
+        
+		reg_read_data_1: out signed(15 downto 0); 
+		reg_read_data_2: out signed(15 downto 0);
+		reg_read_data_3: out signed(15 downto 0); 
+		reg_read_data_4: out signed(15 downto 0);
+		reg_read_data_5: out signed(15 downto 0); 
+		reg_read_data_6: out signed(15 downto 0);
+		reg_read_data_7: out signed(15 downto 0); 
+		reg_read_data_8: out signed(15 downto 0)
     );
 end entity RegisterFile;
 
 architecture Behavioral of RegisterFile is
-    type RegArrayType is array (0 to 7) of std_logic_vector(15 downto 0); -- represents the registers where each holds 16 bits
+    type RegArrayType is array (0 to 7) of signed(15 downto 0); -- represents the registers where each holds 16 bits
     signal reg_array: RegArrayType;	-- signal of type RegArrayType so that we can store the register values
 begin
     process (clk, rst)
@@ -50,5 +66,12 @@ begin
 
     -- Read operation
     reg_read_data_1 <= reg_array(to_integer(unsigned(reg_read_addr_1))); -- assigned the value stored in reg_read_addr_1
-    reg_read_data_2 <= reg_array(to_integer(unsigned(reg_read_addr_2))); -- assigned the value stored in reg_read_addr_2
+    reg_read_data_2 <= reg_array(to_integer(unsigned(reg_read_addr_2))); -- assigned the value stored in reg_read_addr_2  
+	reg_read_data_3 <= reg_array(to_integer(unsigned(reg_read_addr_3))); -- assigned the value stored in reg_read_addr_3
+    reg_read_data_4 <= reg_array(to_integer(unsigned(reg_read_addr_4))); -- assigned the value stored in reg_read_addr_4
+	reg_read_data_5 <= reg_array(to_integer(unsigned(reg_read_addr_5))); -- assigned the value stored in reg_read_addr_5
+    reg_read_data_6 <= reg_array(to_integer(unsigned(reg_read_addr_6))); -- assigned the value stored in reg_read_addr_6
+	reg_read_data_7 <= reg_array(to_integer(unsigned(reg_read_addr_7))); -- assigned the value stored in reg_read_addr_7
+    reg_read_data_8 <= reg_array(to_integer(unsigned(reg_read_addr_8))); -- assigned the value stored in reg_read_addr_8
 end architecture Behavioral;
+

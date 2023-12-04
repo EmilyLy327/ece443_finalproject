@@ -4,7 +4,7 @@ VCS=0
 version=4
 Current Config=compile
 [Configurations]
-compile=Simple_Processor
+compile=simple_processor
 [Library]
 Simple_Processor=.\Simple_Processor\Simple_Processor.lib
 [$LibMap$]
@@ -18,6 +18,7 @@ FLOWTOOLS=ONLY_IMPL
 ON_SERVERFARM_SYNTH=0
 ON_SERVERFARM_IMPL=0
 ON_SERVERFARM_SIM=0
+fileopenfolder=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\ece443_finalproject\Components\Register_File\Register File\src
 [IMPLEMENTATION]
 UCF=
 [folders]
@@ -58,7 +59,7 @@ name11=Waveform Files
 directory11=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\Simple_Processor\Simple Processor\
 extension11=asdb;awc;asdbc;asdbe
 [HierarchyViewer]
-HierarchyInformation=instructionmemory|Behavioral|0
+HierarchyInformation=registerfile|Behavioral|0
 ShowHide=ShowTopLevel
 Selected=
 [SpecTracer]

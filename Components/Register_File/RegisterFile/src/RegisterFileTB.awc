@@ -6,7 +6,7 @@
     </comment>
     <databases>
         <database id="">*virtual*</database>
-        <database id="e0d55eaf4d651be86365c4746a350100">untitled.asdb</database>
+        <database id="LOCAL___280d6e65a1a251010c00">RegisterFileTB.asdb</database>
     </databases>
     <gridshown/>
     <signallists>
@@ -18,14 +18,26 @@
         <signal>/registerfile_tb/reg_write_data</signal>
         <signal>/registerfile_tb/reg_read_addr_1</signal>
         <signal>/registerfile_tb/reg_read_addr_2</signal>
+        <signal>/registerfile_tb/reg_read_addr_3</signal>
+        <signal>/registerfile_tb/reg_read_addr_4</signal>
+        <signal>/registerfile_tb/reg_read_addr_5</signal>
+        <signal>/registerfile_tb/reg_read_addr_6</signal>
+        <signal>/registerfile_tb/reg_read_addr_7</signal>
+        <signal>/registerfile_tb/reg_read_addr_8</signal>
         <signal>/registerfile_tb/reg_read_data_1</signal>
         <signal>/registerfile_tb/reg_read_data_2</signal>
+        <signal>/registerfile_tb/reg_read_data_3</signal>
+        <signal>/registerfile_tb/reg_read_data_4</signal>
+        <signal>/registerfile_tb/reg_read_data_5</signal>
+        <signal>/registerfile_tb/reg_read_data_6</signal>
+        <signal>/registerfile_tb/reg_read_data_7</signal>
+        <signal>/registerfile_tb/reg_read_data_8</signal>
         <signal>/registerfile_tb/CLOCK_PERIOD</signal>
         </signallist>
     </signallists>
     <timebases>
         <timebase id="0">
-            <time start_time="0" end_time="1032601" />
+            <time start_time="0" end_time="270315" />
         </timebase>
     </timebases>
     <prefbases>
@@ -38,7 +50,7 @@
     </bookmarkbases>
     <cursorbases>
         <cursors id="0">
-            <cursor value="207409" label="Cursor 1" locked="0" />
+            <cursor value="260000" label="Cursor 1" locked="0" />
         </cursors>
     </cursorbases>
     <measurementbases>

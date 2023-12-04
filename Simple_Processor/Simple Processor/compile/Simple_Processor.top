@@ -1,2 +1,1 @@
-Processor_TB ENTITY
-mux_16bit ENTITY
+RegisterFile ENTITY

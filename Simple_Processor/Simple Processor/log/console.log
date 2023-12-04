@@ -1,90 +1,24 @@
-acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/Testbench/tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/tb.vhd
-# Compile Entity "Processor_TB"
-# Compile Architecture "Testbench" of Entity "Processor_TB"
-# Error: COMP96_0127: Testbench/tb.vhd : (32, 36): Improper aggregate length. Expected length is 16.
-# Error: COMP96_0077: Testbench/tb.vhd : (83, 19): Undefined type of expression. Expected type 'SIGNED'.
-# Error: COMP96_0131: Testbench/tb.vhd : (90, 38): Illegal operand for type conversion.
-# Error: COMP96_0131: Testbench/tb.vhd : (93, 38): Illegal operand for type conversion.
-# Error: COMP96_0367: Testbench/tb.vhd : (93, 31): Improper array length (15). Expected length is 16.
-# Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work Simple_Processor -2002  $dsn/src/Testbench/tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/tb.vhd
-# Compile Entity "Processor_TB"
-# Compile Architecture "Testbench" of Entity "Processor_TB"
-# Error: COMP96_0127: Testbench/tb.vhd : (32, 36): Improper aggregate length. Expected length is 16.
-# Error: COMP96_0077: Testbench/tb.vhd : (83, 19): Undefined type of expression. Expected type 'SIGNED'.
-# Error: COMP96_0078: Testbench/tb.vhd : (101, 40): Unknown identifier "conv_integer".
-# Error: COMP96_0133: Testbench/tb.vhd : (101, 40): Cannot find object declaration.
-# Error: COMP96_0289: Testbench/tb.vhd : (101, 40): Prefix of index must be an array.
-# Compile failure 5 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work Simple_Processor -2002  "$dsn/src/Control Unit.vhd"
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Control Unit.vhd
-# Compile Entity "ControlUnit"
-# Compile Architecture "Behavioral" of Entity "ControlUnit"
-# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
 # Library Manager: Library "simple_processor" contents cleared.
-acom -reorder -O3 -e 100 -work Simple_Processor -2002  $dsn/src/half_adder.vhd $dsn/src/full_adder.vhd $dsn/src/sixteen_bit_adder.vhd $dsn/src/sixteen_bit_subtractor.vhd $dsn/src/sixteen_bit_multiplier.vhd $dsn/src/sixteen_bit_multiplexer.vhd $dsn/src/ALU.vhd "$dsn/src/Data Memory.vhd" "$dsn/src/Register File.vhd" "$dsn/src/Control Unit.vhd" "$dsn/src/Instruction Memory.vhd" "$dsn/src/Instruction Fetch.vhd" "$dsn/src/Instruction Decode Execute.vhd" $dsn/src/Testbench/tb.vhd
+acom -reorder -O3 -e 100 -work Simple_Processor -2002  "$dsn/src/Register File.vhd"
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/half_adder.vhd
-# Compile Entity "and_gate"
-# Compile Architecture "structural" of Entity "and_gate"
-# Compile Entity "xor_gate"
-# Compile Architecture "structural" of Entity "xor_gate"
-# Compile Entity "half_adder"
-# Compile Architecture "structural" of Entity "half_adder"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/full_adder.vhd
-# Compile Entity "Full_Adder"
-# Compile Architecture "structural" of Entity "Full_Adder"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/sixteen_bit_adder.vhd
-# Compile Entity "sixteen_bit_adder"
-# Compile Architecture "structural" of Entity "sixteen_bit_adder"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/sixteen_bit_subtractor.vhd
-# Compile Entity "sixteen_bit_subtractor"
-# Compile Architecture "structural" of Entity "sixteen_bit_subtractor"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/sixteen_bit_multiplier.vhd
-# Compile Entity "sixteen_bit_multiplier"
-# Compile Architecture "Behavioral" of Entity "sixteen_bit_multiplier"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/sixteen_bit_multiplexer.vhd
-# Compile Entity "mux_16bit"
-# Compile Architecture "structural" of Entity "mux_16bit"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/ALU.vhd
-# Compile Entity "alu"
-# Compile Architecture "structural" of Entity "ALU"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Data Memory.vhd
-# Compile Entity "DataMemory"
-# Compile Architecture "Behavioral" of Entity "DataMemory"
 # File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Register File.vhd
 # Compile Entity "RegisterFile"
 # Compile Architecture "Behavioral" of Entity "RegisterFile"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Control Unit.vhd
-# Compile Entity "ControlUnit"
-# Compile Architecture "Behavioral" of Entity "ControlUnit"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Memory.vhd
-# Compile Entity "InstructionMemory"
-# Compile Architecture "Behavioral" of Entity "InstructionMemory"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Fetch.vhd
-# Compile Entity "InstructionFetch"
-# Compile Architecture "Behavioral" of Entity "InstructionFetch"
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Instruction Decode Execute.vhd
-# Compile Entity "Processor"
-# Compile Architecture "Structural" of Entity "Processor"
+# Top-level unit(s) detected:
+# Entity => RegisterFile
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work simple_processor -2002  $dsn/src/Testbench/tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/tb.vhd
 # Compile Entity "Processor_TB"
 # Compile Architecture "Testbench" of Entity "Processor_TB"
-# Incorrect order of units detected.
-# Automatic reorder and incremental recompilation of required units in progress.
-# Top-level unit(s) detected:
-# Entity => Processor_TB
-# Entity => mux_16bit
-# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Simple_Processor/Simple Processor/src/Testbench/tb.vhd
-# Compile Architecture "Testbench" of Entity "Processor_TB"
 # Error: COMP96_0127: Testbench/tb.vhd : (32, 36): Improper aggregate length. Expected length is 16.
+# Error: COMP96_0078: Testbench/tb.vhd : (52, 22): Unknown identifier "Processor".
+# Error: COMP96_0055: Testbench/tb.vhd : (52, 17): Cannot find context item "work.Processor".
 # Error: COMP96_0077: Testbench/tb.vhd : (83, 19): Undefined type of expression. Expected type 'SIGNED'.
 # Error: COMP96_0078: Testbench/tb.vhd : (100, 40): Unknown identifier "conv_integer".
 # Error: COMP96_0133: Testbench/tb.vhd : (100, 40): Cannot find object declaration.
 # Error: COMP96_0289: Testbench/tb.vhd : (100, 40): Prefix of index must be an array.
-# Compile failure 5 Errors 0 Warnings  Analysis time :  0.5 [s]
+# Compile failure 7 Errors 0 Warnings  Analysis time :  31.0 [ms]

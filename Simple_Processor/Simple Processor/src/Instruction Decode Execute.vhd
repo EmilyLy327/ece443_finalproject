@@ -155,7 +155,7 @@ begin
 		   alu_src => alu_src,
 		   sign_or_zero => sign_or_zero
        );
-
+	
     -- Writeback  
     process(clk)
     begin

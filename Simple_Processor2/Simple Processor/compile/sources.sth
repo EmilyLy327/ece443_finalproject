@@ -1,0 +1,18 @@
+[Files List]
+C:\Aldec\Active-HDL-12\vlib\std/src/standard.vhd=S
+C:\Aldec\Active-HDL-12\vlib\std/src/textio.vhd=S
+C:\Aldec\Active-HDL-12\vlib\ieee/src/std_logic_1164.vhdl=S
+C:\Aldec\Active-HDL-12\vlib\ieee/src/std_logic_1164-body.vhdl=S
+C:\Aldec\Active-HDL-12\vlib\ieee/src/numeric_std.vhdl=S
+C:\Aldec\Active-HDL-12\vlib\ieee/src/numeric_std-body.vhdl=S
+C:\My_Designs\ece443_finalproject\Simple_Processor2\Simple Processor/src/half_adder.vhd=S
+C:\My_Designs\ece443_finalproject\Simple_Processor2\Simple Processor/src/full_adder.vhd=S
+C:\My_Designs\ece443_finalproject\Simple_Processor2\Simple Processor/src/sixteen_bit_adder.vhd=S
+C:\My_Designs\ece443_finalproject\Simple_Processor2\Simple Processor/src/sixteen_bit_multiplier.vhd=S
+C:\My_Designs\ece443_finalproject\Simple_Processor2\Simple Processor/src/sixteen_bit_subtractor.vhd=S
+C:\My_Designs\ece443_finalproject\Simple_Processor2\Simple Processor/src/Instruction Memory.vhd=S
+C:\My_Designs\ece443_finalproject\Simple_Processor2\Simple Processor/src/ALU.vhd=S
+C:\My_Designs\ece443_finalproject\Simple_Processor2\Simple Processor/src/Instruction Fetch.vhd=S
+C:\My_Designs\ece443_finalproject\Simple_Processor2\Simple Processor/src/Instruction Decode Execute.vhd=S
+C:\My_Designs\ece443_finalproject\Simple_Processor2\Simple Processor/src/processor.vhd=S
+C:\My_Designs\ece443_finalproject\Simple_Processor2\Simple Processor/src/Testbench/tb.vhd=S

@@ -1,0 +1,3 @@
+register_file ENTITY
+Processor ENTITY
+ALU_control ENTITY

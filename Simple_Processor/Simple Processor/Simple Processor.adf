@@ -58,7 +58,7 @@ name11=Waveform Files
 directory11=C:\Users\emily\Git\Ece443_Ly_Zimmerman_FinalProject\Simple_Processor\Simple Processor\
 extension11=asdb;awc;asdbc;asdbe
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=instructionmemory|Behavioral|0
 ShowHide=ShowTopLevel
 Selected=
 [SpecTracer]

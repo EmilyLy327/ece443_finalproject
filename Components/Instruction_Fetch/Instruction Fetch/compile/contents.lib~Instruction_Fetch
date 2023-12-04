@@ -1,0 +1,5 @@
+4
+~E 1 "../src/Instruction Fetch.vhd" 19 InstructionFetch
+~A 1 "../src/Instruction Fetch.vhd" 28 Behavioral
+~E 1 "../src/Instruction Memory.vhd" 18 InstructionMemory
+~A 1 "../src/Instruction Memory.vhd" 26 Behavioral

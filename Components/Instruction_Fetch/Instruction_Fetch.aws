@@ -1,0 +1,12 @@
+[Version]
+Version=13.0
+[Designs]
+instruction fetch=.\Instruction Fetch\Instruction Fetch.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+instruction fetch=1

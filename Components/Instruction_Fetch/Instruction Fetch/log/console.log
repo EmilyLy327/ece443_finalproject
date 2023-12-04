@@ -1,0 +1,39 @@
+# Design: Design Instruction Fetch already active.
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: C-Synthesis: Not Defined
+# DESIGN: HDL Synthesis: Not Defined
+# DESIGN: Physical Synthesis: Not Defined
+# DESIGN: Implementation: Not Defined
+acom -reorder -O3 -e 100 -work Instruction_Fetch -2002  "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Fetch/Instruction Fetch/src/Instruction Fetch.vhd
+# Compile Entity "InstructionFetch"
+# Compile Architecture "Behavioral" of Entity "InstructionFetch"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => InstructionFetch
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Fetch/Instruction Fetch/src/Instruction Fetch.vhd
+# Compile Architecture "Behavioral" of Entity "InstructionFetch"
+# Error: COMP96_0078: Instruction Fetch.vhd : (52, 36): Unknown identifier "InstructionMemory".
+# Error: COMP96_0055: Instruction Fetch.vhd : (52, 31): Cannot find context item "work.InstructionMemory".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work Instruction_Fetch -2002  "$dsn/src/Instruction Memory.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Fetch/Instruction Fetch/src/Instruction Memory.vhd
+# Compile Entity "InstructionMemory"
+# Compile Architecture "Behavioral" of Entity "InstructionMemory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work Instruction_Fetch -2002  "$dsn/src/Instruction Fetch.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Fetch/Instruction Fetch/src/Instruction Fetch.vhd
+# Compile Entity "InstructionFetch"
+# Compile Architecture "Behavioral" of Entity "InstructionFetch"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work Instruction_Fetch -2002  "$dsn/src/Instruction Memory.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/emily/Git/Ece443_Ly_Zimmerman_FinalProject/ece443_finalproject/Components/Instruction_Fetch/Instruction Fetch/src/Instruction Memory.vhd
+# Compile Entity "InstructionMemory"
+# Compile Architecture "Behavioral" of Entity "InstructionMemory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]

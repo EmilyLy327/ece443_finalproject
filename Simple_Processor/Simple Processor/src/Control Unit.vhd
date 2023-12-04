@@ -22,7 +22,7 @@ entity ControlUnit is
   port (
     opcode : in std_logic_vector(2 downto 0);
     reset : in std_logic;
-    reg_dst, mem_to_reg, alu_op : out signed(1 downto 0);
+    reg_dst, mem_to_reg, alu_op : out std_logic_vector(1 downto 0);
     mem_read, mem_write, alu_src, reg_write, sign_or_zero : out std_logic
   );
 end ControlUnit;
@@ -48,7 +48,7 @@ begin
           alu_op <= "00";	   -- tells alu to perform addition
           mem_read <= '0';	   -- no memory read operation is required for this instruction
           mem_write <= '0';	   -- no write memory operation is required for this instruction
-          alu_src <= '0';	   -- implys that second operand is not an immediate value
+          alu_src <= '0';	   -- implies that second operand is not an immediate value
           reg_write <= '1';	   -- signals that the result should be written back to the register file
           sign_or_zero <= '0'; -- alu should produce a result without considering signed or zero
         when "001" => -- signed multiplication (mult)

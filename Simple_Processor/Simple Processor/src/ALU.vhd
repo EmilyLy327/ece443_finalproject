@@ -71,8 +71,6 @@ signal mux_overflow: std_logic;
 
 signal result : signed(15 downto 0);
 
-signal temp : signed(15 downto 0);
-
 begin
 	-- Instantiate components
     adder_inst: sixteen_bit_adder port map (A => A, B => B, Sum => adder_result);
